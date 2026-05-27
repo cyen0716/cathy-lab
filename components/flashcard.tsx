@@ -56,12 +56,13 @@ export function Flashcard({ words }: FlashcardProps) {
             <span className="text-sm text-muted-foreground">點擊翻轉</span>
           </div>
 
-          {/* Back - Chinese */}
+          {/* Back - Chinese + Romanization */}
           <div
             className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-primary rounded-xl"
             style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
           >
-            <span className="text-4xl font-bold text-primary-foreground mb-2">{currentWord.chinese}</span>
+            <span className="text-4xl font-bold text-primary-foreground mb-1">{currentWord.chinese}</span>
+            <span className="text-base text-primary-foreground/80 mb-2">{currentWord.romanization}</span>
             <span className="text-sm text-primary-foreground/70">點擊翻轉</span>
           </div>
         </Card>
