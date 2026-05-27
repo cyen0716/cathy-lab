@@ -6,25 +6,29 @@ import { vocabularyData } from "@/lib/vocabulary-data"
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC]">
-      <div className="max-w-7xl mx-auto px-8 py-10">
+      <div className="max-w-7xl mx-auto px-8 py-14">
 
         {/* Header */}
-        <header className="mb-10">
-          <p className="text-sm font-medium uppercase tracking-[0.15em] text-slate-400 mb-3">
+        <header className="mb-14">
+          <p className="text-sm font-medium uppercase tracking-[0.15em] text-slate-400 mb-4">
             Cathy Hangul
           </p>
 
-          <h1 className="text-4xl font-bold text-slate-900">
+          <h1 className="text-5xl font-bold text-slate-900 leading-tight">
             韓語單字本
           </h1>
 
-          <p className="text-2xl font-semibold text-slate-600 mt-2">
+          <p className="text-xl font-semibold text-slate-500 mt-3">
             Korean Vocabulary
+          </p>
+
+          <p className="text-base text-slate-400 mt-6">
+            오늘은 어떤 단어를 배울까? ✨
           </p>
         </header>
 
         {/* Categories */}
-        <div className="grid grid-cols-5 gap-5">
+        <div className="grid grid-cols-5 gap-6">
           {vocabularyData.map((category) => (
             <CategoryCard
               key={category.id}
