@@ -32,32 +32,45 @@ export default function CategoryPage({ params }: CategoryPageProps) {
     return category.words.filter(
       (word) =>
         word.korean.includes(searchQuery) ||
-        word.chinese.includes(searchQuery) ||
-        word.romanization.toLowerCase().includes(query)
+        word.chinese.includes(searchQuery)
     )
   }, [category.words, searchQuery])
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="max-w-md mx-auto px-4 py-6 pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
         {/* Header */}
-        <header className="flex items-center gap-3 mb-4">
-          <Link href="/">
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <ChevronLeft className="h-5 w-5" />
-            </Button>
-          </Link>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">{category.icon}</span>
-            <div>
-              <h1 className="text-lg font-bold text-foreground">{category.name}</h1>
-              <p className="text-xs text-muted-foreground">{category.nameKorean} · {category.words.length} 個單字</p>
+        <header className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <ChevronLeft className="h-5 w-5" />
+              </Button>
+            </Link>
+            <div className="flex items-center gap-3">
+              <span className="text-3xl">{category.icon}</span>
+              <div>
+                <h1 className="text-xl font-bold text-foreground">{category.name}</h1>
+                <p className="text-sm text-muted-foreground">{category.nameKorean} · {category.words.length} 個單字</p>
+              </div>
             </div>
+          </div>
+          
+          {/* Search Bar - Desktop */}
+          <div className="hidden sm:block relative w-64">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="搜尋單字..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10 rounded-xl bg-muted/50 border-0 h-10"
+            />
           </div>
         </header>
 
-        {/* Search Bar */}
-        <div className="relative mb-4">
+        {/* Search Bar - Mobile */}
+        <div className="sm:hidden relative mb-4">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             type="text"
@@ -70,16 +83,16 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-4 h-11 rounded-xl bg-muted/50">
-            <TabsTrigger value="list" className="rounded-lg gap-1.5 text-sm">
+          <TabsList className="inline-flex h-11 rounded-xl bg-muted/50 p-1 mb-6">
+            <TabsTrigger value="list" className="rounded-lg gap-1.5 text-sm px-4">
               <List className="h-4 w-4" />
               列表
             </TabsTrigger>
-            <TabsTrigger value="flashcards" className="rounded-lg gap-1.5 text-sm">
+            <TabsTrigger value="flashcards" className="rounded-lg gap-1.5 text-sm px-4">
               <BookOpen className="h-4 w-4" />
               單字卡
             </TabsTrigger>
-            <TabsTrigger value="quiz" className="rounded-lg gap-1.5 text-sm">
+            <TabsTrigger value="quiz" className="rounded-lg gap-1.5 text-sm px-4">
               <Brain className="h-4 w-4" />
               測驗
             </TabsTrigger>
@@ -90,11 +103,15 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           </TabsContent>
 
           <TabsContent value="flashcards" className="mt-0">
-            <Flashcard words={filteredWords.length > 0 ? filteredWords : category.words} />
+            <div className="max-w-md mx-auto">
+              <Flashcard words={filteredWords.length > 0 ? filteredWords : category.words} />
+            </div>
           </TabsContent>
 
           <TabsContent value="quiz" className="mt-0">
-            <Quiz words={filteredWords.length > 0 ? filteredWords : category.words} />
+            <div className="max-w-md mx-auto">
+              <Quiz words={filteredWords.length > 0 ? filteredWords : category.words} />
+            </div>
           </TabsContent>
         </Tabs>
       </div>

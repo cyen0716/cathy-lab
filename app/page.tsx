@@ -12,32 +12,30 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="max-w-md mx-auto px-4 py-6 pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
         {/* Header */}
-        <header className="text-center mb-6">
-          <h1 className="text-2xl font-bold text-foreground">韓語單字本</h1>
-          <p className="text-sm text-muted-foreground">Korean Vocabulary</p>
+        <header className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-foreground">韓語單字本</h1>
+          <p className="text-sm text-muted-foreground mt-1">Korean Vocabulary</p>
         </header>
 
         {/* Search */}
-        <div className="mb-6">
+        <div className="max-w-md mx-auto mb-8">
           <SearchBar onSearchResults={setSearchResults} onSearchQuery={setSearchQuery} />
         </div>
 
         {/* Search Results */}
         {searchQuery && (
-          <div className="mb-6">
-            <h2 className="text-sm font-medium text-muted-foreground mb-3">
+          <div className="mb-8">
+            <h2 className="text-sm font-medium text-muted-foreground mb-4">
               搜尋結果 ({searchResults.length})
             </h2>
             {searchResults.length > 0 ? (
-              <div className="space-y-2">
-                {searchResults.slice(0, 10).map((word, index) => (
-                  <Card key={index} className="p-3 border-0 shadow-sm">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium">{word.korean}</span>
-                      <span className="text-muted-foreground">{word.chinese}</span>
-                    </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+                {searchResults.slice(0, 20).map((word, index) => (
+                  <Card key={index} className="p-4 border-0 shadow-sm flex flex-col items-center justify-center min-h-[88px]">
+                    <span className="font-semibold text-lg text-center">{word.korean}</span>
+                    <span className="text-sm text-muted-foreground mt-1 text-center">{word.chinese}</span>
                   </Card>
                 ))}
               </div>
@@ -52,8 +50,8 @@ export default function HomePage() {
         {/* Categories */}
         {!searchQuery && (
           <>
-            <h2 className="text-sm font-medium text-muted-foreground mb-3">主題分類</h2>
-            <div className="grid grid-cols-2 gap-3">
+            <h2 className="text-sm font-medium text-muted-foreground mb-4">主題分類</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
               {vocabularyData.map((category) => (
                 <CategoryCard key={category.id} category={category} />
               ))}
