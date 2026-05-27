@@ -12,16 +12,22 @@ function getIconBg(id: string) {
   switch (id) {
     case "daily-life":
       return "bg-blue-50"
+
     case "emotions":
       return "bg-pink-50"
+
     case "food":
       return "bg-orange-50"
+
     case "cafe":
       return "bg-amber-50"
+
     case "travel":
       return "bg-cyan-50"
+
     case "kdrama":
       return "bg-violet-50"
+
     default:
       return "bg-slate-100"
   }
@@ -30,11 +36,11 @@ function getIconBg(id: string) {
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
-      <Card className="h-[190px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer">
+      <Card className="h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 cursor-pointer">
         <div className="h-full flex flex-col items-center justify-center text-center px-3">
 
           <div
-            className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${getIconBg(category.id)}`}
+            className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 ${getIconBg(category.id)}`}
           >
             <span className="text-3xl">
               {category.icon}
@@ -45,7 +51,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
             {category.name}
           </p>
 
-          <p className="text-lg font-semibold text-slate-600 mt-1 leading-tight">
+          <p className="text-base font-semibold text-slate-600 mt-1 leading-tight">
             {category.nameKorean}
           </p>
 
