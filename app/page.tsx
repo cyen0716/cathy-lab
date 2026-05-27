@@ -10,6 +10,10 @@ export default function HomePage() {
 
         {/* Header */}
         <header className="mb-10">
+          <p className="text-sm font-medium uppercase tracking-[0.15em] text-slate-400 mb-3">
+            Cathy Hangul
+          </p>
+
           <h1 className="text-4xl font-bold text-slate-900">
             韓語單字本
           </h1>
