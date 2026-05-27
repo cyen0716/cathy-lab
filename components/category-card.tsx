@@ -11,22 +11,22 @@ interface CategoryCardProps {
 function getIconBg(id: string) {
   switch (id) {
     case "daily-life":
-      return "bg-blue-50"
+      return "bg-blue-100"
 
     case "emotions":
-      return "bg-pink-50"
+      return "bg-pink-100"
 
     case "food":
-      return "bg-orange-50"
+      return "bg-orange-100"
 
     case "cafe":
-      return "bg-amber-50"
+      return "bg-amber-100"
 
     case "travel":
-      return "bg-cyan-50"
+      return "bg-cyan-100"
 
     case "kdrama":
-      return "bg-violet-50"
+      return "bg-violet-100"
 
     default:
       return "bg-slate-100"
@@ -36,13 +36,13 @@ function getIconBg(id: string) {
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
-      <Card className="h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 cursor-pointer">
-        <div className="h-full flex flex-col items-center justify-center text-center px-3">
+      <Card className="h-[190px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+        <div className="h-full flex flex-col items-center justify-center text-center px-4">
 
           <div
-            className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 ${getIconBg(category.id)}`}
+            className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-5 ${getIconBg(category.id)}`}
           >
-            <span className="text-3xl">
+            <span className="text-4xl">
               {category.icon}
             </span>
           </div>
@@ -51,11 +51,11 @@ export function CategoryCard({ category }: CategoryCardProps) {
             {category.name}
           </p>
 
-          <p className="text-base font-semibold text-slate-600 mt-1 leading-tight">
+          <p className="text-lg font-semibold text-slate-600 mt-1 leading-tight">
             {category.nameKorean}
           </p>
 
-          <p className="text-xs text-slate-400 mt-3">
+          <p className="text-xs text-slate-400 mt-4">
             {category.words.length} 個單字
           </p>
 
