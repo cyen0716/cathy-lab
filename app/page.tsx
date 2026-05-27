@@ -5,7 +5,7 @@ import { vocabularyData } from "@/lib/vocabulary-data"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#F7FFF2]">
+    <main className="min-h-screen bg-[#FAFAF7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8">
 
         {/* Header */}
