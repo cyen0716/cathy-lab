@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '韓語單字本 | Korean Vocabulary',
+  title: 'Cathy Lab',
   description: 'Learn Korean vocabulary with flashcards and quizzes - 學習韓文單字',
   generator: 'v0.app',
   icons: {
