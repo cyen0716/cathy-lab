@@ -82,8 +82,7 @@ export default function HomePage() {
                   </h3>
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
-                    Flashcards, quizzes, pronunciation,
-                    and categorized Korean vocabulary study sets.
+                    Flashcards, quizzes, pronunciation, and categorized Korean vocabulary study sets.
                   </p>
 
                 </div>
