@@ -74,7 +74,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    🐰
+                    🇰🇷
                   </div>
 
                   <h3 className="text-3xl font-serif font-bold text-slate-900">
@@ -100,7 +100,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    ⚡
+                    🖥️
                   </div>
 
                   <h3 className="text-3xl font-serif font-bold text-slate-900">
