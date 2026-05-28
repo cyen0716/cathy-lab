@@ -10,36 +10,11 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-10 py-10">
 
         {/* Navbar */}
-        <nav className="flex items-center justify-between mb-14">
+        <nav className="mb-14">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
           </p>
-
-          <div className="flex items-center gap-10 text-sm text-slate-500 font-medium">
-
-            <a
-              href="#projects"
-              className="hover:text-slate-900 transition-colors"
-            >
-              Projects
-            </a>
-
-            <a
-              href="/korean"
-              className="hover:text-slate-900 transition-colors"
-            >
-              Korean
-            </a>
-
-            <a
-              href="/semiconductor"
-              className="hover:text-slate-900 transition-colors"
-            >
-              Semiconductor
-            </a>
-
-          </div>
 
         </nav>
 
@@ -83,7 +58,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    🐰
+                    🇰🇷
                   </div>
 
                   <h3 className="text-3xl font-bold text-slate-900">
@@ -109,7 +84,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    ⚡
+                    🖥️
                   </div>
 
                   <h3 className="text-3xl font-bold text-slate-900">
