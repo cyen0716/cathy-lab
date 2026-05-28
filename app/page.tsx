@@ -5,12 +5,12 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#F7F4EF]">
+    <main className="min-h-screen bg-[#F8FAFC]">
 
       <div className="max-w-7xl mx-auto px-10 py-10">
 
         {/* Navbar */}
-        <nav className="flex items-center justify-between mb-12">
+        <nav className="flex items-center justify-between mb-14">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
@@ -18,15 +18,24 @@ export default function HomePage() {
 
           <div className="flex items-center gap-10 text-sm text-slate-500 font-medium">
 
-            <a href="#projects" className="hover:text-slate-900 transition-colors">
+            <a
+              href="#projects"
+              className="hover:text-slate-900 transition-colors"
+            >
               Projects
             </a>
 
-            <a href="/korean" className="hover:text-slate-900 transition-colors">
+            <a
+              href="/korean"
+              className="hover:text-slate-900 transition-colors"
+            >
               Korean
             </a>
 
-            <a href="/semiconductor" className="hover:text-slate-900 transition-colors">
+            <a
+              href="/semiconductor"
+              className="hover:text-slate-900 transition-colors"
+            >
               Semiconductor
             </a>
 
@@ -35,9 +44,9 @@ export default function HomePage() {
         </nav>
 
         {/* Hero */}
-        <section className="mb-16">
+        <section className="mb-14">
 
-          <h1 className="text-[88px] leading-[0.9] font-serif font-bold text-slate-900">
+          <h1 className="text-[88px] leading-[0.9] font-bold text-slate-900">
 
             Hi,
             <br />
@@ -60,7 +69,7 @@ export default function HomePage() {
         {/* Projects */}
         <section id="projects">
 
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-8">
             Projects
           </h2>
 
@@ -69,12 +78,12 @@ export default function HomePage() {
             {/* Korean */}
             <Link href="/korean">
 
-              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
+              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
 
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    🇰🇷
+                    🐰
                   </div>
 
                   <h3 className="text-3xl font-bold text-slate-900">
@@ -82,7 +91,8 @@ export default function HomePage() {
                   </h3>
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
-                    Flashcards, quizzes, pronunciation, and categorized Korean vocabulary study sets.
+                    Flashcards, quizzes, pronunciation,
+                    and categorized Korean vocabulary study sets.
                   </p>
 
                 </div>
@@ -91,15 +101,15 @@ export default function HomePage() {
 
             </Link>
 
-            {/* Semiconductor */}
+            {/* Technology */}
             <Link href="/semiconductor">
 
-              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
+              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
 
                 <div className="flex flex-col h-full">
 
                   <div className="text-5xl mb-4">
-                    🖥️
+                    ⚡
                   </div>
 
                   <h3 className="text-3xl font-bold text-slate-900">
@@ -107,7 +117,8 @@ export default function HomePage() {
                   </h3>
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
-                    Networking, semiconductor and AI explorations.
+                    Networking, semiconductor,
+                    cybersecurity and AI explorations.
                   </p>
 
                 </div>
