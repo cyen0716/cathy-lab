@@ -10,7 +10,7 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-10 py-10">
 
         {/* Navbar */}
-        <nav className="mb-14">
+        <nav className="mb-12">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
@@ -19,9 +19,9 @@ export default function HomePage() {
         </nav>
 
         {/* Hero */}
-        <section className="mb-14">
+        <section className="mb-14 max-w-4xl">
 
-          <h1 className="text-[88px] leading-[0.9] font-bold text-slate-900">
+          <h1 className="text-[72px] leading-[0.92] font-bold text-slate-900">
 
             Hi,
             <br />
@@ -39,6 +39,10 @@ export default function HomePage() {
             and language learning.
           </p>
 
+          <p className="text-sm text-slate-400 mt-5">
+            🐰 learning korean everyday
+          </p>
+
         </section>
 
         {/* Projects */}
@@ -53,15 +57,15 @@ export default function HomePage() {
             {/* Korean */}
             <Link href="/korean">
 
-              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
+              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#E86C5D] hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[180px]">
 
                 <div className="flex flex-col h-full">
 
-                  <div className="text-5xl mb-4">
+                  <div className="text-4xl mb-3 transition-transform duration-300 group-hover:translate-x-1">
                     🇰🇷
                   </div>
 
-                  <h3 className="text-3xl font-bold text-slate-900">
+                  <h3 className="text-2xl font-bold text-slate-900">
                     Korean Vocabulary
                   </h3>
 
@@ -79,15 +83,15 @@ export default function HomePage() {
             {/* Technology */}
             <Link href="/semiconductor">
 
-              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
+              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#E86C5D] hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[180px]">
 
                 <div className="flex flex-col h-full">
 
-                  <div className="text-5xl mb-4">
-                    🖥️
+                  <div className="text-4xl mb-3">
+                    ⚡
                   </div>
 
-                  <h3 className="text-3xl font-bold text-slate-900">
+                  <h3 className="text-2xl font-bold text-slate-900">
                     Technology
                   </h3>
 
