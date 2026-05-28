@@ -5,92 +5,70 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#F8FAFC]">
-      <div className="max-w-6xl mx-auto px-8 py-16">
+    <main className="min-h-screen bg-[#F7F4EF]">
 
-        {/* Intro */}
-        <section className="mb-20">
+      <div className="max-w-7xl mx-auto px-10 py-14">
 
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-400 font-medium mb-5">
+        {/* Navbar */}
+        <nav className="flex items-center justify-between mb-20">
+
+          <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
           </p>
 
-          <h1 className="text-6xl font-bold text-slate-900 leading-tight">
-            Cathy Yen
-          </h1>
+          <div className="flex items-center gap-10 text-sm text-slate-500 font-medium">
+            <a href="#projects" className="hover:text-slate-900 transition-colors">
+              Projects
+            </a>
 
-          <p className="text-2xl text-slate-600 font-semibold mt-4">
-            Frontend • AI • Korean • Semiconductor
-          </p>
+            <a href="/korean" className="hover:text-slate-900 transition-colors">
+              Korean
+            </a>
 
-          <p className="text-lg text-slate-400 mt-8 max-w-2xl leading-relaxed">
-            Exploring technology, design, AI, networking, and language learning.
-          </p>
+            <a href="/semiconductor" className="hover:text-slate-900 transition-colors">
+              Semiconductor
+            </a>
+          </div>
 
-        </section>
+        </nav>
 
-        {/* Project Cards */}
-        <section>
+        {/* Hero */}
+        <section className="grid grid-cols-2 gap-12 items-center mb-24">
 
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">
-            Projects
-          </h2>
+          {/* Left */}
+          <div>
 
-          <div className="grid grid-cols-2 gap-6">
+            <h1 className="text-[96px] leading-[0.9] font-serif font-bold text-slate-900">
 
-            {/* Korean */}
-            <Link href="/korean">
-              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[260px]">
+              Hi,
+              <br />
 
-                <div className="text-5xl mb-6">
-                  🐰
-                </div>
+              I’m <span className="text-[#E86C5D]">Cathy.</span>
 
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Korean Vocabulary
-                </h3>
+            </h1>
 
-                <p className="text-slate-500 mt-4 leading-relaxed">
-                  Korean vocabulary learning app with flashcards,
-                  quizzes, pronunciation, and categorized study sets.
-                </p>
+            <p className="text-xl text-slate-500 font-medium mt-8 tracking-wide">
+              Frontend • AI • Korean • Semiconductor
+            </p>
 
-                <p className="text-sm text-slate-400 mt-6">
-                  Next.js • Tailwind • Vercel
-                </p>
+            <p className="text-lg text-slate-400 mt-8 leading-relaxed max-w-xl">
+              Exploring technology, design, AI, networking,
+              and language learning.
+            </p>
 
-              </Card>
-            </Link>
+            <Link href="#projects">
 
-            {/* Semiconductor */}
-            <Link href="/semiconductor">
-              <Card className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[260px]">
+              <button className="mt-10 bg-[#E86C5D] hover:bg-[#db5c4c] transition-colors text-white px-8 py-4 rounded-2xl text-lg font-medium shadow-sm">
 
-                <div className="text-5xl mb-6">
-                  ⚡
-                </div>
+                Explore My Projects →
 
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Semiconductor & AI
-                </h3>
+              </button>
 
-                <p className="text-slate-500 mt-4 leading-relaxed">
-                  Notes and explorations about semiconductor,
-                  networking technology, AI trends, and cybersecurity.
-                </p>
-
-                <p className="text-sm text-slate-400 mt-6">
-                  AI • Networking • Semiconductor
-                </p>
-
-              </Card>
             </Link>
 
           </div>
 
-        </section>
+          {/* Right */}
+          <div className="relative flex justify-center">
 
-      </div>
-    </main>
-  )
-}
+            <div className="w
