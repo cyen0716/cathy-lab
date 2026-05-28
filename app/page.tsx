@@ -103,7 +103,7 @@ export default function HomePage() {
                   </div>
 
                   <h3 className="text-3xl font-bold text-slate-900">
-                    Semiconductor & AI
+                    Technology
                   </h3>
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
