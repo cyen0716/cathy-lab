@@ -71,4 +71,101 @@ export default function HomePage() {
           {/* Right */}
           <div className="relative flex justify-center">
 
-            <div className="w
+            <div className="w-[520px] h-[520px] rounded-full bg-[#EFE8DF] absolute top-0" />
+
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+              alt="profile"
+              className="relative z-10 w-[430px] object-cover rounded-3xl"
+            />
+
+          </div>
+
+        </section>
+
+        {/* Projects */}
+        <section id="projects">
+
+          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-10">
+            Projects
+          </h2>
+
+          <div className="grid grid-cols-2 gap-8">
+
+            {/* Korean */}
+            <Link href="/korean">
+
+              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[220px]">
+
+                <div className="flex flex-col h-full">
+
+                  <div className="text-5xl mb-5">
+                    🐰
+                  </div>
+
+                  <h3 className="text-3xl font-serif font-bold text-slate-900">
+                    Korean Vocabulary
+                  </h3>
+
+                  <p className="text-slate-500 mt-4 leading-relaxed">
+                    Korean vocabulary learning app with flashcards,
+                    quizzes, pronunciation, and categorized study sets.
+                  </p>
+
+                  <div className="flex gap-3 mt-auto pt-6 text-sm text-slate-400">
+
+                    <span>Next.js</span>
+                    <span>Tailwind</span>
+                    <span>Vercel</span>
+
+                  </div>
+
+                </div>
+
+              </Card>
+
+            </Link>
+
+            {/* Semiconductor */}
+            <Link href="/semiconductor">
+
+              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[220px]">
+
+                <div className="flex flex-col h-full">
+
+                  <div className="text-5xl mb-5">
+                    ⚡
+                  </div>
+
+                  <h3 className="text-3xl font-serif font-bold text-slate-900">
+                    Semiconductor & AI
+                  </h3>
+
+                  <p className="text-slate-500 mt-4 leading-relaxed">
+                    Notes and explorations about semiconductor,
+                    networking technology, AI trends, and cybersecurity.
+                  </p>
+
+                  <div className="flex gap-3 mt-auto pt-6 text-sm text-slate-400">
+
+                    <span>AI</span>
+                    <span>Networking</span>
+                    <span>Semiconductor</span>
+
+                  </div>
+
+                </div>
+
+              </Card>
+
+            </Link>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+  )
+}
