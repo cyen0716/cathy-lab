@@ -47,11 +47,11 @@ export default function HomePage() {
           </h1>
 
           <p className="text-xl text-slate-500 font-medium mt-6 tracking-wide">
-            Frontend • AI • Korean • Semiconductor
+            AI • Semiconductor • Korean
           </p>
 
           <p className="text-lg text-slate-400 mt-6 leading-relaxed max-w-2xl">
-            Exploring technology, design, AI, networking,
+            Exploring technology, AI, networking,
             and language learning.
           </p>
 
@@ -60,7 +60,7 @@ export default function HomePage() {
         {/* Projects */}
         <section id="projects">
 
-          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-slate-900 mb-8">
             Projects
           </h2>
 
@@ -77,7 +77,7 @@ export default function HomePage() {
                     🇰🇷
                   </div>
 
-                  <h3 className="text-3xl font-serif font-bold text-slate-900">
+                  <h3 className="text-3xl font-bold text-slate-900">
                     Korean Vocabulary
                   </h3>
 
@@ -103,13 +103,12 @@ export default function HomePage() {
                     🖥️
                   </div>
 
-                  <h3 className="text-3xl font-serif font-bold text-slate-900">
+                  <h3 className="text-3xl font-bold text-slate-900">
                     Semiconductor & AI
                   </h3>
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
-                    Networking, cybersecurity,
-                    semiconductor and AI explorations.
+                    Networking, semiconductor and AI explorations.
                   </p>
 
                 </div>
