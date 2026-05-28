@@ -7,16 +7,17 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F7F4EF]">
 
-      <div className="max-w-7xl mx-auto px-10 py-14">
+      <div className="max-w-7xl mx-auto px-10 py-10">
 
         {/* Navbar */}
-        <nav className="flex items-center justify-between mb-20">
+        <nav className="flex items-center justify-between mb-12">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
           </p>
 
           <div className="flex items-center gap-10 text-sm text-slate-500 font-medium">
+
             <a href="#projects" className="hover:text-slate-900 transition-colors">
               Projects
             </a>
@@ -28,65 +29,38 @@ export default function HomePage() {
             <a href="/semiconductor" className="hover:text-slate-900 transition-colors">
               Semiconductor
             </a>
+
           </div>
 
         </nav>
 
         {/* Hero */}
-        <section className="grid grid-cols-2 gap-12 items-center mb-24">
+        <section className="mb-16">
 
-          {/* Left */}
-          <div>
+          <h1 className="text-[88px] leading-[0.9] font-serif font-bold text-slate-900">
 
-            <h1 className="text-[96px] leading-[0.9] font-serif font-bold text-slate-900">
+            Hi,
+            <br />
 
-              Hi,
-              <br />
+            I’m <span className="text-[#E86C5D]">Cathy.</span>
 
-              I’m <span className="text-[#E86C5D]">Cathy.</span>
+          </h1>
 
-            </h1>
+          <p className="text-xl text-slate-500 font-medium mt-6 tracking-wide">
+            Frontend • AI • Korean • Semiconductor
+          </p>
 
-            <p className="text-xl text-slate-500 font-medium mt-8 tracking-wide">
-              Frontend • AI • Korean • Semiconductor
-            </p>
-
-            <p className="text-lg text-slate-400 mt-8 leading-relaxed max-w-xl">
-              Exploring technology, design, AI, networking,
-              and language learning.
-            </p>
-
-            <Link href="#projects">
-
-              <button className="mt-10 bg-[#E86C5D] hover:bg-[#db5c4c] transition-colors text-white px-8 py-4 rounded-2xl text-lg font-medium shadow-sm">
-
-                Explore My Projects →
-
-              </button>
-
-            </Link>
-
-          </div>
-
-          {/* Right */}
-          <div className="relative flex justify-center">
-
-            <div className="w-[520px] h-[520px] rounded-full bg-[#EFE8DF] absolute top-0" />
-
-            <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
-              alt="profile"
-              className="relative z-10 w-[430px] object-cover rounded-3xl"
-            />
-
-          </div>
+          <p className="text-lg text-slate-400 mt-6 leading-relaxed max-w-2xl">
+            Exploring technology, design, AI, networking,
+            and language learning.
+          </p>
 
         </section>
 
         {/* Projects */}
         <section id="projects">
 
-          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-10">
+          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-8">
             Projects
           </h2>
 
@@ -95,11 +69,11 @@ export default function HomePage() {
             {/* Korean */}
             <Link href="/korean">
 
-              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[220px]">
+              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
 
                 <div className="flex flex-col h-full">
 
-                  <div className="text-5xl mb-5">
+                  <div className="text-5xl mb-4">
                     🐰
                   </div>
 
@@ -107,18 +81,10 @@ export default function HomePage() {
                     Korean Vocabulary
                   </h3>
 
-                  <p className="text-slate-500 mt-4 leading-relaxed">
-                    Korean vocabulary learning app with flashcards,
-                    quizzes, pronunciation, and categorized study sets.
+                  <p className="text-slate-500 mt-3 leading-relaxed">
+                    Flashcards, quizzes, pronunciation,
+                    and categorized Korean vocabulary study sets.
                   </p>
-
-                  <div className="flex gap-3 mt-auto pt-6 text-sm text-slate-400">
-
-                    <span>Next.js</span>
-                    <span>Tailwind</span>
-                    <span>Vercel</span>
-
-                  </div>
 
                 </div>
 
@@ -129,11 +95,11 @@ export default function HomePage() {
             {/* Semiconductor */}
             <Link href="/semiconductor">
 
-              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[220px]">
+              <Card className="p-8 rounded-[32px] border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[200px]">
 
                 <div className="flex flex-col h-full">
 
-                  <div className="text-5xl mb-5">
+                  <div className="text-5xl mb-4">
                     ⚡
                   </div>
 
@@ -141,18 +107,10 @@ export default function HomePage() {
                     Semiconductor & AI
                   </h3>
 
-                  <p className="text-slate-500 mt-4 leading-relaxed">
-                    Notes and explorations about semiconductor,
-                    networking technology, AI trends, and cybersecurity.
+                  <p className="text-slate-500 mt-3 leading-relaxed">
+                    Networking, cybersecurity,
+                    semiconductor and AI explorations.
                   </p>
-
-                  <div className="flex gap-3 mt-auto pt-6 text-sm text-slate-400">
-
-                    <span>AI</span>
-                    <span>Networking</span>
-                    <span>Semiconductor</span>
-
-                  </div>
 
                 </div>
 
