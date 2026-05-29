@@ -7,11 +7,11 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC]">
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-8 md:py-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-10">
 
         {/* Logo */}
 
-        <nav className="mb-12">
+        <nav className="mb-14">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
@@ -21,7 +21,7 @@ export default function HomePage() {
 
         {/* Hero */}
 
-        <section className="max-w-4xl mb-20">
+        <section className="max-w-4xl mb-24">
 
           <h1 className="text-6xl md:text-[72px] leading-[0.92] font-bold text-slate-900">
 
@@ -36,10 +36,19 @@ export default function HomePage() {
             AI • Semiconductor • Korean
           </p>
 
-          <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mt-10">
-            I build things with AI, learn Korean,
-            and explore technology one project at a time.
-          </p>
+          <div className="mt-10 space-y-5 max-w-3xl">
+
+            <p className="text-xl text-slate-700 leading-relaxed">
+              I build things with AI, learn Korean,
+              and explore technology one project at a time.
+            </p>
+
+            <p className="text-lg text-slate-400 leading-relaxed">
+              This website is my playground for experiments,
+              learning notes, and side projects.
+            </p>
+
+          </div>
 
         </section>
 
@@ -57,7 +66,7 @@ export default function HomePage() {
 
             <Link href="/korean">
 
-              <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+              <Card className="p-6 min-h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
 
                 <div>
 
@@ -84,7 +93,7 @@ export default function HomePage() {
 
             <Link href="/semiconductor">
 
-              <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+              <Card className="p-6 min-h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
 
                 <div>
 
@@ -98,7 +107,7 @@ export default function HomePage() {
 
                   <p className="text-slate-500 mt-3 leading-relaxed">
                     Networking, semiconductor,
-                    cybersecurity and AI explorations.
+                    cybersecurity, AI, and learning notes.
                   </p>
 
                 </div>
