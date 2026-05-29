@@ -143,7 +143,7 @@ export default function SemiconductorPage() {
             <div className="my-12">
 
               <img
-                src="/chip-transistor.png"
+                src="/transistor-chip.png"
                 alt="Relationship between transistor and chip"
                 className="w-full max-w-3xl mx-auto rounded-2xl border border-slate-200"
               />
