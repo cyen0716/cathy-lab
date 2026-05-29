@@ -40,22 +40,26 @@ export default function SemiconductorPage() {
 
           {/* Basics */}
 
-          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300">
+          <Link href="/semiconductor/basics">
 
-            <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
-              Basics
-            </p>
+            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
 
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              Semiconductor Basics
-            </h2>
+              <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
+                Basics
+              </p>
 
-            <p className="text-slate-500 leading-relaxed">
-              What is a semiconductor, wafer, chip,
-              fab, foundry, and Moore's Law.
-            </p>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                Semiconductor Basics
+              </h2>
 
-          </div>
+              <p className="text-slate-500 leading-relaxed">
+                What is a semiconductor, wafer, chip,
+                fab, foundry, and Moore's Law.
+              </p>
+
+            </div>
+
+          </Link>
 
           {/* Process */}
 
