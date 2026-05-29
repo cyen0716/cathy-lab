@@ -63,13 +63,13 @@ export default function SemiconductorPage() {
                 Computers only understand two states:
               </p>
 
-              <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-2xl p-5">
+              <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-2xl p-5 text-center">
 
-                <p className="text-2xl font-bold text-[#4338CA]">
+                <p className="text-xl font-bold text-[#4338CA]">
                   1 = ON
                 </p>
 
-                <p className="text-2xl font-bold text-[#4338CA] mt-2">
+                <p className="text-xl font-bold text-[#4338CA] mt-2">
                   0 = OFF
                 </p>
 
