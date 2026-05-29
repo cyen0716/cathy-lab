@@ -201,7 +201,7 @@ export default function SemiconductorPage() {
 
     <div className="text-center">
 
-      <p className="text-2xl font-medium text-slate-500">
+      <p className="text-xl font-medium text-slate-500">
         × Billions
       </p>
 
