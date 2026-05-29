@@ -36,7 +36,8 @@ function getIconBg(id: string) {
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
-      <Card className="h-[190px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+      <Card className="h-[210px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
+
         <div className="h-full flex flex-col items-center justify-center text-center px-4">
 
           <div
@@ -47,19 +48,26 @@ export function CategoryCard({ category }: CategoryCardProps) {
             </span>
           </div>
 
-          <p className="text-lg font-bold text-slate-900 leading-tight">
+          <p className="text-lg font-bold text-slate-900">
             {category.name}
           </p>
 
-          <p className="text-lg font-semibold text-slate-600 mt-1 leading-tight">
+          <p className="text-base text-slate-500 mt-1">
             {category.nameKorean}
           </p>
 
-          <p className="text-xs text-slate-400 mt-4">
-            {category.words.length} 個單字
+          <div className="mt-4">
+            <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">
+              {category.words.length} words
+            </span>
+          </div>
+
+          <p className="text-sm text-[#4338CA] font-medium mt-4">
+            Start Learning →
           </p>
 
         </div>
+
       </Card>
     </Link>
   )
