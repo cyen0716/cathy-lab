@@ -111,7 +111,7 @@ export default function SemiconductorPage() {
 
               <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
-                <p className="text-2xl font-semibold text-center text-[#3730A3]">
+                <p className="text-xl font-semibold text-center text-[#4338CA]">
                   A semiconductor is a material that allows us to control electricity.
                 </p>
 
@@ -244,11 +244,7 @@ export default function SemiconductorPage() {
               </div>
 
               <p>
-                A chip is not one switch.
-              </p>
-
-              <p className="mt-3 text-xl font-semibold text-slate-900">
-                It is billions of tiny switches working together.
+                A chip is not one switch. It is billions of tiny switches working together.
               </p>
 
             </section>
