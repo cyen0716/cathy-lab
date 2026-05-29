@@ -65,11 +65,11 @@ export default function SemiconductorPage() {
 
               <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-10 text-center">
 
-                <p className="text-3xl font-bold text-[#4338CA]">
+                <p className="text-2xl font-bold text-[#4338CA]">
                   1 = ON
                 </p>
 
-                <p className="text-3xl font-bold text-[#4338CA] mt-4">
+                <p className="text-2xl font-bold text-[#4338CA] mt-4">
                   0 = OFF
                 </p>
 
@@ -187,17 +187,17 @@ export default function SemiconductorPage() {
 
     <div className="text-center">
 
-      <p className="text-lg font-medium text-slate-700 mb-3">
-        One Transistor
-      </p>
+  <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-10 py-4">
+    <p className="text-xl font-bold text-[#4338CA]">
+      ON
+    </p>
+  </div>
 
-      <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-10 py-4">
-        <p className="text-xl font-bold text-[#4338CA]">
-          ON
-        </p>
-      </div>
+  <p className="text-lg font-medium text-slate-700 mt-3">
+    One Transistor
+  </p>
 
-    </div>
+</div>
 
     <div className="text-center">
 
