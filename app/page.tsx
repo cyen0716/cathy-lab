@@ -19,33 +19,38 @@ export default function HomePage() {
 
         </nav>
 
-        {/* Hero */}
+       {/* Hero */}
 
-        <section className="mb-12 max-w-4xl">
+<section className="mb-12 max-w-4xl">
 
-          <h1 className="text-6xl md:text-[72px] leading-[0.92] font-bold text-slate-900">
+  <h1 className="text-6xl md:text-[72px] leading-[0.92] font-bold text-slate-900">
 
-            Hi,
-            <br />
+    Hi,
+    <br />
 
-            I’m <span className="text-[#4F46E5]">Cathy.</span>
+    I’m <span className="text-[#4F46E5]">Cathy.</span>
 
-          </h1>
+  </h1>
 
-          <p className="text-lg md:text-xl text-slate-500 font-medium mt-5 tracking-wide">
-            AI • Semiconductor • Korean
-          </p>
+  <p className="text-lg md:text-xl text-slate-500 font-medium mt-6 tracking-wide">
+    AI • Semiconductor • Korean
+  </p>
 
-          <p className="text-base md:text-lg text-slate-400 mt-5 leading-relaxed max-w-2xl">
-            Exploring technology, AI, networking,
-            and language learning.
-          </p>
+  <div className="mt-8 max-w-2xl space-y-4">
 
-          <p className="text-sm text-slate-400 mt-5">
-            Building with AI • Learning Korean
-          </p>
+    <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
+      I build things with AI, learn Korean,
+      and explore technology one project at a time.
+    </p>
 
-        </section>
+    <p className="text-base md:text-lg text-slate-400 leading-relaxed">
+      This website is my playground for experiments,
+      learning notes, and side projects.
+    </p>
+
+  </div>
+
+</section>
 
         {/* Projects */}
 
