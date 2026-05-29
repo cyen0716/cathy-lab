@@ -74,122 +74,118 @@ export default function SemiconductorPage() {
 
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Why Do We Need Semiconductors?
           </h1>
 
           {/* Big Picture */}
 
-          <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8 mb-12">
+          <div className="mt-10 mb-12 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
-            <h2 className="text-lg font-bold text-[#3730A3] mb-6">
+            <p className="text-sm uppercase tracking-[0.15em] text-[#4338CA] font-medium mb-6">
               The Big Picture
-            </h2>
+            </p>
 
-            <div className="space-y-3 text-[#4338CA] text-lg">
+            <div className="space-y-3 text-center">
 
-              <p>Computer needs 0 and 1</p>
+              <p className="text-lg font-medium text-slate-900">
+                Computers need 0 and 1
+              </p>
 
-              <p>↓</p>
+              <p className="text-slate-400">↓</p>
 
-              <p>0 and 1 need switches</p>
+              <p className="text-lg font-medium text-slate-900">
+                0 and 1 need switches
+              </p>
 
-              <p>↓</p>
+              <p className="text-slate-400">↓</p>
 
-              <p>Switch = Transistor</p>
+              <p className="text-lg font-medium text-slate-900">
+                Switch = Transistor
+              </p>
 
-              <p>↓</p>
+              <p className="text-slate-400">↓</p>
 
-              <p>Transistors are made from semiconductors</p>
+              <p className="text-lg font-medium text-slate-900">
+                Transistors are made from semiconductors
+              </p>
 
-              <p>↓</p>
+              <p className="text-slate-400">↓</p>
 
-              <p>Billions of transistors = Chip</p>
-
-              <p>↓</p>
-
-              <p>Chips power smartphones</p>
+              <p className="text-lg font-medium text-slate-900">
+                Billions of transistors = One chip
+              </p>
 
             </div>
 
           </div>
 
-          {/* Intro */}
-
-          <p className="text-xl text-slate-700 mb-10">
+          <p className="text-xl text-slate-700 font-medium mb-10">
             Let's break it down.
           </p>
 
-          {/* Step 1 */}
+          {/* Content */}
 
-          <section className="mb-12">
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed text-slate-600">
 
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 1: Computers Need 0 and 1
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+            <p>
               Computers only understand two numbers:
             </p>
 
             <div className="bg-white border border-slate-200 rounded-3xl p-10 text-center">
 
-              <p className="text-6xl font-bold text-slate-900 tracking-widest">
+              <p className="text-6xl font-bold tracking-widest text-slate-900">
                 0 1
               </p>
 
             </div>
 
-          </section>
-
-          {/* Step 2 */}
-
-          <section className="mb-12">
-
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 2: 0 and 1 Need Switches
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p>
               You can think of them as:
             </p>
 
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 mt-6">
+            <div className="bg-white border border-slate-200 rounded-3xl p-8">
 
-              <p className="font-medium text-slate-900">
+              <p className="text-lg font-medium text-slate-900">
                 1 = ON
               </p>
 
-              <p className="font-medium text-slate-900 mt-3">
+              <p className="text-lg font-medium text-slate-900 mt-3">
                 0 = OFF
               </p>
 
             </div>
 
-            <p className="text-lg text-slate-600 leading-relaxed mt-6">
+            <p>
               If computers only understand ON and OFF,
               they need a way to create billions of ONs and OFFs every second.
             </p>
 
-          </section>
-
-          {/* Step 3 */}
-
-          <section className="mb-12">
-
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 3: Switch = Transistor
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Engineers created tiny electronic switches.
+            <p className="font-semibold text-slate-900">
+              They need billions of tiny switches.
             </p>
 
-            <p className="text-lg text-slate-900 font-medium mt-4">
+            <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
+
+              <p className="text-2xl font-medium text-slate-700">
+                ON → OFF → ON → OFF → ON → OFF
+              </p>
+
+            </div>
+
+            <p>
+              Of course, we cannot put billions of physical switches inside a smartphone.
+            </p>
+
+            <p>
+              So engineers created tiny electronic switches instead.
+            </p>
+
+            <p className="font-semibold text-slate-900">
               These switches are called transistors.
             </p>
 
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 mt-6">
+            <div className="bg-white border border-slate-200 rounded-3xl p-8">
 
               <p>
                 Electricity passes → 1
@@ -201,48 +197,19 @@ export default function SemiconductorPage() {
 
             </div>
 
-          </section>
-
-          {/* Step 4 */}
-
-          <section className="mb-12">
-
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 4: Semiconductors Make Transistors Possible
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Transistors are built using semiconductor materials.
-            </p>
-
-            <p className="text-lg text-slate-600 leading-relaxed mt-4">
-              Without semiconductors, we would not be able to create
-              these tiny electronic switches.
-            </p>
-
-          </section>
-
-          {/* Step 5 */}
-
-          <section className="mb-12">
-
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 5: Billions of Transistors Become a Chip
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p>
               A transistor is just one switch.
             </p>
 
-            <p className="text-lg text-slate-600 leading-relaxed mt-4">
+            <p>
               That doesn't sound very impressive.
             </p>
 
-            <p className="text-lg text-slate-600 leading-relaxed mt-4">
+            <p className="font-semibold text-slate-900">
               But a modern smartphone chip contains billions of transistors.
             </p>
 
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 mt-6 text-center">
+            <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
 
               <p>
                 1 Transistor
@@ -262,34 +229,31 @@ export default function SemiconductorPage() {
 
             </div>
 
-          </section>
-
-          {/* Step 6 */}
-
-          <section className="mb-12">
-
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
-              Step 6: Chips Power Smartphones
-            </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Modern smartphones contain multiple chips.
+            <p>
+              This is where semiconductors come in.
             </p>
 
-            <p className="text-lg text-slate-600 leading-relaxed mt-4">
-              Those chips process information, store data,
-              connect to the internet, and run apps.
+            <p>
+              Semiconductors make it possible to build these tiny electronic switches.
             </p>
 
-            <p className="text-lg text-slate-900 font-medium mt-6">
+            <p>
+              Without semiconductors, there would be no transistors.
+            </p>
+
+            <p>
+              Without transistors, there would be no chips.
+            </p>
+
+            <p className="font-medium text-slate-900">
               Without chips, your smartphone would stop being smart.
             </p>
 
-          </section>
+          </div>
 
           {/* Key Takeaway */}
 
-          <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
+          <div className="mt-12 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
             <h2 className="text-lg font-bold text-[#3730A3] mb-4">
               Key Takeaway
