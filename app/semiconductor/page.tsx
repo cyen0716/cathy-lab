@@ -181,12 +181,58 @@ export default function SemiconductorPage() {
 
               <div className="my-10">
 
-                <img
-                  src="/transistor-chip.png"
-                  alt="Relationship between transistor and chip"
-                  className="w-full max-w-3xl mx-auto rounded-2xl border border-slate-200"
-                />
+                <div className="my-12 flex flex-col items-center">
 
+  <p className="text-lg font-medium text-slate-700 mb-3">
+    One Transistor
+  </p>
+
+  <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-10 py-4">
+    <p className="text-xl font-bold text-[#4338CA]">
+      ON
+    </p>
+  </div>
+
+  <p className="text-3xl text-slate-400 my-4">
+    ×
+  </p>
+
+  <p className="text-lg font-medium text-slate-700">
+    Billions
+  </p>
+
+  <p className="text-3xl text-slate-400 my-4">
+    =
+  </p>
+
+  <div className="bg-white border border-slate-200 rounded-xl px-8 py-6">
+
+    <div className="grid grid-cols-4 gap-x-4 gap-y-2 text-sm font-medium text-slate-700">
+
+      <span>ON</span>
+      <span>OFF</span>
+      <span>ON</span>
+      <span>OFF</span>
+
+      <span>OFF</span>
+      <span>ON</span>
+      <span>OFF</span>
+      <span>ON</span>
+
+      <span>ON</span>
+      <span>ON</span>
+      <span>OFF</span>
+      <span>ON</span>
+
+    </div>
+
+  </div>
+
+  <p className="text-lg font-medium text-slate-700 mt-3">
+    Chip
+  </p>
+
+</div>
               </div>
 
               <p>
