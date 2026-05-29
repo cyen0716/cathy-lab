@@ -107,6 +107,7 @@ export default function HomePage() {
 
                   <p className="text-slate-500 mt-2 leading-relaxed">
                     Semiconductor and learning notes.
+
                   </p>
 
                 </div>
