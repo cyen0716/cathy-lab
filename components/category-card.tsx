@@ -36,9 +36,10 @@ function getIconBg(id: string) {
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
-      <Card className="h-[210px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
 
-        <div className="h-full flex flex-col items-center justify-center text-center px-4">
+      <Card className="min-h-[240px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
+
+        <div className="h-full flex flex-col items-center text-center px-4 pt-6">
 
           <div
             className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-5 ${getIconBg(category.id)}`}
@@ -62,13 +63,14 @@ export function CategoryCard({ category }: CategoryCardProps) {
             </span>
           </div>
 
-          <p className="text-sm text-[#4338CA] font-medium mt-4">
+          <p className="text-xs tracking-wide text-[#4338CA] font-medium mt-5">
             Start Learning →
           </p>
 
         </div>
 
       </Card>
+
     </Link>
   )
 }
