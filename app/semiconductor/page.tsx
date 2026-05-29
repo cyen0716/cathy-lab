@@ -181,8 +181,6 @@ export default function SemiconductorPage() {
 
               <div className="my-10">
 
-                <div className="my-12 flex flex-col items-center">
-
   <div className="my-12">
 
   <div className="flex items-center justify-center gap-8 flex-wrap">
