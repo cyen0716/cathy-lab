@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { ChevronLeft } from "lucide-react"
 import { CategoryCard } from "@/components/category-card"
 import { vocabularyData } from "@/lib/vocabulary-data"
 
@@ -19,9 +20,24 @@ export default function KoreanPage() {
 
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-700 transition-colors mb-8"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            w-11
+            h-11
+            rounded-full
+            bg-[#EEF2FF]
+            text-[#4338CA]
+            hover:bg-[#E0E7FF]
+            hover:shadow-md
+            hover:-translate-y-0.5
+            transition-all
+            duration-200
+            mb-8
+          "
         >
-          ← Back to Home
+          <ChevronLeft className="w-5 h-5" />
         </Link>
 
         {/* Header */}
