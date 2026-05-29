@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Volume2 } from "lucide-react"
 import { VocabWord } from "@/lib/vocabulary-data"
 import { speakKorean } from "@/lib/speech"
@@ -9,6 +10,8 @@ interface VocabularyListProps {
 }
 
 export function VocabularyList({ words }: VocabularyListProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+
   if (words.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-slate-500">
@@ -17,8 +20,14 @@ export function VocabularyList({ words }: VocabularyListProps) {
     )
   }
 
-  const handleSpeak = (korean: string) => {
+  const handleSpeak = (korean: string, index: number) => {
+    setActiveIndex(index)
+
     speakKorean(korean)
+
+    setTimeout(() => {
+      setActiveIndex(null)
+    }, 300)
   }
 
   return (
@@ -28,8 +37,8 @@ export function VocabularyList({ words }: VocabularyListProps) {
 
         <div
           key={index}
-          onClick={() => handleSpeak(word.korean)}
-          className="
+          onClick={() => handleSpeak(word.korean, index)}
+          className={`
             group
             relative
             flex
@@ -41,21 +50,23 @@ export function VocabularyList({ words }: VocabularyListProps) {
             p-5
             min-h-[120px]
             border
-            border-slate-200
             shadow-sm
             cursor-pointer
             transition-all
             duration-200
-            hover:shadow-lg
-            hover:border-[#4338CA]
-            hover:-translate-y-1
-          "
+
+            ${
+              activeIndex === index
+                ? "border-[#4338CA] shadow-lg scale-95 ring-2 ring-[#4338CA]/20"
+                : "border-slate-200 hover:border-[#4338CA] hover:shadow-lg hover:-translate-y-1"
+            }
+          `}
         >
 
           <button
             onClick={(e) => {
               e.stopPropagation()
-              handleSpeak(word.korean)
+              handleSpeak(word.korean, index)
             }}
             className="
               absolute
