@@ -7,8 +7,6 @@ export default function SemiconductorPage() {
 
       <div className="max-w-4xl mx-auto px-6 py-10">
 
-        {/* Back */}
-
         <Link
           href="/"
           className="
@@ -40,57 +38,7 @@ export default function SemiconductorPage() {
             What Is a Semiconductor?
           </h1>
 
-          {/* Big Picture */}
-
-          <div className="mt-10 mb-12 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
-
-            <p className="text-sm uppercase tracking-[0.15em] text-[#4338CA] font-medium mb-6">
-              The Big Picture
-            </p>
-
-            <div className="space-y-3 text-center">
-
-              <p className="text-lg font-medium text-slate-900">
-                Semiconductor
-              </p>
-
-              <p className="text-slate-400">↓</p>
-
-              <p className="text-slate-700">
-                Used to build
-              </p>
-
-              <p className="text-lg font-medium text-slate-900">
-                Transistor
-              </p>
-
-              <p className="text-slate-400">↓</p>
-
-              <p className="text-slate-700">
-                Billions of transistors form a
-              </p>
-
-              <p className="text-lg font-medium text-slate-900">
-                Chip
-              </p>
-
-              <p className="text-slate-400">↓</p>
-
-              <p className="text-slate-700">
-                Powers a
-              </p>
-
-              <p className="text-lg font-medium text-slate-900">
-                Smartphone
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* Content */}
-
-          <div className="space-y-8 text-lg md:text-xl leading-relaxed text-slate-600">
+          <div className="mt-10 space-y-8 text-lg md:text-xl leading-relaxed text-slate-600">
 
             <div>
 
@@ -213,6 +161,46 @@ export default function SemiconductorPage() {
               <p className="font-medium text-slate-900">
                 Together, they create the 0s and 1s used by computers.
               </p>
+
+            </div>
+
+            {/* Flow Chart */}
+
+            <div className="pt-8">
+
+              <div className="flex flex-wrap items-center justify-center gap-3">
+
+                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
+                  <p className="font-medium text-[#4338CA]">
+                    Semiconductor
+                  </p>
+                </div>
+
+                <span className="text-slate-400 text-xl">→</span>
+
+                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
+                  <p className="font-medium text-[#4338CA]">
+                    Transistor
+                  </p>
+                </div>
+
+                <span className="text-slate-400 text-xl">→</span>
+
+                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
+                  <p className="font-medium text-[#4338CA]">
+                    Chip
+                  </p>
+                </div>
+
+                <span className="text-slate-400 text-xl">→</span>
+
+                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
+                  <p className="font-medium text-[#4338CA]">
+                    Smartphone
+                  </p>
+                </div>
+
+              </div>
 
             </div>
 
