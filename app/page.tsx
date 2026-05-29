@@ -106,8 +106,7 @@ export default function HomePage() {
                   </h3>
 
                   <p className="text-slate-500 mt-2 leading-relaxed">
-                    Networking, semiconductor,
-                    cybersecurity, AI, and learning notes.
+                    Semiconductor and learning notes.
                   </p>
 
                 </div>
