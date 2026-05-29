@@ -12,7 +12,7 @@ export default function KoreanPage() {
   )
 
   return (
-    <main className="min-h-screen bg-[#F8FAFC]">
+    <main className="min-h-screen bg-[#FCFCFC]">
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-10 md:py-14">
 
