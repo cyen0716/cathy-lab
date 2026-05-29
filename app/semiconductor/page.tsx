@@ -34,11 +34,11 @@ export default function SemiconductorPage() {
             Semiconductor Fundamentals
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            What Is a Semiconductor?
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10">
+            Why Do We Need Semiconductors?
           </h1>
 
-          <div className="mt-10 space-y-8 text-lg md:text-xl leading-relaxed text-slate-600">
+          <div className="space-y-8 text-lg leading-relaxed text-slate-600">
 
             <div>
 
@@ -46,15 +46,15 @@ export default function SemiconductorPage() {
                 A good switch needs two states:
               </p>
 
-              <div className="mt-6 space-y-3 text-slate-900 font-medium">
+              <p className="mt-4">
+                ON
+              </p>
 
-                <p>ON</p>
+              <p>
+                OFF
+              </p>
 
-                <p>OFF</p>
-
-              </div>
-
-              <p className="mt-6">
+              <p className="mt-4">
                 If it is always ON, it is not much of a switch.
               </p>
 
@@ -74,24 +74,16 @@ export default function SemiconductorPage() {
                 Computers only understand two states:
               </p>
 
-              <div className="mt-6 bg-white border border-slate-200 rounded-3xl p-8 text-center">
-
-                <p className="text-4xl font-bold text-slate-900">
-                  1 = ON
-                </p>
-
-                <p className="text-4xl font-bold text-slate-900 mt-4">
-                  0 = OFF
-                </p>
-
-              </div>
-
-              <p className="mt-6">
-                To create those 0s and 1s, computers need switches.
+              <p className="mt-4">
+                1 = ON
               </p>
 
               <p>
-                Modern chips contain billions of them.
+                0 = OFF
+              </p>
+
+              <p className="mt-4">
+                To create those 0s and 1s, computers need switches.
               </p>
 
               <p>
@@ -122,20 +114,12 @@ export default function SemiconductorPage() {
                 A semiconductor is a material that allows us to control electricity.
               </p>
 
-              <div className="mt-6 bg-white border border-slate-200 rounded-3xl p-8">
+              <p className="mt-4">
+                Electricity flows → ON
+              </p>
 
-                <p>
-                  Electricity flows → ON
-                </p>
-
-                <p className="mt-4">
-                  Electricity stops → OFF
-                </p>
-
-              </div>
-
-              <p className="mt-6">
-                That ability makes semiconductors the ideal material for electronic switches.
+              <p>
+                Electricity stops → OFF
               </p>
 
             </div>
@@ -143,11 +127,7 @@ export default function SemiconductorPage() {
             <div>
 
               <p>
-                Using semiconductor materials, engineers can build transistors.
-              </p>
-
-              <p>
-                A transistor is the tiny electronic switch used inside modern chips.
+                Using semiconductor materials, engineers can build tiny electronic switches called transistors.
               </p>
 
               <p>
@@ -158,49 +138,27 @@ export default function SemiconductorPage() {
                 A modern smartphone chip contains billions of transistors working together.
               </p>
 
-              <p className="font-medium text-slate-900">
-                Together, they create the 0s and 1s used by computers.
-              </p>
+            </div>
+
+            <div className="my-12">
+
+              <img
+                src="/chip-transistor.png"
+                alt="Relationship between transistor and chip"
+                className="w-full max-w-3xl mx-auto rounded-2xl border border-slate-200"
+              />
 
             </div>
 
-            {/* Flow Chart */}
+            <div>
 
-            <div className="pt-8">
+              <p>
+                A chip is not one switch.
+              </p>
 
-              <div className="flex flex-wrap items-center justify-center gap-3">
-
-                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
-                  <p className="font-medium text-[#4338CA]">
-                    Semiconductor
-                  </p>
-                </div>
-
-                <span className="text-slate-400 text-xl">→</span>
-
-                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
-                  <p className="font-medium text-[#4338CA]">
-                    Transistor
-                  </p>
-                </div>
-
-                <span className="text-slate-400 text-xl">→</span>
-
-                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
-                  <p className="font-medium text-[#4338CA]">
-                    Chip
-                  </p>
-                </div>
-
-                <span className="text-slate-400 text-xl">→</span>
-
-                <div className="px-5 py-3 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE]">
-                  <p className="font-medium text-[#4338CA]">
-                    Smartphone
-                  </p>
-                </div>
-
-              </div>
+              <p>
+                It is billions of switches working together.
+              </p>
 
             </div>
 
