@@ -33,16 +33,16 @@ export default function SemiconductorPage() {
         <article className="mt-8">
 
           <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4">
-            Semiconductor Fundamentals
+            Semiconductor Basics
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Why Do We Need Semiconductors?
           </h1>
 
           {/* Navigation */}
 
-          <div className="flex flex-wrap gap-3 mt-8 mb-10">
+          <div className="flex flex-wrap gap-2 mt-6 mb-10">
 
             <span className="px-4 py-2 rounded-full bg-[#4338CA] text-white text-sm font-medium">
               Why Need?
@@ -50,28 +50,28 @@ export default function SemiconductorPage() {
 
             <Link
               href="/semiconductor/what-is"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
             >
               What Is?
             </Link>
 
             <Link
               href="/semiconductor/why-silicon"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
             >
               Why Silicon?
             </Link>
 
             <Link
               href="/semiconductor/transistor"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
             >
               Transistor
             </Link>
 
             <Link
               href="/semiconductor/wafer-vs-chip"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
             >
               Wafer vs Chip
             </Link>
@@ -80,23 +80,21 @@ export default function SemiconductorPage() {
 
           {/* Content */}
 
-          <div className="space-y-5 text-lg leading-relaxed text-slate-600">
+          <div className="text-xl leading-relaxed text-slate-600 space-y-6">
 
             <p>
               Imagine your smartphone suddenly loses all its chips.
             </p>
 
-            <p>No processor.</p>
+            <p>
+              No processor. No memory.
+              <br />
+              No Wi-Fi. No camera sensor.
+              <br />
+              No storage.
+            </p>
 
-            <p>No memory.</p>
-
-            <p>No Wi-Fi.</p>
-
-            <p>No camera sensor.</p>
-
-            <p>No storage.</p>
-
-            <p className="font-medium text-slate-900 pt-2">
+            <p className="font-medium text-slate-900">
               It would become a piece of metal and glass.
             </p>
 
@@ -107,11 +105,7 @@ export default function SemiconductorPage() {
           <div className="mt-10 bg-white border border-slate-200 rounded-3xl p-8">
 
             <p className="text-lg leading-relaxed text-slate-700">
-              Everything that makes a smartphone{" "}
-              <span className="font-semibold">
-                "smart"
-              </span>{" "}
-              depends on chips.
+              Everything that makes a smartphone smart depends on chips.
             </p>
 
             <p className="text-lg leading-relaxed text-slate-700 mt-4">
@@ -124,8 +118,8 @@ export default function SemiconductorPage() {
 
           <div className="mt-10 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
-            <h2 className="text-xl font-bold text-[#3730A3] mb-3">
-              📌 Key Takeaway
+            <h2 className="text-lg font-bold text-[#3730A3] mb-3">
+              Key Takeaway
             </h2>
 
             <p className="text-lg leading-relaxed text-[#4338CA]">
