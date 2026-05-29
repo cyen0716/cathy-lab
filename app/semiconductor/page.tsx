@@ -38,60 +38,76 @@ export default function SemiconductorPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+          {/* Basics */}
 
-            <div className="text-3xl mb-4">📘</div>
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300">
+
+            <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
+              Basics
+            </p>
 
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
               Semiconductor Basics
             </h2>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 leading-relaxed">
               What is a semiconductor, wafer, chip,
-              fab, foundry, and Moore’s Law.
+              fab, foundry, and Moore's Law.
             </p>
 
           </div>
 
-          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+          {/* Process */}
 
-            <div className="text-3xl mb-4">⚙️</div>
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300">
+
+            <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
+              Process
+            </p>
 
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
               Process Technology
             </h2>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 leading-relaxed">
               FinFET, GAA, EUV lithography,
               and process node evolution.
             </p>
 
           </div>
 
-          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+          {/* Memory */}
 
-            <div className="text-3xl mb-4">💾</div>
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300">
+
+            <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
+              Memory
+            </p>
 
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
               Memory & Logic
             </h2>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 leading-relaxed">
               DRAM, NAND Flash, CPU,
               GPU, and AI chips.
             </p>
 
           </div>
 
-          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+          {/* Packaging */}
 
-            <div className="text-3xl mb-4">📦</div>
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300">
+
+            <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-3">
+              Packaging
+            </p>
 
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              Packaging
+              Advanced Packaging
             </h2>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 leading-relaxed">
               Chiplets, CoWoS,
               advanced packaging and integration.
             </p>
