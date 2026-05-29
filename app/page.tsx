@@ -33,7 +33,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base md:text-xl text-slate-500 font-medium mt-4 tracking-wide">
-            AI • Semiconductor • Korean
+            AI • Korean • Tech  
           </p>
 
           <div className="mt-6 space-y-3 max-w-3xl">
