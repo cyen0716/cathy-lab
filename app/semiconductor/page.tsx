@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 
-export default function BasicsPage() {
+export default function SemiconductorPage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC]">
 
@@ -10,7 +10,7 @@ export default function BasicsPage() {
         {/* Back */}
 
         <Link
-          href="/semiconductor"
+          href="/"
           className="
             inline-flex
             items-center
@@ -36,9 +36,49 @@ export default function BasicsPage() {
             Semiconductor Fundamentals
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
             Why Do We Need Semiconductors?
           </h1>
+
+          {/* Navigation */}
+
+          <div className="flex flex-wrap gap-3 mt-8 mb-10">
+
+            <span className="px-4 py-2 rounded-full bg-[#4338CA] text-white text-sm font-medium">
+              Why Need?
+            </span>
+
+            <Link
+              href="/semiconductor/what-is"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+            >
+              What Is?
+            </Link>
+
+            <Link
+              href="/semiconductor/why-silicon"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+            >
+              Why Silicon?
+            </Link>
+
+            <Link
+              href="/semiconductor/transistor"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+            >
+              Transistor
+            </Link>
+
+            <Link
+              href="/semiconductor/wafer-vs-chip"
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+            >
+              Wafer vs Chip
+            </Link>
+
+          </div>
+
+          {/* Content */}
 
           <div className="space-y-5 text-lg leading-relaxed text-slate-600">
 
@@ -62,6 +102,8 @@ export default function BasicsPage() {
 
           </div>
 
+          {/* Highlight */}
+
           <div className="mt-10 bg-white border border-slate-200 rounded-3xl p-8">
 
             <p className="text-lg leading-relaxed text-slate-700">
@@ -77,6 +119,8 @@ export default function BasicsPage() {
             </p>
 
           </div>
+
+          {/* Key Takeaway */}
 
           <div className="mt-10 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
