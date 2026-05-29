@@ -37,9 +37,11 @@ export default function SemiconductorPage() {
             Why Do We Need Semiconductors?
           </h1>
 
-          <div className="space-y-8 text-lg leading-relaxed text-slate-600">
+          <div className="space-y-10 text-lg leading-relaxed text-slate-600">
 
-            <div>
+            {/* Intro */}
+
+            <section>
               <p>
                 A good switch needs two states: ON and OFF.
               </p>
@@ -47,55 +49,128 @@ export default function SemiconductorPage() {
               <p className="mt-4">
                 If it is always ON, it is not much of a switch. If it is always OFF, it is not very useful either.
               </p>
-            </div>
+            </section>
 
-            <div>
+            {/* 0 and 1 */}
+
+            <section>
+
               <p>
                 Computers work the same way.
               </p>
 
               <p className="mt-4">
-                Computers only understand two states: 1 = ON and 0 = OFF. To create those 0s and 1s, computers need switches.
+                Computers only understand two states:
+              </p>
+
+              <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-10 text-center">
+
+                <p className="text-4xl font-bold text-[#4338CA]">
+                  1 = ON
+                </p>
+
+                <p className="text-4xl font-bold text-[#4338CA] mt-4">
+                  0 = OFF
+                </p>
+
+              </div>
+
+              <p className="mt-6">
+                To create those 0s and 1s, computers need switches.
               </p>
 
               <p className="mt-4">
-                Imagine putting billions of light switches inside a smartphone. That would be impossible.
+                Imagine putting billions of light switches inside a smartphone.
+              </p>
+
+              <p className="mt-4 font-medium text-slate-900">
+                That would be impossible.
               </p>
 
               <p className="mt-4">
                 So engineers created tiny electronic switches instead.
               </p>
-            </div>
 
-            <div>
+            </section>
+
+            {/* Divider */}
+
+            <div className="border-t border-slate-200" />
+
+            {/* Semiconductor */}
+
+            <section>
+
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                What Makes Those Tiny Switches Possible?
+              </h2>
+
               <p>
-                So how do engineers build these tiny electronic switches?
-              </p>
-
-              <p className="mt-4 font-medium text-slate-900">
                 The answer is semiconductors.
               </p>
 
-              <p className="mt-4">
-                A semiconductor is a material that allows us to control electricity.
-              </p>
+              <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
 
-              <div className="mt-6 bg-white border border-slate-200 rounded-2xl p-6">
-                <p>
-                  When electricity flows, the switch is ON.
+                <p className="text-2xl font-semibold text-center text-[#3730A3]">
+                  A semiconductor is a material that allows us to control electricity.
                 </p>
 
-                <p className="mt-2">
-                  When electricity stops, the switch is OFF.
-                </p>
               </div>
 
-              <p className="mt-4">
+              <div className="mt-8 grid md:grid-cols-2 gap-4">
+
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 text-center">
+
+                  <p className="text-slate-500 font-medium">
+                    Electricity Flows
+                  </p>
+
+                  <p className="text-3xl my-3">
+                    ↓
+                  </p>
+
+                  <p className="text-2xl font-bold text-slate-900">
+                    ON
+                  </p>
+
+                </div>
+
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 text-center">
+
+                  <p className="text-slate-500 font-medium">
+                    Electricity Stops
+                  </p>
+
+                  <p className="text-3xl my-3">
+                    ↓
+                  </p>
+
+                  <p className="text-2xl font-bold text-slate-900">
+                    OFF
+                  </p>
+
+                </div>
+
+              </div>
+
+              <p className="mt-6">
                 That ability makes semiconductors the ideal material for electronic switches.
               </p>
-            </div>
 
-            <div>
+            </section>
+
+            {/* Divider */}
+
+            <div className="border-t border-slate-200" />
+
+            {/* Transistor */}
+
+            <section>
+
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                From Transistor to Chip
+              </h2>
+
               <p>
                 Using semiconductor materials, engineers can build tiny electronic switches called transistors.
               </p>
@@ -103,25 +178,26 @@ export default function SemiconductorPage() {
               <p className="mt-4">
                 One transistor is simple. A modern smartphone chip contains billions of transistors working together.
               </p>
-            </div>
 
-            <div className="my-12">
-              <img
-                src="/transistor-chip.png"
-                alt="Relationship between transistor and chip"
-                className="w-full max-w-3xl mx-auto rounded-2xl border border-slate-200"
-              />
-            </div>
+              <div className="my-10">
 
-            <div>
+                <img
+                  src="/transistor-chip.png"
+                  alt="Relationship between transistor and chip"
+                  className="w-full max-w-3xl mx-auto rounded-2xl border border-slate-200"
+                />
+
+              </div>
+
               <p>
                 A chip is not one switch.
               </p>
 
-              <p className="mt-2">
+              <p className="mt-3 text-xl font-semibold text-slate-900">
                 It is billions of tiny switches working together.
               </p>
-            </div>
+
+            </section>
 
           </div>
 
