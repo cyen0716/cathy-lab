@@ -33,7 +33,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base md:text-xl text-slate-500 font-medium mt-4 tracking-wide">
-            AI • Korean • Tech  
+            AI • Korean • Tech
           </p>
 
           <div className="mt-6 space-y-3 max-w-3xl">
@@ -89,7 +89,7 @@ export default function HomePage() {
 
             </Link>
 
-            {/* Technology */}
+            {/* Semiconductor */}
 
             <Link href="/semiconductor">
 
@@ -102,12 +102,12 @@ export default function HomePage() {
                   </div>
 
                   <h3 className="text-2xl font-bold text-slate-900">
-                    Technology
+                    Semiconductor Notes
                   </h3>
 
                   <p className="text-slate-500 mt-2 leading-relaxed">
-                    Semiconductor and learning notes.
-
+                    Semiconductor basics,
+                    technical concepts, and learning notes.
                   </p>
 
                 </div>
