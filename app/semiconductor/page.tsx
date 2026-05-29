@@ -188,7 +188,7 @@ export default function SemiconductorPage() {
     <div className="text-center">
 
   <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-10 py-4">
-    <p className="text-xl text-slate-900">
+    <p className="text-base text-slate-900">
       ON
     </p>
   </div>
