@@ -28,12 +28,12 @@ export default function HomePage() {
             Hi,
             <br />
 
-            I’m <span className="text-[#4338CA]">Cathy.</span>
+            I’m <span className="text-[#4338CA]">Cathy</span>
 
           </h1>
 
           <p className="text-base md:text-xl text-slate-500 font-medium mt-4 tracking-wide">
-            AI • Korean • Tech
+            AI • Tech • Korean
           </p>
 
           <div className="mt-6 space-y-3 max-w-3xl">
@@ -71,7 +71,7 @@ export default function HomePage() {
                 <div>
 
                   <div className="text-4xl mb-3">
-                    📗
+                    📓
                   </div>
 
                   <h3 className="text-2xl font-bold text-slate-900">
