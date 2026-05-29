@@ -3,7 +3,7 @@ import { ChevronLeft } from "lucide-react"
 
 export default function SemiconductorPage() {
   return (
-    <main className="min-h-screen bg-[#F8FAFC]">
+    <main className="min-h-screen bg-[#FCFCFC]">
 
       <div className="max-w-4xl mx-auto px-6 py-10">
 
