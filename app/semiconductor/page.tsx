@@ -125,11 +125,11 @@ export default function SemiconductorPage() {
                     Electricity Flows
                   </p>
 
-                  <p className="text-3xl my-3">
+                  <p className="text-2xl my-3">
                     ↓
                   </p>
 
-                  <p className="text-2xl font-bold text-slate-900">
+                  <p className="text-xl font-bold text-slate-900">
                     ON
                   </p>
 
@@ -141,11 +141,11 @@ export default function SemiconductorPage() {
                     Electricity Stops
                   </p>
 
-                  <p className="text-3xl my-3">
+                  <p className="text-2xl my-3">
                     ↓
                   </p>
 
-                  <p className="text-2xl font-bold text-slate-900">
+                  <p className="text-xl font-bold text-slate-900">
                     OFF
                   </p>
 
