@@ -36,46 +36,8 @@ export default function SemiconductorPage() {
             Semiconductor Fundamentals
           </p>
 
-          {/* Navigation */}
-
-          <div className="flex flex-wrap gap-2 mb-8">
-
-            <span className="px-4 py-2 rounded-full bg-[#4338CA] text-white text-sm font-medium">
-              Why Need?
-            </span>
-
-            <Link
-              href="/semiconductor/what-is"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              What Is?
-            </Link>
-
-            <Link
-              href="/semiconductor/why-silicon"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Why Silicon?
-            </Link>
-
-            <Link
-              href="/semiconductor/transistor"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Transistor
-            </Link>
-
-            <Link
-              href="/semiconductor/wafer-vs-chip"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Wafer vs Chip
-            </Link>
-
-          </div>
-
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            Why Do We Need Semiconductors?
+            What Is a Semiconductor?
           </h1>
 
           {/* Big Picture */}
@@ -89,183 +51,170 @@ export default function SemiconductorPage() {
             <div className="space-y-3 text-center">
 
               <p className="text-lg font-medium text-slate-900">
-                Computers need 0 and 1
+                Semiconductor
               </p>
 
               <p className="text-slate-400">↓</p>
 
+              <p className="text-slate-700">
+                Used to build
+              </p>
+
               <p className="text-lg font-medium text-slate-900">
-                0 and 1 need switches
+                Transistor
               </p>
 
               <p className="text-slate-400">↓</p>
 
+              <p className="text-slate-700">
+                Billions of transistors form a
+              </p>
+
               <p className="text-lg font-medium text-slate-900">
-                Switch = Transistor
+                Chip
               </p>
 
               <p className="text-slate-400">↓</p>
 
-              <p className="text-lg font-medium text-slate-900">
-                Transistors are made from semiconductors
+              <p className="text-slate-700">
+                Powers a
               </p>
 
-              <p className="text-slate-400">↓</p>
-
               <p className="text-lg font-medium text-slate-900">
-                Billions of transistors = One chip
+                Smartphone
               </p>
 
             </div>
 
           </div>
-
-          <p className="text-xl text-slate-700 font-medium mb-10">
-            Let's break it down.
-          </p>
 
           {/* Content */}
 
           <div className="space-y-8 text-lg md:text-xl leading-relaxed text-slate-600">
 
-            <p>
-              Computers only understand two numbers:
-            </p>
-
-            <div className="bg-white border border-slate-200 rounded-3xl p-10 text-center">
-
-              <p className="text-6xl font-bold tracking-widest text-slate-900">
-                0 1
-              </p>
-
-            </div>
-
-            <p>
-              You can think of them as:
-            </p>
-
-            <div className="bg-white border border-slate-200 rounded-3xl p-8">
-
-              <p className="text-lg font-medium text-slate-900">
-                1 = ON
-              </p>
-
-              <p className="text-lg font-medium text-slate-900 mt-3">
-                0 = OFF
-              </p>
-
-            </div>
-
-            <p>
-              If computers only understand ON and OFF,
-              they need a way to create billions of ONs and OFFs every second.
-            </p>
-
-            <p className="font-semibold text-slate-900">
-              They need billions of tiny switches.
-            </p>
-
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
-
-              <p className="text-2xl font-medium text-slate-700">
-                ON → OFF → ON → OFF → ON → OFF
-              </p>
-
-            </div>
-
-            <p>
-              Of course, we cannot put billions of physical switches inside a smartphone.
-            </p>
-
-            <p>
-              So engineers created tiny electronic switches instead.
-            </p>
-
-            <p className="font-semibold text-slate-900">
-              These switches are called transistors.
-            </p>
-
-            <div className="bg-white border border-slate-200 rounded-3xl p-8">
+            <div>
 
               <p>
-                Electricity passes → 1
+                A good switch needs two states:
               </p>
 
-              <p className="mt-3">
-                Electricity stops → 0
-              </p>
+              <div className="mt-6 space-y-3 text-slate-900 font-medium">
 
-            </div>
+                <p>ON</p>
 
-            <p>
-              A transistor is just one switch.
-            </p>
+                <p>OFF</p>
 
-            <p>
-              That doesn't sound very impressive.
-            </p>
-
-            <p className="font-semibold text-slate-900">
-              But a modern smartphone chip contains billions of transistors.
-            </p>
-
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
-
-              <p>
-                1 Transistor
-                <br />
-                ↓
-                <br />
-                1 Switch
-              </p>
+              </div>
 
               <p className="mt-6">
-                Billions of Transistors
-                <br />
-                ↓
-                <br />
-                1 Chip
+                If it is always ON, it is not much of a switch.
+              </p>
+
+              <p>
+                If it is always OFF, it is not very useful either.
               </p>
 
             </div>
 
-            <p>
-              This is where semiconductors come in.
-            </p>
+            <div>
 
-            <p>
-              Semiconductors make it possible to build these tiny electronic switches.
-            </p>
+              <p>
+                Computers work the same way.
+              </p>
 
-            <p>
-              Without semiconductors, there would be no transistors.
-            </p>
+              <p>
+                Computers only understand two states:
+              </p>
 
-            <p>
-              Without transistors, there would be no chips.
-            </p>
+              <div className="mt-6 bg-white border border-slate-200 rounded-3xl p-8 text-center">
 
-            <p className="font-medium text-slate-900">
-              Without chips, your smartphone would stop being smart.
-            </p>
+                <p className="text-4xl font-bold text-slate-900">
+                  1 = ON
+                </p>
 
-          </div>
+                <p className="text-4xl font-bold text-slate-900 mt-4">
+                  0 = OFF
+                </p>
 
-          {/* Key Takeaway */}
+              </div>
 
-          <div className="mt-12 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
+              <p className="mt-6">
+                To create those 0s and 1s, computers need switches.
+              </p>
 
-            <h2 className="text-lg font-bold text-[#3730A3] mb-4">
-              Key Takeaway
-            </h2>
+              <p>
+                Modern chips contain billions of them.
+              </p>
 
-            <p className="text-lg text-[#4338CA] leading-relaxed">
-              Computers need billions of tiny ON/OFF switches to create 0s and 1s.
-            </p>
+              <p>
+                Imagine putting billions of light switches inside a smartphone.
+              </p>
 
-            <p className="text-lg text-[#4338CA] leading-relaxed mt-3">
-              Semiconductors make those switches possible.
-            </p>
+              <p className="font-medium text-slate-900">
+                That would be impossible.
+              </p>
+
+              <p>
+                So engineers created tiny electronic switches instead.
+              </p>
+
+            </div>
+
+            <div>
+
+              <p>
+                So how do engineers build these tiny electronic switches?
+              </p>
+
+              <p className="font-medium text-slate-900">
+                The answer is semiconductors.
+              </p>
+
+              <p>
+                A semiconductor is a material that allows us to control electricity.
+              </p>
+
+              <div className="mt-6 bg-white border border-slate-200 rounded-3xl p-8">
+
+                <p>
+                  Electricity flows → ON
+                </p>
+
+                <p className="mt-4">
+                  Electricity stops → OFF
+                </p>
+
+              </div>
+
+              <p className="mt-6">
+                That ability makes semiconductors the ideal material for electronic switches.
+              </p>
+
+            </div>
+
+            <div>
+
+              <p>
+                Using semiconductor materials, engineers can build transistors.
+              </p>
+
+              <p>
+                A transistor is the tiny electronic switch used inside modern chips.
+              </p>
+
+              <p>
+                One transistor is simple.
+              </p>
+
+              <p>
+                A modern smartphone chip contains billions of transistors working together.
+              </p>
+
+              <p className="font-medium text-slate-900">
+                Together, they create the 0s and 1s used by computers.
+              </p>
+
+            </div>
 
           </div>
 
