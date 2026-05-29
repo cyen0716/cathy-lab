@@ -17,29 +17,74 @@ export function VocabularyList({ words }: VocabularyListProps) {
     )
   }
 
-  const handleSpeak = (e: React.MouseEvent, korean: string) => {
-    e.stopPropagation()
+  const handleSpeak = (korean: string) => {
     speakKorean(korean)
   }
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+
       {words.map((word, index) => (
+
         <div
           key={index}
-          className="group relative flex flex-col items-center justify-center rounded-xl bg-card p-4 shadow-sm border border-border/50 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5 min-h-[88px]"
+          onClick={() => handleSpeak(word.korean)}
+          className="
+            group
+            relative
+            flex
+            flex-col
+            items-center
+            justify-center
+            rounded-xl
+            bg-card
+            p-4
+            shadow-sm
+            border
+            border-border/50
+            transition-all
+            hover:shadow-md
+            hover:border-primary/30
+            hover:-translate-y-0.5
+            min-h-[88px]
+            cursor-pointer
+          "
         >
+
           <button
-            onClick={(e) => handleSpeak(e, word.korean)}
-            className="absolute top-2 right-2 p-1 rounded-full text-muted-foreground/40 hover:text-primary hover:bg-primary/10 active:scale-95 transition-all"
+            onClick={(e) => {
+              e.stopPropagation()
+              handleSpeak(word.korean)
+            }}
+            className="
+              absolute
+              top-2
+              right-2
+              p-1
+              rounded-full
+              text-muted-foreground/40
+              hover:text-primary
+              hover:bg-primary/10
+              active:scale-95
+              transition-all
+            "
             aria-label={`播放 ${word.korean} 發音`}
           >
             <Volume2 className="w-3.5 h-3.5" />
           </button>
-          <span className="text-lg font-semibold text-foreground text-center leading-tight">{word.korean}</span>
-          <span className="text-sm text-muted-foreground mt-1 text-center">{word.chinese}</span>
+
+          <span className="text-lg font-semibold text-foreground text-center leading-tight">
+            {word.korean}
+          </span>
+
+          <span className="text-sm text-muted-foreground mt-1 text-center">
+            {word.chinese}
+          </span>
+
         </div>
+
       ))}
+
     </div>
   )
 }
