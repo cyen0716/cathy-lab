@@ -36,13 +36,9 @@ export default function SemiconductorPage() {
             Semiconductor Basics
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            Why Do We Need Semiconductors?
-          </h1>
-
           {/* Navigation */}
 
-          <div className="flex flex-wrap gap-2 mt-6 mb-10">
+          <div className="flex flex-wrap gap-2 mb-8">
 
             <span className="px-4 py-2 rounded-full bg-[#4338CA] text-white text-sm font-medium">
               Why Need?
@@ -78,24 +74,32 @@ export default function SemiconductorPage() {
 
           </div>
 
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-10">
+            Why Do We Need Semiconductors?
+          </h1>
+
           {/* Content */}
 
-          <div className="text-xl leading-relaxed text-slate-600 space-y-6">
+          <div className="space-y-6 text-xl leading-relaxed text-slate-600">
 
             <p>
               Imagine your smartphone suddenly loses all its chips.
             </p>
 
-            <p>
-              No processor. No memory.
-              <br />
-              No Wi-Fi. No camera sensor.
-              <br />
-              No storage.
-            </p>
+            <div className="space-y-2">
 
-            <p className="font-medium text-slate-900">
-              It would become a piece of metal and glass.
+              <p>No processor.</p>
+
+              <p>No memory.</p>
+
+              <p>No Wi-Fi.</p>
+
+              <p>No camera.</p>
+
+            </div>
+
+            <p className="text-slate-900 font-medium">
+              Your smartphone would stop being smart.
             </p>
 
           </div>
