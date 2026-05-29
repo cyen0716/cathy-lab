@@ -1,141 +1,157 @@
-import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
+{/* Content */}
 
-export default function SemiconductorPage() {
-  return (
-    <main className="min-h-screen bg-[#F8FAFC]">
+<div className="space-y-8 text-xl leading-relaxed text-slate-600">
 
-      <div className="max-w-4xl mx-auto px-6 py-10">
+  <p>
+    Computers only understand two numbers:
+  </p>
 
-        {/* Back */}
+  <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
 
-        <Link
-          href="/"
-          className="
-            inline-flex
-            items-center
-            justify-center
-            w-11
-            h-11
-            rounded-full
-            bg-[#EEF2FF]
-            text-[#4338CA]
-            hover:bg-[#E0E7FF]
-            hover:shadow-md
-            hover:-translate-y-0.5
-            transition-all
-            duration-200
-          "
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </Link>
+    <p className="text-5xl font-bold text-slate-900 tracking-widest">
+      0&nbsp;&nbsp;1
+    </p>
 
-        <article className="mt-8">
+  </div>
 
-          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4">
-            Semiconductor Basics
-          </p>
+  <p>
+    You can think of them as:
+  </p>
 
-          {/* Navigation */}
+  <div className="bg-white border border-slate-200 rounded-3xl p-8">
 
-          <div className="flex flex-wrap gap-2 mb-8">
+    <div className="space-y-3 text-slate-900 font-medium">
 
-            <span className="px-4 py-2 rounded-full bg-[#4338CA] text-white text-sm font-medium">
-              Why Need?
-            </span>
+      <p>1 = ON</p>
 
-            <Link
-              href="/semiconductor/what-is"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              What Is?
-            </Link>
+      <p>0 = OFF</p>
 
-            <Link
-              href="/semiconductor/why-silicon"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Why Silicon?
-            </Link>
+    </div>
 
-            <Link
-              href="/semiconductor/transistor"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Transistor
-            </Link>
+  </div>
 
-            <Link
-              href="/semiconductor/wafer-vs-chip"
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
-            >
-              Wafer vs Chip
-            </Link>
+  <p>
+    If computers only understand ON and OFF,
+    they need a way to create billions of ONs and OFFs every second.
+  </p>
 
-          </div>
+  <p>
+    So what do computers really need?
+  </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-10">
-            Why Do We Need Semiconductors?
-          </h1>
+  <p className="font-medium text-slate-900">
+    They need billions of tiny switches.
+  </p>
 
-          {/* Content */}
+  <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center">
 
-          <div className="space-y-6 text-xl leading-relaxed text-slate-600">
+    <p className="text-2xl font-medium text-slate-700">
+      ON → OFF → ON → OFF → ON → OFF
+    </p>
 
-            <p>
-              Imagine your smartphone suddenly loses all its chips.
-            </p>
+  </div>
 
-            <div className="space-y-2">
+  <p>
+    Of course, we cannot put billions of physical switches
+    inside a smartphone.
+  </p>
 
-              <p>No processor.</p>
+  <p>
+    So engineers created tiny electronic switches instead.
+  </p>
 
-              <p>No memory.</p>
+  <p className="font-medium text-slate-900">
+    These switches are called transistors.
+  </p>
 
-              <p>No Wi-Fi.</p>
+  <div className="bg-white border border-slate-200 rounded-3xl p-8">
 
-              <p>No camera.</p>
+    <div className="space-y-3">
 
-            </div>
+      <p>
+        Electricity passes → 1
+      </p>
 
-            <p className="text-slate-900 font-medium">
-              Your smartphone would stop being smart.
-            </p>
+      <p>
+        Electricity stops → 0
+      </p>
 
-          </div>
+    </div>
 
-          {/* Highlight */}
+  </div>
 
-          <div className="mt-10 bg-white border border-slate-200 rounded-3xl p-8">
+  <p>
+    Now imagine billions of them working together.
+  </p>
 
-            <p className="text-lg leading-relaxed text-slate-700">
-              Everything that makes a smartphone smart depends on chips.
-            </p>
+  <div className="bg-white border border-slate-200 rounded-3xl p-8">
 
-            <p className="text-lg leading-relaxed text-slate-700 mt-4">
-              And every chip is built using semiconductor technology.
-            </p>
+    <div className="space-y-4 text-slate-700">
 
-          </div>
+      <p>
+        Transistor
+        <br />
+        ↓
+        <br />
+        Switch
+      </p>
 
-          {/* Key Takeaway */}
+      <p>
+        Billions of switches
+        <br />
+        ↓
+        <br />
+        Chip
+      </p>
 
-          <div className="mt-10 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
+      <p>
+        Billions of chips
+        <br />
+        ↓
+        <br />
+        Modern Technology
+      </p>
 
-            <h2 className="text-lg font-bold text-[#3730A3] mb-3">
-              Key Takeaway
-            </h2>
+    </div>
 
-            <p className="text-lg leading-relaxed text-[#4338CA]">
-              Semiconductors make modern technology possible.
-            </p>
+  </div>
 
-          </div>
+  <p>
+    This is where semiconductors come in.
+  </p>
 
-        </article>
+  <p>
+    Semiconductors make it possible to build these tiny electronic switches.
+  </p>
 
-      </div>
+  <p>
+    Without semiconductors, there would be no transistors.
+  </p>
 
-    </main>
-  )
-}
+  <p>
+    Without transistors, there would be no chips.
+  </p>
+
+  <p>
+    Without chips, there would be no smartphones, computers, or AI.
+  </p>
+
+</div>
+
+{/* Key Takeaway */}
+
+<div className="mt-10 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
+
+  <h2 className="text-lg font-bold text-[#3730A3] mb-3">
+    Key Takeaway
+  </h2>
+
+  <p className="text-lg leading-relaxed text-[#4338CA]">
+    Computers need billions of tiny ON/OFF switches to create 0s and 1s.
+  </p>
+
+  <p className="text-lg leading-relaxed text-[#4338CA] mt-3">
+    Semiconductors make those switches possible.
+  </p>
+
+</div>
