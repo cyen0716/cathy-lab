@@ -7,10 +7,10 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC]">
 
-      <div className="max-w-7xl mx-auto px-10 py-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-8 md:py-10">
 
-        {/* Navbar */}
-        <nav className="mb-12">
+        {/* Logo */}
+        <nav className="mb-10">
 
           <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
             Cathy Lab
@@ -19,49 +19,65 @@ export default function HomePage() {
         </nav>
 
         {/* Hero */}
-        <section className="mb-14 max-w-4xl">
+        <section className="mb-12 max-w-4xl">
 
-          <h1 className="text-[72px] leading-[0.92] font-bold text-slate-900">
+          <h1 className="text-6xl md:text-[72px] leading-[0.92] font-bold text-slate-900">
 
             Hi,
             <br />
 
-            I’m <span className="text-[#E86C5D]">Cathy.</span>
+            I’m <span className="text-[#4F46E5]">Cathy.</span>
 
           </h1>
 
-          <p className="text-xl text-slate-500 font-medium mt-6 tracking-wide">
+          <p className="text-lg md:text-xl text-slate-500 font-medium mt-5 tracking-wide">
             AI • Semiconductor • Korean
           </p>
 
-          <p className="text-lg text-slate-400 mt-6 leading-relaxed max-w-2xl">
+          <p className="text-base md:text-lg text-slate-400 mt-5 leading-relaxed max-w-2xl">
             Exploring technology, AI, networking,
             and language learning.
           </p>
 
-          <p className="text-sm text-slate-400 mt-5">
-            🐰 learning korean everyday
-          </p>
+          {/* Personal Tags */}
+
+          <div className="flex flex-wrap gap-3 mt-8">
+
+            <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-600 shadow-sm">
+              🐰 Korean Learner
+            </div>
+
+            <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-600 shadow-sm">
+              💻 Tech Explorer
+            </div>
+
+            <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-600 shadow-sm">
+              ✨ AI Builder
+            </div>
+
+          </div>
 
         </section>
 
         {/* Projects */}
-        <section id="projects">
 
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-8">
+        <section>
+
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">
             Projects
           </h2>
 
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Korean */}
+
             <Link href="/korean">
 
-              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#E86C5D] hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[180px]">
+              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#4F46E5] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
 
-                <div className="flex flex-col h-full">
+                <div>
 
-                  <div className="text-4xl mb-3 transition-transform duration-300 group-hover:translate-x-1">
+                  <div className="text-4xl mb-4">
                     🇰🇷
                   </div>
 
@@ -81,14 +97,15 @@ export default function HomePage() {
             </Link>
 
             {/* Technology */}
+
             <Link href="/semiconductor">
 
-              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#E86C5D] hover:-translate-y-2 transition-all duration-300 cursor-pointer h-[180px]">
+              <Card className="p-6 rounded-3xl border border-slate-200 bg-white shadow-md hover:shadow-2xl hover:border-[#4F46E5] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
 
-                <div className="flex flex-col h-full">
+                <div>
 
-                  <div className="text-4xl mb-3">
-                    ⚡
+                  <div className="text-4xl mb-4">
+                    🖥️
                   </div>
 
                   <h3 className="text-2xl font-bold text-slate-900">
