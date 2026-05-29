@@ -65,11 +65,11 @@ export default function SemiconductorPage() {
 
               <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-10 text-center">
 
-                <p className="text-4xl font-bold text-[#4338CA]">
+                <p className="text-3xl font-bold text-[#4338CA]">
                   1 = ON
                 </p>
 
-                <p className="text-4xl font-bold text-[#4338CA] mt-4">
+                <p className="text-3xl font-bold text-[#4338CA] mt-4">
                   0 = OFF
                 </p>
 
