@@ -29,13 +29,53 @@ export default function SemiconductorPage() {
 
         <article className="mt-8">
 
-          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4">
-            Semiconductor Fundamentals
-          </p>
+          <div className="flex flex-wrap gap-3 mb-6">
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10">
-            Why Do We Need Semiconductors?
-          </h1>
+  <Link
+    href="/semiconductor"
+    className="
+      px-4
+      py-2
+      rounded-full
+      bg-[#EEF2FF]
+      text-[#4338CA]
+      text-sm
+      font-medium
+      hover:bg-[#E0E7FF]
+      transition
+    "
+  >
+    Semiconductors
+  </Link>
+
+  <Link
+    href="/ip"
+    className="
+      px-4
+      py-2
+      rounded-full
+      bg-white
+      border
+      border-slate-200
+      text-slate-700
+      text-sm
+      font-medium
+      hover:bg-slate-50
+      transition
+    "
+  >
+    Semiconductor IP
+  </Link>
+
+</div>
+
+<p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4">
+  Semiconductor Fundamentals
+</p>
+
+<h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10">
+  Why Do We Need Semiconductors?
+</h1>
 
           <div className="space-y-10 text-lg leading-relaxed text-slate-600">
 
