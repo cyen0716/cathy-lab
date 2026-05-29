@@ -62,33 +62,6 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl">
 
-            {/* Korean */}
-
-            <Link href="/korean">
-
-              <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-
-                <div>
-
-                  <div className="text-4xl mb-3">
-                    📓
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-slate-900">
-                    Korean Vocabulary
-                  </h3>
-
-                  <p className="text-slate-500 mt-2 leading-relaxed">
-                    Flashcards, quizzes, pronunciation,
-                    and categorized Korean vocabulary study sets.
-                  </p>
-
-                </div>
-
-              </Card>
-
-            </Link>
-
             {/* Semiconductor */}
 
             <Link href="/semiconductor">
@@ -108,6 +81,33 @@ export default function HomePage() {
                   <p className="text-slate-500 mt-2 leading-relaxed">
                     Semiconductor basics,
                     technical concepts, and learning notes.
+                  </p>
+
+                </div>
+
+              </Card>
+
+            </Link>
+
+            {/* Korean */}
+
+            <Link href="/korean">
+
+              <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+
+                <div>
+
+                  <div className="text-4xl mb-3">
+                    📓
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-slate-900">
+                    Korean Vocabulary
+                  </h3>
+
+                  <p className="text-slate-500 mt-2 leading-relaxed">
+                    Flashcards, quizzes, pronunciation,
+                    and categorized Korean vocabulary study sets.
                   </p>
 
                 </div>
