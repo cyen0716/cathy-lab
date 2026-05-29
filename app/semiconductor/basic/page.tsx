@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ChevronLeft } from "lucide-react"
 
 export default function BasicsPage() {
   return (
@@ -7,11 +8,25 @@ export default function BasicsPage() {
       <div className="max-w-4xl mx-auto px-6 py-10">
 
         <Link
-          href="/semiconductor"
-          className="text-sm text-slate-400 hover:text-slate-700 transition-colors"
-        >
-          ← Back to Semiconductor Notes
-        </Link>
+  href="/semiconductor"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    w-11
+    h-11
+    rounded-full
+    bg-[#EEF2FF]
+    text-[#4338CA]
+    hover:bg-[#E0E7FF]
+    hover:shadow-md
+    hover:-translate-y-0.5
+    transition-all
+    duration-200
+  "
+>
+  <ChevronLeft className="w-5 h-5" />
+</Link>
 
         <article className="mt-8">
 
