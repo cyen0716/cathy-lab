@@ -11,7 +11,7 @@ interface VocabularyListProps {
 export function VocabularyList({ words }: VocabularyListProps) {
   if (words.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-12 text-muted-foreground">
+      <div className="flex flex-col items-center justify-center py-12 text-slate-500">
         <p>沒有找到相關單字</p>
       </div>
     )
@@ -22,7 +22,7 @@ export function VocabularyList({ words }: VocabularyListProps) {
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
 
       {words.map((word, index) => (
 
@@ -36,19 +36,19 @@ export function VocabularyList({ words }: VocabularyListProps) {
             flex-col
             items-center
             justify-center
-            rounded-xl
+            rounded-2xl
             bg-white
-            p-4
-            shadow-sm
+            p-5
+            min-h-[120px]
             border
             border-slate-200
+            shadow-sm
+            cursor-pointer
             transition-all
             duration-200
-            hover:shadow-md
+            hover:shadow-lg
             hover:border-[#4338CA]
             hover:-translate-y-1
-            min-h-[88px]
-            cursor-pointer
           "
         >
 
@@ -59,9 +59,9 @@ export function VocabularyList({ words }: VocabularyListProps) {
             }}
             className="
               absolute
-              top-2
-              right-2
-              p-1
+              top-3
+              right-3
+              p-1.5
               rounded-full
               text-slate-400
               hover:text-[#4338CA]
@@ -71,14 +71,14 @@ export function VocabularyList({ words }: VocabularyListProps) {
             "
             aria-label={`播放 ${word.korean} 發音`}
           >
-            <Volume2 className="w-3.5 h-3.5" />
+            <Volume2 className="w-4 h-4" />
           </button>
 
-          <span className="text-lg font-semibold text-slate-900 text-center leading-tight">
+          <span className="text-2xl font-bold text-slate-900 text-center leading-tight">
             {word.korean}
           </span>
 
-          <span className="text-sm text-slate-500 mt-1 text-center">
+          <span className="text-base text-slate-500 mt-2 text-center">
             {word.chinese}
           </span>
 
