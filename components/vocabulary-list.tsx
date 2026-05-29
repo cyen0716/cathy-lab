@@ -37,15 +37,16 @@ export function VocabularyList({ words }: VocabularyListProps) {
             items-center
             justify-center
             rounded-xl
-            bg-card
+            bg-white
             p-4
             shadow-sm
             border
-            border-border/50
+            border-slate-200
             transition-all
+            duration-200
             hover:shadow-md
-            hover:border-primary/30
-            hover:-translate-y-0.5
+            hover:border-[#4338CA]
+            hover:-translate-y-1
             min-h-[88px]
             cursor-pointer
           "
@@ -62,9 +63,9 @@ export function VocabularyList({ words }: VocabularyListProps) {
               right-2
               p-1
               rounded-full
-              text-muted-foreground/40
-              hover:text-primary
-              hover:bg-primary/10
+              text-slate-400
+              hover:text-[#4338CA]
+              hover:bg-slate-100
               active:scale-95
               transition-all
             "
@@ -73,11 +74,11 @@ export function VocabularyList({ words }: VocabularyListProps) {
             <Volume2 className="w-3.5 h-3.5" />
           </button>
 
-          <span className="text-lg font-semibold text-foreground text-center leading-tight">
+          <span className="text-lg font-semibold text-slate-900 text-center leading-tight">
             {word.korean}
           </span>
 
-          <span className="text-sm text-muted-foreground mt-1 text-center">
+          <span className="text-sm text-slate-500 mt-1 text-center">
             {word.chinese}
           </span>
 
