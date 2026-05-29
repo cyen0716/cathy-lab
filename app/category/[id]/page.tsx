@@ -31,7 +31,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[#F8FAFC]">
+    <main className="min-h-screen bg-[#FCFCFC]">
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
 
