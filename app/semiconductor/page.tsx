@@ -55,7 +55,7 @@ export default function SemiconductorPage() {
 
           {/* Basics */}
 
-          <Link href="/semiconductor/basics">
+          <Link href="/semiconductor/basic">
 
             <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
 
