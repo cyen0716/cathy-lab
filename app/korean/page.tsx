@@ -53,11 +53,9 @@ export default function KoreanPage() {
 
           {/* Body Text */}
           <p className="text-base leading-[1.85] text-slate-500 mt-4 max-w-2xl">
-            Learn Korean through flashcards,
-            quizzes, and categorized word sets.
+            A growing collection of Korean words I'm learning and exploring.
           </p>
 
-          {/* Stats (改為符合 Style Guide 的 Inactive / Active Pill 藥丸風格與顏色) */}
           <div className="flex flex-wrap gap-2.5 mt-8">
 
             <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-500 text-sm font-medium shadow-sm">
@@ -68,15 +66,10 @@ export default function KoreanPage() {
               📂 {vocabularyData.length} Categories
             </div>
 
-            <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-500 text-sm font-medium shadow-sm">
-              🧠 Flashcards & Quiz
-            </div>
-
           </div>
 
         </header>
 
-        {/* Categories Grid (保留原本的 5 欄排版，僅調整間距適應規範) */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
 
           {vocabularyData.map((category) => (
