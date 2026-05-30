@@ -14,7 +14,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
       <Card className="min-h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
         <div className="h-full flex flex-col items-center text-center px-4 pt-6 pb-6">
           
-          <div className="w-10 h-10 flex items-center justify-center mb-4">
+          <div className="w-10 h-10 flex items-center justify-center mb-2">
             <span className="text-2xl">
               {category.icon}
             </span>
