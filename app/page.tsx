@@ -34,12 +34,12 @@ export default function HomePage() {
               I&apos;m a Technical Writer. I learn by building.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.5] text-slate-600">
+            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
               From tech to korean, I turn things I don&apos;t understand
               into projects I can explore.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.5] text-slate-600">
+            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
               This website is my playground for experiments,
               learning notes, and everything I&apos;m curious about.
             </p>
