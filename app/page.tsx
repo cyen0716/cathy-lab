@@ -23,23 +23,23 @@ export default function HomePage() {
         {/* Hero Section - 完美回歸靠左 */}
         <section className="max-w-4xl mb-14">
 
-          <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
+          <h1 className="text-4xl md:text-7xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-9">
             Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
-          <div className="mt-6 max-w-5xl">
+          <div className="mt-8 max-w-5xl">
 
-            <p className="text-lg font-bold leading-[2.5] text-slate-600">
+            <p className="text-base font-bold leading-[1.0] text-slate-700">
               I&apos;m a Technical Writer. I learn by building.
             </p>
 
-            <p className="mt-2 text-lg font-bold leading-[1.0] text-slate-600">
+            <p className="mt-2 text-base font-bold leading-[1.0] text-slate-700">
               From tech to korean, I turn things I don&apos;t understand
               into projects I can explore.
             </p>
 
-            <p className="mt-2 text-lg font-bold leading-[1.0] text-slate-600">
+            <p className="mt-2 text-base font-bold leading-[1.0] text-slate-700">
               This website is my playground for experiments,
               learning notes, and everything I&apos;m curious about.
             </p>
