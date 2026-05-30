@@ -148,7 +148,7 @@ export const vocabularyData: VocabCategory[] = [
   id: "body",
   name: "身體",
   nameKorean: "몸",
-  icon: "🧍",
+  icon: "🦷",
   words: [
     { korean: "머리", chinese: "頭" },
     { korean: "얼굴", chinese: "臉" },
@@ -204,7 +204,7 @@ export const vocabularyData: VocabCategory[] = [
   id: "place",
   name: "地點",
   nameKorean: "장소",
-  icon: "📍",
+  icon: "🏪",
   words: [
     { korean: "집", chinese: "家" },
     { korean: "학교", chinese: "學校" },
@@ -233,7 +233,7 @@ export const vocabularyData: VocabCategory[] = [
   id: "hobby",
   name: "興趣",
   nameKorean: "취미",
-  icon: "🎨",
+  icon: "🎧",
   words: [
     { korean: "음악 듣기", chinese: "聽音樂" },
     { korean: "사진 찍기", chinese: "拍照" },
