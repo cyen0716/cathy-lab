@@ -79,22 +79,28 @@ export function Quiz({ words }: QuizProps) {
   }
 
   if (questions.length === 0) {
-    return <div className="text-center text-muted-foreground">載入中...</div>
+    return <div className="text-center text-slate-400 py-12">載入中...</div>
   }
 
   if (isComplete) {
     return (
       <div className="flex flex-col items-center gap-6">
-        <Card className="w-full p-8 text-center border-0 shadow-lg">
+        <Card className="w-full p-8 text-center border-0 shadow-[0_12px_30px_-10px_rgba(0,0,0,0.08)] rounded-2xl bg-white">
           <div className="text-6xl mb-4">
             {score === questions.length ? "🎉" : score >= questions.length / 2 ? "👏" : "💪"}
           </div>
-          <h2 className="text-2xl font-bold mb-2">測驗完成!</h2>
-          <p className="text-lg text-muted-foreground mb-4">
-            你答對了 <span className="text-primary font-bold">{score}</span> / {questions.length} 題
+          <h2 className="text-2xl font-bold text-slate-800 mb-2">測驗完成!</h2>
+          <p className="text-lg text-slate-500 mb-6">
+            你答對了 <span className="text-[#4338CA] font-bold">{score}</span> / {questions.length} 題
           </p>
-          <Progress value={(score / questions.length) * 100} className="h-3 mb-6" />
-          <Button onClick={initQuiz} className="rounded-full px-6">
+          
+          {/* 進度條改為 Indigo 藍色系 */}
+          <Progress value={(score / questions.length) * 100} className="h-3 mb-8 bg-slate-100 [&>div]:bg-[#4338CA]" />
+          
+          <Button 
+            onClick={initQuiz} 
+            className="rounded-full px-6 bg-[#4338CA] hover:bg-[#3730A3] text-white transition-colors cursor-pointer shadow-sm shadow-indigo-200"
+          >
             <RotateCcw className="h-4 w-4 mr-2" />
             再試一次
           </Button>
@@ -109,16 +115,17 @@ export function Quiz({ words }: QuizProps) {
     <div className="flex flex-col gap-6">
       {/* Progress */}
       <div className="flex items-center gap-4">
-        <Progress value={((currentQuestion + 1) / questions.length) * 100} className="h-2" />
-        <span className="text-sm text-muted-foreground whitespace-nowrap">
+        {/* 上方進度條改為 Indigo 藍色系 */}
+        <Progress value={((currentQuestion + 1) / questions.length) * 100} className="h-2 bg-slate-100 [&>div]:bg-[#4338CA]" />
+        <span className="text-sm font-medium text-slate-400 whitespace-nowrap select-none">
           {currentQuestion + 1} / {questions.length}
         </span>
       </div>
 
       {/* Question */}
-      <Card className="p-8 text-center border-0 shadow-lg">
-        <p className="text-sm text-muted-foreground mb-2">這個韓文是什麼意思?</p>
-        <p className="text-4xl font-bold">{question.word.korean}</p>
+      <Card className="p-8 text-center border border-slate-100 shadow-[0_8px_20px_-6px_rgba(0,0,0,0.04)] rounded-2xl bg-white">
+        <p className="text-xs font-semibold text-indigo-500 bg-indigo-50 px-3 py-1 rounded-full w-fit mx-auto mb-4">這個韓文是什麼意思?</p>
+        <p className="text-4xl md:text-5xl font-bold text-slate-800 tracking-wide font-sans">{question.word.korean}</p>
       </Card>
 
       {/* Options */}
@@ -128,29 +135,38 @@ export function Quiz({ words }: QuizProps) {
           const isCorrect = index === question.correctIndex
           const showResult = selectedAnswer !== null
 
-          let buttonVariant: "outline" | "default" | "destructive" = "outline"
-          let buttonClass = "h-14 text-lg rounded-2xl transition-all"
+          let buttonClass = "h-14 text-base font-medium rounded-xl transition-all cursor-pointer w-full border-slate-200 bg-white text-slate-700"
 
-          if (showResult) {
+          if (!showResult) {
+            // 未選擇時的 hover 效果，與主色調同步
+            buttonClass += " hover:border-indigo-200 hover:bg-indigo-50/30 hover:text-[#4338CA]"
+          } else {
+            // 答對的亮綠色
             if (isCorrect) {
-              buttonClass += " bg-green-100 border-green-500 text-green-700"
-            } else if (isSelected && !isCorrect) {
-              buttonClass += " bg-red-100 border-red-500 text-red-700"
+              buttonClass += " bg-emerald-50/80 border-emerald-500 text-emerald-700 font-semibold"
+            } 
+            // 答錯的亮紅色
+            else if (isSelected && !isCorrect) {
+              buttonClass += " bg-rose-50/80 border-rose-500 text-rose-700 font-semibold"
+            } 
+            // 其他沒被選中的選項變半透明不干擾視覺
+            else {
+              buttonClass += " opacity-40 border-slate-100"
             }
           }
 
           return (
             <Button
               key={index}
-              variant={buttonVariant}
+              variant="outline"
               className={buttonClass}
               onClick={() => handleAnswer(index)}
               disabled={selectedAnswer !== null}
             >
-              <span className="flex items-center gap-2">
-                {option}
-                {showResult && isCorrect && <CheckCircle2 className="h-5 w-5 text-green-600" />}
-                {showResult && isSelected && !isCorrect && <XCircle className="h-5 w-5 text-red-600" />}
+              <span className="flex items-center justify-center gap-2 w-full relative">
+                <span>{option}</span>
+                {showResult && isCorrect && <CheckCircle2 className="h-5 w-5 text-emerald-600 absolute right-1" />}
+                {showResult && isSelected && !isCorrect && <XCircle className="h-5 w-5 text-rose-600 absolute right-1" />}
               </span>
             </Button>
           )
