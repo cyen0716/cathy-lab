@@ -150,7 +150,7 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "food",
-    name: "料理",
+    name: "食物",
     nameKorean: "음식",
     icon: "🥗",
     color: "bg-orange-100 text-orange-700",
