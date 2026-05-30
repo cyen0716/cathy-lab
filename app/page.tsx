@@ -23,12 +23,12 @@ export default function HomePage() {
         {/* Hero Section - 完美回歸靠左 */}
         <section className="max-w-4xl mb-14">
 
-          <h1 className="text-4xl md:text-7xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-9">
+          <h1 className="text-5xl md:text-7xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-9">
             Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
-          <div className="mt-8 max-w-5xl">
+          <div className="mt-10 max-w-5xl">
 
             <p className="text-base font-bold leading-[1.0] text-slate-700">
               I&apos;m a Technical Writer. I learn by building.
