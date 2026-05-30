@@ -8,69 +8,28 @@ interface CategoryCardProps {
   category: VocabCategory
 }
 
-function getIconBg(id: string) {
-  switch (id) {
-    case "daily-life":
-      return "bg-blue-100"
-
-    case "emotions":
-      return "bg-pink-100"
-
-    case "food":
-      return "bg-orange-100"
-
-    case "cafe":
-      return "bg-amber-100"
-
-    case "travel":
-      return "bg-cyan-100"
-
-    case "kdrama":
-      return "bg-violet-100"
-
-    default:
-      return "bg-slate-100"
-  }
-}
-
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
-
-      <Card className="min-h-[240px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
-
-        <div className="h-full flex flex-col items-center text-center px-4 pt-6">
-
-          <div
-            className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-5 ${getIconBg(category.id)}`}
-          >
-            <span className="text-4xl">
+      <Card className="min-h-[180px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#4338CA] transition-all duration-300 cursor-pointer">
+        <div className="h-full flex flex-col items-center text-center px-4 pt-6 pb-6">
+          
+          <div className="w-10 h-10 flex items-center justify-center mb-4">
+            <span className="text-2xl">
               {category.icon}
             </span>
           </div>
 
-          <p className="text-lg font-bold text-slate-900">
-            {category.name}
-          </p>
-
-          <p className="text-base text-slate-500 mt-1">
+          <p className="text-xl font-bold text-slate-900">
             {category.nameKorean}
           </p>
 
-          <div className="mt-4">
-            <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">
-              {category.words.length} words
-            </span>
-          </div>
-
-          <p className="text-xs tracking-wide text-[#4338CA] font-medium mt-5">
-            Start Learning →
+          <p className="text-sm text-slate-500 mt-1">
+            {category.name}
           </p>
 
         </div>
-
       </Card>
-
     </Link>
   )
 }
