@@ -46,7 +46,7 @@ export const vocabularyData: VocabCategory[] = [
     id: "emotions",
     name: "情緒感受",
     nameKorean: "감정",
-    icon: "💕",
+    icon: "💙",
     color: "bg-pink-100 text-pink-700",
     words: [
       { korean: "사랑해", chinese: "我愛你" },
@@ -71,7 +71,7 @@ export const vocabularyData: VocabCategory[] = [
     id: "food",
     name: "美食料理",
     nameKorean: "음식",
-    icon: "🍜",
+    icon: "🥗",
     color: "bg-orange-100 text-orange-700",
     words: [
       { korean: "김치", chinese: "泡菜" },
@@ -121,7 +121,7 @@ export const vocabularyData: VocabCategory[] = [
     id: "travel",
     name: "旅遊出行",
     nameKorean: "여행",
-    icon: "✈️",
+    icon: "🛫",
     color: "bg-sky-100 text-sky-700",
     words: [
       { korean: "공항", chinese: "機場" },
