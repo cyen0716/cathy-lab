@@ -1,3 +1,13 @@
+"use client"
+
+import Link from "next/link"
+import { Card } from "@/components/ui/card"
+import type { VocabCategory } from "@/lib/vocabulary-data"
+
+interface CategoryCardProps {
+  category: VocabCategory
+}
+
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link href={`/category/${category.id}`}>
@@ -26,3 +36,4 @@ export function CategoryCard({ category }: CategoryCardProps) {
     </Link>
   )
 }
+  )
