@@ -25,7 +25,7 @@ export default function HomePage() {
           </h1>
 
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-6 max-w-6xl">
 
             <p className="text-lg leading-[1.7] text-slate-600">
               I&apos;m a Technical Writer. I learn by building.
