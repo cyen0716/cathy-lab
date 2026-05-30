@@ -17,7 +17,7 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="max-w-4xl mb-14">
+        <section className="max-w-6xl mb-14">
 
           {/* 【放大】Hi, I'm Cathy 升級至 7xl 巨幕大標 */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight mb-8">
