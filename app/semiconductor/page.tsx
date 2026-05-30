@@ -49,23 +49,23 @@ export default function SemiconductorPage() {
   </Link>
 
   <Link
-    href="/ip"
-    className="
-      px-4
-      py-2
-      rounded-full
-      bg-white
-      border
-      border-slate-200
-      text-slate-700
-      text-sm
-      font-medium
-      hover:bg-slate-50
-      transition
-    "
-  >
-    Semiconductor IP
-  </Link>
+  href="/semiconductor/chip"
+  className="
+    px-4
+    py-2
+    rounded-full
+    bg-white
+    border
+    border-slate-200
+    text-slate-700
+    text-sm
+    font-medium
+    hover:bg-slate-50
+    transition
+  "
+>
+  What's Inside a Chip?
+</Link>
 
 </div>
 
