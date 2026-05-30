@@ -16,7 +16,7 @@ export const vocabularyData: VocabCategory[] = [
   {
     id: "daily-life",
     name: "生活",
-    nameKorean: "일상생활",
+    nameKorean: "생활",
     icon: "🏠",
     color: "bg-rose-100 text-rose-700",
     words: [
@@ -46,7 +46,7 @@ export const vocabularyData: VocabCategory[] = [
     id: "emotions",
     name: "心情",
     nameKorean: "감정",
-    icon: "💙",
+    icon: "🤎",
     color: "bg-pink-100 text-pink-700",
     words: [
       { korean: "사랑해", chinese: "我愛你" },
@@ -144,8 +144,8 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "kdrama",
-    name: "韓劇",
-    nameKorean: "드라마 / 팬덤",
+    name: "追星",
+    nameKorean: "팬덤",
     icon: "🎬",
     color: "bg-violet-100 text-violet-700",
     words: [
