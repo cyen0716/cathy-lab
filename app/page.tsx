@@ -5,45 +5,40 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#FCFCFC]">
+    <main className="min-h-screen bg-[#FCFCFC] antialiased">
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-8 md:py-10">
+      {/* 保持您原本的大寬度排版，僅微調上下 padding 符合 py-10 */}
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-10">
 
-        {/* Logo */}
-
+        {/* Logo / Nav */}
         <nav className="mb-10">
-
-          <p className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
+          {/* 改用 Style Guide 的 Eyebrow 字級顏色 */}
+          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
             Cathy Lab
           </p>
-
         </nav>
 
-        {/* Hero */}
-
+        {/* Hero Section */}
         <section className="max-w-4xl mb-14">
 
-          <h1 className="text-5xl md:text-[72px] leading-[0.95] font-bold text-slate-900">
-
+          {/* H1 — 改用 Style Guide 規範的字級與顏色，行高帶入 leading-tight */}
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
             Hi,
             <br />
-
             I’m <span className="text-[#4338CA]">Cathy</span>
-
           </h1>
 
-          <p className="text-base md:text-xl text-slate-500 font-medium mt-4 tracking-wide">
-            AI • Tech • Korean
-          </p>
+          {/* 【已刪除 AI • Tech • Korean 區塊】 */}
 
-          <div className="mt-6 space-y-3 max-w-3xl">
-
-            <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
+          {/* 內文區塊：套用 Style Guide 的文字顏色 text-slate-500、字級 text-base、行高 leading-[1.85] 與段落間距 space-y-3.5 */}
+          <div className="mt-6 space-y-3.5 max-w-3xl text-base leading-[1.85] text-slate-500">
+            
+            <p>
               I build things with AI, learn Korean,
               and explore technology one project at a time.
             </p>
 
-            <p className="text-base text-slate-400 leading-relaxed">
+            <p>
               This website is my playground for experiments,
               learning notes, and side projects.
             </p>
@@ -53,67 +48,64 @@ export default function HomePage() {
         </section>
 
         {/* Selected Projects */}
-
         <section>
 
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">
+          {/* H2 — 改用 Style Guide 規範的字級顏色與底邊距 mb-3 */}
+          <h2 className="text-xl font-bold text-slate-900 mb-3">
             Selected Projects
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl">
+          {/* 保持您原本的網格與寬度，卡片完整保留 Emoji、陰影、懸停位移與 rounded-3xl 效果 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mt-6">
 
             {/* Semiconductor */}
-
             <Link href="/semiconductor">
-
               <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-
                 <div>
 
+                  {/* 完整保留原本的 Emoji */}
                   <div className="text-4xl mb-3">
                     🖥️
                   </div>
 
-                  <h3 className="text-2xl font-bold text-slate-900">
+                  {/* 卡片標題：改用符合規範的標題色彩 text-slate-900 */}
+                  <h3 className="text-xl font-bold text-slate-900">
                     Semiconductor Notes
                   </h3>
 
-                  <p className="text-slate-500 mt-2 leading-relaxed">
+                  {/* 卡片內文：改用符合規範的字級與色彩 */}
+                  <p className="text-base leading-[1.85] text-slate-500 mt-2">
                     Semiconductor basics,
                     technical concepts, and learning notes.
                   </p>
 
                 </div>
-
               </Card>
-
             </Link>
 
             {/* Korean */}
-
             <Link href="/korean">
-
               <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-
                 <div>
 
+                  {/* 完整保留原本的 Emoji */}
                   <div className="text-4xl mb-3">
                     📓
                   </div>
 
-                  <h3 className="text-2xl font-bold text-slate-900">
+                  {/* 卡片標題：改用符合規範的標題色彩 text-slate-900 */}
+                  <h3 className="text-xl font-bold text-slate-900">
                     Korean Vocabulary
                   </h3>
 
-                  <p className="text-slate-500 mt-2 leading-relaxed">
+                  {/* 卡片內文：改用符合規範的字級與色彩 */}
+                  <p className="text-base leading-[1.85] text-slate-500 mt-2">
                     Flashcards, quizzes, pronunciation,
                     and categorized Korean vocabulary study sets.
                   </p>
 
                 </div>
-
               </Card>
-
             </Link>
 
           </div>
