@@ -51,8 +51,8 @@ export default function ChipPage() {
           <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
             Semiconductor Fundamentals
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
-            What&apos;s Inside a Chip?
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
+            What is Inside a Chip?
           </h1>
 
           {/* Intro */}
