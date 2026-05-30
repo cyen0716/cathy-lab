@@ -60,7 +60,7 @@ export function VocabularyList({ words }: VocabularyListProps) {
         >
           {/* 左側：大字級單字區，靠左對齊更好閱讀 */}
           <div className="flex flex-col items-start gap-1 select-none">
-            <span className="text-2xl font-bold text-slate-800 tracking-wide leading-none">
+            <span className="text-2xl font-bold text-slate-700 tracking-wide leading-none">
               {word.korean}
             </span>
             <span className="text-sm font-medium text-slate-500 mt-0.5">
