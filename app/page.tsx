@@ -27,20 +27,16 @@ export default function HomePage() {
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
           <div className="mt-6 max-w-3xl">
 
-            <p className="text-base leading-[1.65] text-slate-500">
-              I&apos;m a Technical Writer.
+            <p className="text-base leading-[1.7] text-slate-700">
+              I&apos;m a Technical Writer. I learn by building.
             </p>
 
-            <p className="mt-2 text-base leading-[1.5] text-[#4338CA] font-medium">
-              I learn by building.
-            </p>
-
-            <p className="mt-2 text-base leading-[1.5] text-slate-500">
+            <p className="mt-2 text-base leading-[1.5] text-slate-700">
               From tech to korean, I turn things I don&apos;t understand
               into projects I can explore.
             </p>
 
-            <p className="mt-2 text-base leading-[1.5] text-slate-500">
+            <p className="mt-2 text-base leading-[1.5] text-slate-700">
               This website is my playground for experiments,
               learning notes, and everything I&apos;m curious about.
             </p>
