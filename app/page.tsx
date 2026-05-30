@@ -5,7 +5,11 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#FCFCFC] antialiased">
+    /* 在這裡注入 Apple 官方字體庫，讓整頁所有文字自動同步為 SF Pro 與 萍方體 */
+    <main 
+      className="min-h-screen bg-[#FCFCFC] antialiased"
+      style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang TC", sans-serif' }}
+    >
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
 
@@ -19,12 +23,9 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-4xl mb-14">
 
-<h1 
-  className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8"
-  style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang TC", sans-serif' }}
->
-  Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
-</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
+            Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
+          </h1>
 
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
           <div className="mt-6 max-w-3xl">
@@ -85,8 +86,7 @@ export default function HomePage() {
 
             {/* Korean */}
             <Link href="/korean">
-                            <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-[0_15px_35px_-10px_rgba(15,23,42,0.06),0_10px_20px_-5px_rgba(67,56,202,0.03)] hover:border-indigo-100 hover:scale-[1.02] transition-all duration-500 ease-out cursor-pointer">
-
+              <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-[0_15px_35px_-10px_rgba(15,23,42,0.06),0_10px_20px_-5px_rgba(67,56,202,0.03)] hover:border-indigo-100 hover:scale-[1.02] transition-all duration-500 ease-out cursor-pointer">
                 <div>
 
                   {/* 完整保留原本的 Emoji */}
