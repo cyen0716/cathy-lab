@@ -53,7 +53,7 @@ export const vocabularyData: VocabCategory[] = [
     { korean: "노란색", chinese: "黃色" },
     { korean: "초록색", chinese: "綠色" },
     { korean: "파란색", chinese: "藍色" },
-    { korean: "남색", chinese: "深藍色" },
+
     { korean: "보라색", chinese: "紫色" },
     { korean: "분홍색", chinese: "粉紅色" },
     { korean: "갈색", chinese: "咖啡色" },
