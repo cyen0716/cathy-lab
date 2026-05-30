@@ -11,7 +11,6 @@ export default function HomePage() {
 
         {/* Logo / Nav */}
         <nav className="mb-10">
-          {/* 改用 Style Guide 的 Eyebrow 字級顏色 */}
           <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
             Cathy Lab
           </p>
@@ -20,8 +19,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-4xl mb-14">
 
-          {/* H1 — 改用 Style Guide 規範的字級與顏色，行高帶入 leading-tight */}
-          <h1 className="text-5xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+          <h1 className="text-6xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
             Hi,
             <br />
             I’m <span className="text-[#4338CA]">Cathy</span>
