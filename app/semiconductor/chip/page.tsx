@@ -70,6 +70,7 @@ export default function ChipPage() {
           </div>
 
           {/* Chip Diagram */}
+<div className="max-w-3xl mx-auto mb-10">
           <div className="bg-white border-2 border-[#C7D2FE] rounded-2xl p-6 mb-10">
             <p className="text-[11px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
               A Simplified Chip
@@ -93,6 +94,7 @@ export default function ChipPage() {
               </div>
             </div>
           </div>
+</div>
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
