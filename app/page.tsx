@@ -5,7 +5,8 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#FCFCFC] antialiased selection:bg-indigo-100">
+    /* 這裡注入了 Apple 官方專屬的字體庫：優先調用 SF Pro 與 萍方體 */
+    <main className="min-h-screen bg-[#FCFCFC] antialiased selection:bg-indigo-100" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "PingFang TC", "Helvetica Neue", Helvetica, Arial, sans-serif' }}>
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-14">
 
