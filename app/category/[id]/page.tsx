@@ -31,33 +31,33 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[#FAFAFA]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-6 md:py-8">
+    <main className="min-h-screen bg-[#FCFCFC]">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-6 md:py-8">
         
-        {/* 頂部導航與標題區塊：優化結構，緊湊排版 */}
-        <div className="flex flex-col gap-3 mb-6">
-          <Link
-            href="/"
-            className="flex items-center gap-1 text-sm font-medium text-slate-400 hover:text-indigo-600 transition-colors w-fit cursor-pointer"
-          >
-            <ChevronLeft className="w-4 h-4" />
-            <span>返回首頁</span>
-          </Link>
-          
-          <div className="flex items-center justify-between">
-            <h1 className="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight">
-              {category.title}
-            </h1>
-            <span className="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-500 rounded-full">
-              {category.words.length} 個單字
-            </span>
-          </div>
+        {/* 原本的返回鍵樣式 */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-slate-500 hover:text-slate-800 transition-colors mb-6"
+        >
+          <ChevronLeft className="w-5 h-5" />
+          <span>返回</span>
+        </Link>
+
+        {/* 標題區塊：移除了單字數量，並微調 mb 讓 Tabs 往上提 */}
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">
+            {category.title}
+          </h1>
+          <p className="text-slate-500">
+            {category.subtitle}
+          </p>
         </div>
 
         {/* Tabs 切換區塊 */}
         <Tabs defaultValue="list" className="w-full" onValueChange={setActiveTab}>
-          {/* TabsList：加上緊湊外觀與精緻背景 */}
-          <TabsList className="inline-flex items-center justify-start p-1 bg-slate-100/80 backdrop-blur-sm rounded-xl border border-slate-200/40 mb-6 w-full sm:w-auto">
+          
+          {/* TabsList：加上 cursor-pointer 與精緻化調整 */}
+          <TabsList className="inline-flex items-center justify-start p-1 bg-slate-100 rounded-xl mb-6 w-full sm:w-auto">
             
             <TabsTrigger
               value="list"
