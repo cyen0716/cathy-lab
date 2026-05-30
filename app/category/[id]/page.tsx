@@ -59,39 +59,25 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <ChevronLeft className="w-5 h-5" />
         </Link>
 
-        {/* Header */}
+        {/* Header - 已刪除 Icon、xx Words，並將中韓文標題對調 */}
 
-        <header className="mb-10">
-
-          <div className="flex items-center gap-4 mb-4">
-
-            <div className="text-5xl">
-              {category.icon}
-            </div>
-
-            <div>
-
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-                {category.name}
-              </h1>
-
-              <p className="text-lg text-slate-500 mt-1">
-                {category.nameKorean}
-              </p>
-
-            </div>
-
-          </div>
+        <header className="mb-8">
 
           <div>
-            <span className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-600 shadow-sm">
-              📚 {category.words.length} Words
-            </span>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-wide font-sans">
+              {category.nameKorean}
+            </h1>
+
+            <p className="text-base font-medium text-slate-400 mt-1.5">
+              {category.name}
+            </p>
+
           </div>
 
         </header>
 
-        {/* Tabs */}
+        {/* Tabs - 書籤美感升級、往上移、加上手手 */}
 
         <Tabs
           value={activeTab}
@@ -99,31 +85,27 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           className="w-full"
         >
 
-          {/* 僅將 mb-8 微調為 mb-5 讓整體內容往上移 */}
-          <TabsList className="inline-flex h-11 rounded-xl bg-slate-100 p-1 mb-5">
+          <TabsList className="inline-flex h-11 rounded-xl bg-slate-100/80 backdrop-blur-sm p-1 mb-5 border border-slate-200/20 shadow-sm">
 
-            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="list"
-              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
+              className="rounded-lg gap-1.5 text-sm px-4 font-medium transition-all cursor-pointer select-none text-slate-500 data-[state=active]:bg-white data-[state=active]:text-[#4338CA] data-[state=active]:shadow-sm"
             >
               <List className="h-4 w-4" />
               List
             </TabsTrigger>
 
-            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="flashcards"
-              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
+              className="rounded-lg gap-1.5 text-sm px-4 font-medium transition-all cursor-pointer select-none text-slate-500 data-[state=active]:bg-white data-[state=active]:text-[#4338CA] data-[state=active]:shadow-sm"
             >
               <BookOpen className="h-4 w-4" />
               Flashcards
             </TabsTrigger>
 
-            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="quiz"
-              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
+              className="rounded-lg gap-1.5 text-sm px-4 font-medium transition-all cursor-pointer select-none text-slate-500 data-[state=active]:bg-white data-[state=active]:text-[#4338CA] data-[state=active]:shadow-sm"
             >
               <Brain className="h-4 w-4" />
               Quiz
