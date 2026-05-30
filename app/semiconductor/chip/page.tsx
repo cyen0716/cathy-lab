@@ -88,10 +88,19 @@ export default function ChipPage() {
                 <p className="text-base font-bold text-indigo-800">Memory Controller</p>
                 <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Data routing</p>
               </div>
-              <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-base font-bold text-indigo-800">USB</p>
-                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">External communication</p>
-              </div>
+              <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+  <p className="text-base font-bold text-indigo-800">USB</p>
+  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
+    Connectivity
+  </p>
+</div>
+
+<div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+  <p className="text-base font-bold text-indigo-800">Security</p>
+  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
+    Data Protection
+  </p>
+</div>
             </div>
           </div>
 </div>
