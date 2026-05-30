@@ -200,10 +200,8 @@ export default function ChipPage() {
             <section>
               <div className="border-t border-slate-200 mb-8" />
               <div className="space-y-3.5">
-                <p>Each block contains millions of transistors. Together, they form a complete chip.</p>
                 <p>
-                  Designing these blocks takes significant time and expertise. Engineers
-                  rarely build each block from scratch — which leads to the next question:
+                  CPU, memory, and interfaces all have different jobs. A modern chip combines these functions into a single system.
                 </p>
               </div>
             </section>
