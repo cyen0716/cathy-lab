@@ -63,11 +63,8 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
         <header className="mb-10">
 
-          <div className="flex items-center gap-4 mb-4">
+          <div className="mb-4">
 
-            <div className="text-5xl">
-              {category.icon}
-            </div>
 
             <div>
 
@@ -83,11 +80,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
           </div>
 
-          <div>
-            <span className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-600 shadow-sm">
-              📚 {category.words.length} Words
-            </span>
-          </div>
 
         </header>
 
