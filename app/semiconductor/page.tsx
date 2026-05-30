@@ -4,7 +4,7 @@ import { ChevronLeft } from "lucide-react"
 export default function SemiconductorPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-7xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-6 py-10">
 
         <Link
           href="/"
