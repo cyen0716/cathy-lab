@@ -29,14 +29,18 @@ export default function HomePage() {
           <div className="mt-6 space-y-3.5 max-w-3xl text-base leading-[1.85] text-slate-500">
             
             <p>
-              I build things with AI, learn Korean,
-              and explore technology one project at a time.
-            </p>
+  I&apos;m a Technical Writer who learns by building.
+</p>
 
-            <p>
-              This website is my playground for experiments,
-              learning notes, and side projects.
-            </p>
+<p>
+  From Korean to tech,
+  I turn things I don&apos;t understand into projects I can explore.
+</p>
+
+<p>
+  This website is my playground for experiments,
+  learning notes, and everything I&apos;m curious about.
+</p>
 
           </div>
 
