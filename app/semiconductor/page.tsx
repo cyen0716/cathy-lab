@@ -45,7 +45,7 @@ export default function SemiconductorPage() {
       transition
     "
   >
-    Semiconductors
+    Why Need Semiconductors?
   </Link>
 
   <Link
