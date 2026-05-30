@@ -74,7 +74,7 @@ export default function SemiconductorPage() {
             Semiconductor Fundamentals
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             Why Do We Need Semiconductors?
           </h1>
 
