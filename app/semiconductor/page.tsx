@@ -4,7 +4,7 @@ import { ChevronLeft } from "lucide-react"
 export default function SemiconductorPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-4xl mx-auto px-6 py-10">
+      <div className="max-w-2xl mx-auto px-6 py-10">
 
         <Link
           href="/"
@@ -22,62 +22,63 @@ export default function SemiconductorPage() {
             hover:-translate-y-0.5
             transition-all
             duration-200
+            mb-7
           "
         >
           <ChevronLeft className="w-5 h-5" />
         </Link>
 
-        <article className="mt-8">
+        <article>
 
-          <div className="flex flex-wrap gap-3 mb-6">
+          <div className="flex flex-wrap gap-2.5 mb-6">
 
-  <Link
-    href="/semiconductor"
-    className="
-      px-4
-      py-2
-      rounded-full
-      bg-[#EEF2FF]
-      text-[#4338CA]
-      text-sm
-      font-medium
-      hover:bg-[#E0E7FF]
-      transition
-    "
-  >
-    Why Need Semiconductors?
-  </Link>
+            <Link
+              href="/semiconductor"
+              className="
+                px-4
+                py-2
+                rounded-full
+                bg-[#EEF2FF]
+                text-[#4338CA]
+                text-sm
+                font-medium
+                hover:bg-[#E0E7FF]
+                transition
+              "
+            >
+              Why Need Semiconductors?
+            </Link>
 
-  <Link
-  href="/semiconductor/chip"
-  className="
-    px-4
-    py-2
-    rounded-full
-    bg-white
-    border
-    border-slate-200
-    text-slate-700
-    text-sm
-    font-medium
-    hover:bg-slate-50
-    transition
-  "
->
-  What's Inside a Chip?
-</Link>
+            <Link
+              href="/semiconductor/chip"
+              className="
+                px-4
+                py-2
+                rounded-full
+                bg-white
+                border
+                border-slate-200
+                text-slate-500
+                text-sm
+                font-medium
+                hover:bg-slate-50
+                transition
+              "
+            >
+              What&apos;s Inside a Chip?
+            </Link>
 
-</div>
+          </div>
 
-<p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4">
-  Semiconductor Fundamentals
-</p>
+          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
+            Semiconductor Fundamentals
+          </p>
 
-<h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10">
-  Why Do We Need Semiconductors?
-</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+            Why Do We Need Semiconductors?
+          </h1>
 
-          <div className="space-y-10 text-lg leading-relaxed text-slate-600">
+          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
             {/* Intro */}
 
@@ -141,7 +142,7 @@ export default function SemiconductorPage() {
 
             <section>
 
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              <h2 className="text-xl font-bold text-slate-900 mb-3">
                 What Makes Those Tiny Switches Possible?
               </h2>
 
@@ -207,7 +208,7 @@ export default function SemiconductorPage() {
 
             <section>
 
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              <h2 className="text-xl font-bold text-slate-900 mb-3">
                 From Transistor to Chip
               </h2>
 
@@ -221,74 +222,75 @@ export default function SemiconductorPage() {
 
               <div className="my-10">
 
-  <div className="my-12">
+                <div className="my-12">
 
-  <div className="flex items-center justify-center gap-8 flex-wrap">
+                  <div className="flex items-center justify-center gap-8 flex-wrap">
 
-    <div className="text-center">
+                    <div className="text-center">
 
-  <div className="bg-white border border-slate-200 rounded-xl px-10 py-4">
-    <p className="text-base text-slate-900">
-      ON
-    </p>
-  </div>
+                      <div className="bg-white border border-slate-200 rounded-xl px-10 py-4">
+                        <p className="text-base text-slate-900">
+                          ON
+                        </p>
+                      </div>
 
-  <p className="text-lg font-medium text-slate-700 mt-3">
-    One Transistor
-  </p>
+                      <p className="text-lg font-medium text-slate-700 mt-3">
+                        One Transistor
+                      </p>
 
-</div>
+                    </div>
 
-    <div className="text-center">
+                    <div className="text-center">
 
-      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-4">
 
-  <p className="text-xl font-medium text-slate-500">
-    × Billions
-  </p>
+                        <p className="text-xl font-medium text-slate-500">
+                          × Billions
+                        </p>
 
-  <p className="text-2xl text-slate-400">
-    =
-  </p>
+                        <p className="text-2xl text-slate-400">
+                          =
+                        </p>
 
-</div>
+                      </div>
 
-    </div>
+                    </div>
 
-    <div className="text-center">
+                    <div className="text-center">
 
-      <div className="bg-white border border-slate-200 rounded-xl px-8 py-6">
+                      <div className="bg-white border border-slate-200 rounded-xl px-8 py-6">
 
-        <div className="grid grid-cols-4 gap-x-4 gap-y-2 text-sm font-medium text-slate-700">
+                        <div className="grid grid-cols-4 gap-x-4 gap-y-2 text-sm font-medium text-slate-700">
 
-          <span>ON</span>
-          <span>OFF</span>
-          <span>ON</span>
-          <span>OFF</span>
+                          <span>ON</span>
+                          <span>OFF</span>
+                          <span>ON</span>
+                          <span>OFF</span>
 
-          <span>OFF</span>
-          <span>ON</span>
-          <span>OFF</span>
-          <span>ON</span>
+                          <span>OFF</span>
+                          <span>ON</span>
+                          <span>OFF</span>
+                          <span>ON</span>
 
-          <span>ON</span>
-          <span>ON</span>
-          <span>OFF</span>
-          <span>ON</span>
+                          <span>ON</span>
+                          <span>ON</span>
+                          <span>OFF</span>
+                          <span>ON</span>
 
-        </div>
+                        </div>
 
-      </div>
+                      </div>
 
-      <p className="text-lg font-medium text-slate-700 mt-3">
-        Chip
-      </p>
+                      <p className="text-lg font-medium text-slate-700 mt-3">
+                        Chip
+                      </p>
 
-    </div>
+                    </div>
 
-  </div>
+                  </div>
 
-</div>
+                </div>
+
               </div>
 
               <p>
