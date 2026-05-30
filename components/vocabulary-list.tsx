@@ -14,27 +14,23 @@ export function VocabularyList({ words }: VocabularyListProps) {
 
   if (words.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-12 text-slate-500">
-        <p>沒有找到相關單字</p>
+      <div className="flex flex-col items-center justify-center py-16 text-slate-400">
+        <p className="text-sm tracking-wide">沒有找到相關單字</p>
       </div>
     )
   }
 
   const handleSpeak = (korean: string, index: number) => {
     setActiveIndex(index)
-
     speakKorean(korean)
-
     setTimeout(() => {
       setActiveIndex(null)
-    }, 300)
+    }, 250) // 縮短動畫延時，讓反饋更俐落
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-1">
       {words.map((word, index) => (
-
         <div
           key={index}
           onClick={() => handleSpeak(word.korean, index)}
@@ -42,61 +38,55 @@ export function VocabularyList({ words }: VocabularyListProps) {
             group
             relative
             flex
-            flex-col
             items-center
-            justify-center
-            rounded-2xl
+            justify-between
+            rounded-xl
             bg-white
-            p-5
-            min-h-[120px]
+            py-3
+            px-4
             border
-            shadow-sm
             cursor-pointer
             transition-all
             duration-200
-
+            ease-out
+            
             ${
               activeIndex === index
-                ? "border-[#4338CA] shadow-lg scale-95 ring-2 ring-[#4338CA]/20"
-                : "border-slate-200 hover:border-[#4338CA] hover:shadow-lg hover:-translate-y-1"
+                ? "border-indigo-600 bg-indigo-50/30 scale-[0.98] shadow-sm"
+                : "border-slate-100 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] hover:border-indigo-200 hover:shadow-[0_10px_20px_-5px_rgba(67,56,202,0.08)] hover:-translate-y-0.5"
             }
           `}
         >
+          {/* 左側：單字與翻譯（水平排列或緊湊垂直） */}
+          <div className="flex flex-col items-start gap-0.5 select-none pr-6">
+            <span className="text-lg font-semibold text-slate-800 tracking-wide font-sans">
+              {word.korean}
+            </span>
+            <span className="text-xs font-medium text-slate-400">
+              {word.chinese}
+            </span>
+          </div>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation()
-              handleSpeak(word.korean, index)
-            }}
-            className="
+          {/* 右側：發音按鈕（融入卡片設計，不再突兀） */}
+          <div 
+            className={`
               absolute
-              top-3
               right-3
               p-1.5
-              rounded-full
-              text-slate-400
-              hover:text-[#4338CA]
-              hover:bg-slate-100
-              active:scale-95
-              transition-all
-            "
-            aria-label={`播放 ${word.korean} 發音`}
+              rounded-lg
+              transition-colors
+              duration-150
+              ${
+                activeIndex === index 
+                  ? "text-indigo-600 bg-indigo-100/60" 
+                  : "text-slate-400 group-hover:text-indigo-500 group-hover:bg-slate-50"
+              }
+            `}
           >
             <Volume2 className="w-4 h-4" />
-          </button>
-
-          <span className="text-2xl font-bold text-slate-900 text-center leading-tight">
-            {word.korean}
-          </span>
-
-          <span className="text-base text-slate-500 mt-2 text-center">
-            {word.chinese}
-          </span>
-
+          </div>
         </div>
-
       ))}
-
     </div>
   )
 }
