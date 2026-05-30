@@ -15,7 +15,7 @@ export interface VocabCategory {
 export const vocabularyData: VocabCategory[] = [
   {
     id: "daily-life",
-    name: "日常生活",
+    name: "生活",
     nameKorean: "일상생활",
     icon: "🏠",
     color: "bg-rose-100 text-rose-700",
@@ -44,7 +44,7 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "emotions",
-    name: "情緒感受",
+    name: "心情",
     nameKorean: "감정",
     icon: "💙",
     color: "bg-pink-100 text-pink-700",
@@ -69,7 +69,7 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "food",
-    name: "美食料理",
+    name: "料理",
     nameKorean: "음식",
     icon: "🥗",
     color: "bg-orange-100 text-orange-700",
@@ -119,7 +119,7 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "travel",
-    name: "旅遊出行",
+    name: "旅行",
     nameKorean: "여행",
     icon: "🛫",
     color: "bg-sky-100 text-sky-700",
@@ -144,7 +144,7 @@ export const vocabularyData: VocabCategory[] = [
   },
   {
     id: "kdrama",
-    name: "韓劇追星",
+    name: "韓劇",
     nameKorean: "드라마 / 팬덤",
     icon: "🎬",
     color: "bg-violet-100 text-violet-700",
