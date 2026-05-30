@@ -15,9 +15,9 @@ export interface VocabCategory {
 export const vocabularyData: VocabCategory[] = [
   {
   id: "date",
-  name: "日期",
-  nameKorean: "날짜",
-  icon: "📅",
+  name: "時間",
+  nameKorean: "시간",
+  icon: "🕙",
   color: "bg-green-100 text-green-700",
   words: [
     { korean: "오늘", chinese: "今天" },
