@@ -11,24 +11,25 @@ export default function HomePage() {
       style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang TC", sans-serif' }}
     >
 
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
+      {/* 透過 text-center 讓整頁文字預設置中 */}
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 text-center">
 
-        {/* Logo / Nav */}
+        {/* Logo / Nav - 置中對齊 */}
         <nav className="mb-10">
           <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
             Cathy Lab
           </p>
         </nav>
 
-        {/* Hero Section */}
-        <section className="max-w-6xl mb-14">
+        {/* Hero Section - 透過 mx-auto 讓區塊在畫面正中間 */}
+        <section className="max-w-4xl mx-auto mb-14">
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
             Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
-          {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
-          <div className="mt-6 max-w-3xl">
+          {/* 徹底還原最原始的字體與色彩，mx-auto 確保容器完美置中 */}
+          <div className="mt-6 max-w-3xl mx-auto">
 
             <p className="text-lg leading-[1.7] text-slate-600">
               I&apos;m a Technical Writer. I learn by building.
@@ -49,15 +50,15 @@ export default function HomePage() {
         </section>
 
         {/* Selected Projects */}
-        <section>
+        <section className="max-w-4xl mx-auto">
 
           {/* H2 — 改用 Style Guide 規範的字級顏色與底邊距 mb-3 */}
           <h2 className="text-xl font-bold text-slate-900 mb-3">
             Selected Projects
           </h2>
 
-          {/* 保持您原本的網格與寬度，卡片完整保留 Emoji、陰影、懸停位移與 rounded-3xl 效果 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mt-6">
+          {/* 保持您原本的網格與寬度，mx-auto 讓網格居中 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-left mt-6">
 
             {/* Semiconductor */}
             <Link href="/semiconductor">
