@@ -7,8 +7,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
 
-      {/* 保持您原本的大寬度排版，僅微調上下 padding 符合 py-10 */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-10">
 
         {/* Logo / Nav */}
         <nav className="mb-10">
