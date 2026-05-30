@@ -32,16 +32,16 @@ export default function HomePage() {
     I&apos;m a Technical Writer.
   </p>
 
-  <p className="mt-4 text-base leading-[1.65] text-[#4338CA] font-medium">
+  <p className="mt-4 text-base leading-[1.5] text-[#4338CA] font-medium">
     I learn by building.
   </p>
 
-  <p className="mt-4 text-base leading-[1.65] text-slate-500">
+  <p className="mt-4 text-base leading-[1.5] text-slate-500">
     From tech to korean, I turn things I don&apos;t understand
     into projects I can explore.
   </p>
 
-  <p className="mt-4 text-base leading-[1.65] text-slate-500">
+  <p className="mt-4 text-base leading-[1.5] text-slate-500">
     This website is my playground for experiments,
     learning notes, and everything I&apos;m curious about.
   </p>
