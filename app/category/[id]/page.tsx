@@ -68,12 +68,13 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
             <div>
 
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-                {category.name}
+              <h1 className="text-2xl md:text-3xl font-bold text-slate-800">
+                {category.nameKorean}
+                
               </h1>
 
               <p className="text-lg text-slate-500 mt-1">
-                {category.nameKorean}
+                {category.name}
               </p>
 
             </div>
