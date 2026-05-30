@@ -69,8 +69,7 @@ export default function KoreanPage() {
               📂 {vocabularyData.length} Categories
             </div>
 
-            {/* 把最後一個標籤稍微突顯，使用 Active Pill 樣式搭配內文色彩 */}
-            <div className="px-4 py-2 rounded-full bg-[#EEF2FF] text-[#4338CA] text-sm font-medium shadow-sm">
+            <div className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-500 text-sm font-medium shadow-sm">
               🧠 Flashcards & Quiz
             </div>
 
