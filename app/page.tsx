@@ -24,23 +24,23 @@ export default function HomePage() {
         {/* Hero Section - 透過 mx-auto 讓區塊在畫面正中間 */}
         <section className="max-w-4xl mx-auto mb-14">
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
             Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
           {/* 徹底還原最原始的字體與色彩，mx-auto 確保容器完美置中 */}
           <div className="mt-6 max-w-3xl mx-auto">
 
-            <p className="text-lg leading-[1.7] text-slate-600">
+            <p className="text-lg font-bold leading-[1.7] text-slate-600">
               I&apos;m a Technical Writer. I learn by building.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
+            <p className="mt-2 text-lg font-bold leading-[1.2] text-slate-600">
               From tech to korean, I turn things I don&apos;t understand
               into projects I can explore.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
+            <p className="mt-2 text-lg font-bold leading-[1.2] text-slate-600">
               This website is my playground for experiments,
               learning notes, and everything I&apos;m curious about.
             </p>
@@ -53,7 +53,7 @@ export default function HomePage() {
         <section className="max-w-4xl mx-auto">
 
           {/* H2 — 改用 Style Guide 規範的字級顏色與底邊距 mb-3 */}
-          <h2 className="text-xl font-bold text-slate-900 mb-3">
+          <h2 className="text-2xl font-bold text-slate-900 mb-3">
             Selected Projects
           </h2>
 
