@@ -32,9 +32,9 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-6 md:py-8">
+
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
         
-        {/* 原本的返回鍵樣式 */}
         <Link
           href="/"
           className="inline-flex items-center gap-1 text-slate-500 hover:text-slate-800 transition-colors mb-6"
@@ -43,58 +43,54 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <span>返回</span>
         </Link>
 
-        {/* 標題區塊：移除了單字數量，並微調 mb 讓 Tabs 往上提 */}
-        <div className="mb-6">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
-            {category.title}
-          </h1>
-          <p className="text-slate-500">
-            {category.subtitle}
-          </p>
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2">
+              {category.title}
+            </h1>
+            <p className="text-slate-500">
+              {category.subtitle}
+            </p>
+          </div>
+          <span className="text-sm font-medium px-3 py-1 bg-slate-100 text-slate-600 rounded-full">
+            {category.words.length} 個單字
+          </span>
         </div>
 
-        {/* Tabs 切換區塊 */}
         <Tabs defaultValue="list" className="w-full" onValueChange={setActiveTab}>
           
-          {/* TabsList：加上 cursor-pointer 與精緻化調整 */}
-          <TabsList className="inline-flex items-center justify-start p-1 bg-slate-100 rounded-xl mb-6 w-full sm:w-auto">
+          {/* 僅將 mb-8 改為 mb-6（往上移一點） */}
+          <TabsList className="grid grid-cols-3 w-full max-w-md mb-6">
             
-            <TabsTrigger
-              value="list"
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
-            >
+            {/* 僅加上 cursor-pointer */}
+            <TabsTrigger value="list" className="flex items-center gap-2 cursor-pointer">
               <List className="w-4 h-4" />
               <span>單字列表</span>
             </TabsTrigger>
-
-            <TabsTrigger
-              value="flashcards"
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
-            >
+            
+            {/* 僅加上 cursor-pointer */}
+            <TabsTrigger value="flashcards" className="flex items-center gap-2 cursor-pointer">
               <BookOpen className="w-4 h-4" />
               <span>閃卡練習</span>
             </TabsTrigger>
-
-            <TabsTrigger
-              value="quiz"
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
-            >
+            
+            {/* 僅加上 cursor-pointer */}
+            <TabsTrigger value="quiz" className="flex items-center gap-2 cursor-pointer">
               <Brain className="w-4 h-4" />
               <span>測驗挑戰</span>
             </TabsTrigger>
             
           </TabsList>
 
-          {/* 內容區塊 */}
-          <TabsContent value="list" className="mt-0 focus-visible:outline-none">
+          <TabsContent value="list" className="mt-0">
             <VocabularyList words={category.words} />
           </TabsContent>
 
-          <TabsContent value="flashcards" className="mt-0 focus-visible:outline-none">
+          <TabsContent value="flashcards" className="mt-0">
             <Flashcard words={category.words} />
           </TabsContent>
 
-          <TabsContent value="quiz" className="mt-0 focus-visible:outline-none">
+          <TabsContent value="quiz" className="mt-0">
             <Quiz words={category.words} />
           </TabsContent>
         </Tabs>
