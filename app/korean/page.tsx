@@ -47,7 +47,7 @@ export default function KoreanPage() {
           </p>
 
           {/* H1 — Page Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             Korean Vocabulary
           </h1>
 
