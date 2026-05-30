@@ -30,16 +30,16 @@ export default function HomePage() {
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
           <div className="mt-6 max-w-5xl">
 
-            <p className="text-lg leading-[1.7] text-slate-600">
+            <p className="text-lg font-bold leading-[1.7] text-slate-600">
               I&apos;m a Technical Writer. I learn by building.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
+            <p className="mt-2 text-lg font-bold leading-[1.0] text-slate-600">
               From tech to korean, I turn things I don&apos;t understand
               into projects I can explore.
             </p>
 
-            <p className="mt-2 text-lg leading-[1.2] text-slate-600">
+            <p className="mt-2 text-lg font-bold leading-[1.0] text-slate-600">
               This website is my playground for experiments,
               learning notes, and everything I&apos;m curious about.
             </p>
