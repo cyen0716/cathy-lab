@@ -7,34 +7,46 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
 
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-8 md:py-12">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
 
-        {/* Logo / Nav - 縮減底邊距 */}
-        <nav className="mb-6 md:mb-8">
-          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium">
+        {/* Logo / Nav */}
+        <nav className="mb-10">
+          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
             Cathy Lab
           </p>
         </nav>
 
-        {/* Hero Section - 縮減底邊距，讓內容更緊湊 */}
-        <section className="max-w-4xl mb-8 md:mb-10">
+        {/* Hero Section */}
+        <section className="max-w-4xl mb-14">
 
-          {/* 拿掉 <br /> 改為單行排列，大幅減少垂直高度，保留您愛的漸層字體 */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
+          {/* 完美保留您喜歡的精緻漸層字體與樣式 */}
+          <h1 className="text-6xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-8">
+            Hi,
+            <br />
+            I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
-          {/* 整合內文段落，改用緊湊而流暢的間距 */}
-          <div className="max-w-3xl text-base leading-[1.6] text-slate-500 space-y-2.5">
-            <p className="text-slate-900 font-medium">
-              I&apos;m a Technical Writer. <span className="text-[#4338CA] font-semibold ml-1">I learn by building.</span>
+
+          <div className="mt-6 max-w-3xl">
+
+            <p className="text-base leading-[1.65] text-slate-500">
+              I&apos;m a Technical Writer.
             </p>
-            <p>
-              From tech to korean, I turn things I don&apos;t understand into projects I can explore.
+
+            <p className="mt-4 text-base leading-[1.5] text-[#4338CA] font-medium">
+              I learn by building.
             </p>
-            <p>
-              This website is my playground for experiments, learning notes, and everything I&apos;m curious about.
+
+            <p className="mt-4 text-base leading-[1.5] text-slate-500">
+              From tech to korean, I turn things I don&apos;t understand
+              into projects I can explore.
             </p>
+
+            <p className="mt-4 text-base leading-[1.5] text-slate-500">
+              This website is my playground for experiments,
+              learning notes, and everything I&apos;m curious about.
+            </p>
+
           </div>
 
         </section>
@@ -42,26 +54,35 @@ export default function HomePage() {
         {/* Selected Projects */}
         <section>
 
+          {/* H2 — 改用 Style Guide 規範的字級顏色與底邊距 mb-3 */}
           <h2 className="text-xl font-bold text-slate-900 mb-3">
             Selected Projects
           </h2>
 
-          {/* 保持您原本的網格與寬度，卡片完整保留所有自訂效果 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl">
+          {/* 保持您原本的網格與寬度，卡片完整保留 Emoji、陰影、懸停位移與 rounded-3xl 效果 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mt-6">
 
             {/* Semiconductor */}
             <Link href="/semiconductor">
               <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div>
+
+                  {/* 完整保留原本的 Emoji */}
                   <div className="text-4xl mb-3">
                     🖥️
                   </div>
+
+                  {/* 卡片標題：改用符合規範的標題色彩 text-slate-900 */}
                   <h3 className="text-xl font-bold text-slate-900">
                     Semiconductor Notes
                   </h3>
+
+                  {/* 卡片內文：改用符合規範的字級與色彩 */}
                   <p className="text-base leading-[1.85] text-slate-500 mt-2">
-                    Semiconductor basics, technical concepts, and learning notes.
+                    Semiconductor basics,
+                    technical concepts, and learning notes.
                   </p>
+
                 </div>
               </Card>
             </Link>
@@ -70,15 +91,23 @@ export default function HomePage() {
             <Link href="/korean">
               <Card className="p-6 min-h-[170px] rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-[#4338CA] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div>
+
+                  {/* 完整保留原本的 Emoji */}
                   <div className="text-4xl mb-3">
                     📓
                   </div>
+
+                  {/* 卡片標題：改用符合規範的標題色彩 text-slate-900 */}
                   <h3 className="text-xl font-bold text-slate-900">
                     Korean Vocabulary
                   </h3>
+
+                  {/* 卡片內文：改用符合規範的字級與色彩 */}
                   <p className="text-base leading-[1.85] text-slate-500 mt-2">
-                    Flashcards, quizzes, pronunciation, and categorized Korean vocabulary study sets.
+                    Flashcards, quizzes, pronunciation,
+                    and categorized Korean vocabulary study sets.
                   </p>
+
                 </div>
               </Card>
             </Link>
