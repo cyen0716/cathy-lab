@@ -21,15 +21,13 @@ export default function HomePage() {
         <section className="max-w-4xl mb-14">
 
           {/* H1 — 改用 Style Guide 規範的字級與顏色，行高帶入 leading-tight */}
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+          <h1 className="text-5xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
             Hi,
             <br />
             I’m <span className="text-[#4338CA]">Cathy</span>
           </h1>
 
-          {/* 【已刪除 AI • Tech • Korean 區塊】 */}
 
-          {/* 內文區塊：套用 Style Guide 的文字顏色 text-slate-500、字級 text-base、行高 leading-[1.85] 與段落間距 space-y-3.5 */}
           <div className="mt-6 space-y-3.5 max-w-3xl text-base leading-[1.85] text-slate-500">
             
             <p>
