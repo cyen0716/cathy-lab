@@ -19,10 +19,12 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-4xl mb-14">
 
-          {/* 標題維持原版經典粗體，並保留您滿意的單行漸層樣式 */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
-            Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
-          </h1>
+<h1 
+  className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8"
+  style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang TC", sans-serif' }}
+>
+  Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
+</h1>
 
           {/* 徹底還原最原始的字體與色彩，僅縮小 mt 間距讓畫面不下滑 */}
           <div className="mt-6 max-w-3xl">
