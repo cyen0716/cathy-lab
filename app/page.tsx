@@ -11,7 +11,7 @@ export default function HomePage() {
       style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang TC", sans-serif' }}
     >
 
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-10">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
 
         {/* Logo / Nav */}
         <nav className="mb-10">
