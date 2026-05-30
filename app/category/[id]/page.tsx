@@ -31,125 +31,75 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[#FCFCFC]">
-
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
-
-        {/* Back */}
-
-        <Link
-          href="/korean"
-          className="
-            inline-flex
-            items-center
-            justify-center
-            w-11
-            h-11
-            rounded-full
-            bg-[#EEF2FF]
-            text-[#4338CA]
-            hover:bg-[#E0E7FF]
-            hover:shadow-md
-            hover:-translate-y-0.5
-            transition-all
-            duration-200
-            mb-8
-          "
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </Link>
-
-        {/* Header */}
-
-        <header className="mb-10">
-
-          <div className="mb-4">
-
-
-            <div>
-
-              <h1 className="text-2xl md:text-3xl font-bold text-slate-800">
-                {category.nameKorean}
-                
-              </h1>
-
-              <p className="text-lg text-slate-500 mt-1">
-                {category.name}
-              </p>
-
-            </div>
-
+    <main className="min-h-screen bg-[#FAFAFA]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-6 md:py-8">
+        
+        {/* 頂部導航與標題區塊：優化結構，緊湊排版 */}
+        <div className="flex flex-col gap-3 mb-6">
+          <Link
+            href="/"
+            className="flex items-center gap-1 text-sm font-medium text-slate-400 hover:text-indigo-600 transition-colors w-fit cursor-pointer"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            <span>返回首頁</span>
+          </Link>
+          
+          <div className="flex items-center justify-between">
+            <h1 className="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight">
+              {category.title}
+            </h1>
+            <span className="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-500 rounded-full">
+              {category.words.length} 個單字
+            </span>
           </div>
+        </div>
 
-
-        </header>
-
-        {/* Tabs */}
-
-        <Tabs
-          value={activeTab}
-          onValueChange={setActiveTab}
-          className="w-full"
-        >
-
-          <TabsList className="inline-flex h-11 rounded-xl bg-slate-100 p-1 mb-8">
-
+        {/* Tabs 切換區塊 */}
+        <Tabs defaultValue="list" className="w-full" onValueChange={setActiveTab}>
+          {/* TabsList：加上緊湊外觀與精緻背景 */}
+          <TabsList className="inline-flex items-center justify-start p-1 bg-slate-100/80 backdrop-blur-sm rounded-xl border border-slate-200/40 mb-6 w-full sm:w-auto">
+            
             <TabsTrigger
               value="list"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
             >
-              <List className="h-4 w-4" />
-              List
+              <List className="w-4 h-4" />
+              <span>單字列表</span>
             </TabsTrigger>
 
             <TabsTrigger
               value="flashcards"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
             >
-              <BookOpen className="h-4 w-4" />
-              Flashcards
+              <BookOpen className="w-4 h-4" />
+              <span>閃卡練習</span>
             </TabsTrigger>
 
             <TabsTrigger
               value="quiz"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
             >
-              <Brain className="h-4 w-4" />
-              Quiz
+              <Brain className="w-4 h-4" />
+              <span>測驗挑戰</span>
             </TabsTrigger>
-
+            
           </TabsList>
 
-          <TabsContent value="list" className="mt-0">
-
+          {/* 內容區塊 */}
+          <TabsContent value="list" className="mt-0 focus-visible:outline-none">
             <VocabularyList words={category.words} />
-
           </TabsContent>
 
-          <TabsContent value="flashcards" className="mt-0">
-
-            <div className="max-w-md mx-auto">
-
-              <Flashcard words={category.words} />
-
-            </div>
-
+          <TabsContent value="flashcards" className="mt-0 focus-visible:outline-none">
+            <Flashcard words={category.words} />
           </TabsContent>
 
-          <TabsContent value="quiz" className="mt-0">
-
-            <div className="max-w-md mx-auto">
-
-              <Quiz words={category.words} />
-
-            </div>
-
+          <TabsContent value="quiz" className="mt-0 focus-visible:outline-none">
+            <Quiz words={category.words} />
           </TabsContent>
-
         </Tabs>
-
+        
       </div>
-
     </main>
   )
 }
