@@ -99,4 +99,4 @@ export function VocabularyList({ words }: VocabularyListProps) {
 
     </div>
   )
-}覺得單字卡卡片太高，然後整個看起來沒質感
+}
