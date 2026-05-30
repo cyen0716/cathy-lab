@@ -29,6 +29,9 @@ export default function SemiconductorPage() {
         </Link>
 
         <article>
+          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
+            Semiconductor Fundamentals
+          </p>
 
           <div className="flex flex-wrap gap-2.5 mb-6">
 
@@ -69,10 +72,6 @@ export default function SemiconductorPage() {
             </Link>
 
           </div>
-
-          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
-            Semiconductor Fundamentals
-          </p>
 
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             Why Do We Need Semiconductors?
