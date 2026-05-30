@@ -70,27 +70,27 @@ export default function ChipPage() {
           </div>
 
           {/* Chip Diagram */}
-<div className="max-w-3xl mx-auto mb-10">
+<div className="max-w-2xl mx-auto mb-10">
           <div className="bg-white border-2 border-[#C7D2FE] rounded-2xl p-6 mb-10">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
+            <p className="text-[13px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
               A Simplified Chip
             </p>
             <div className="grid grid-cols-2 gap-2.5">
               <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-sm font-bold text-indigo-800">CPU</p>
-                <p className="text-[11px] text-indigo-500 font-medium mt-0.5">Processor core</p>
+                <p className="text-base font-bold text-indigo-800">CPU</p>
+                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Processor core</p>
               </div>
               <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-sm font-bold text-indigo-800">SRAM</p>
-                <p className="text-[11px] text-indigo-500 font-medium mt-0.5">Fast memory</p>
+                <p className="text-base font-bold text-indigo-800">SRAM</p>
+                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Fast memory</p>
               </div>
               <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-sm font-bold text-indigo-800">Memory Controller</p>
-                <p className="text-[11px] text-indigo-500 font-medium mt-0.5">Data routing</p>
+                <p className="text-base font-bold text-indigo-800">Memory Controller</p>
+                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Data routing</p>
               </div>
               <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-sm font-bold text-indigo-800">USB</p>
-                <p className="text-[11px] text-indigo-500 font-medium mt-0.5">External communication</p>
+                <p className="text-base font-bold text-indigo-800">USB</p>
+                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">External communication</p>
               </div>
             </div>
           </div>
