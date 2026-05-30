@@ -25,7 +25,7 @@ export function VocabularyList({ words }: VocabularyListProps) {
     speakKorean(korean)
     setTimeout(() => {
       setActiveIndex(null)
-    }, 250) // 縮短動畫延時，讓反饋更俐落
+    }, 250)
   }
 
   return (
@@ -42,8 +42,9 @@ export function VocabularyList({ words }: VocabularyListProps) {
             justify-between
             rounded-xl
             bg-white
-            py-3
-            px-4
+            py-4
+            pl-5
+            pr-12
             border
             cursor-pointer
             transition-all
@@ -53,37 +54,37 @@ export function VocabularyList({ words }: VocabularyListProps) {
             ${
               activeIndex === index
                 ? "border-indigo-600 bg-indigo-50/30 scale-[0.98] shadow-sm"
-                : "border-slate-100 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] hover:border-indigo-200 hover:shadow-[0_10px_20px_-5px_rgba(67,56,202,0.08)] hover:-translate-y-0.5"
+                : "border-slate-100 shadow-[0_2px_12px_-3px_rgba(0,0,0,0.04)] hover:border-indigo-200 hover:shadow-[0_12px_24px_-6px_rgba(67,56,202,0.08)] hover:-translate-y-0.5"
             }
           `}
         >
-          {/* 左側：單字與翻譯（水平排列或緊湊垂直） */}
-          <div className="flex flex-col items-start gap-0.5 select-none pr-6">
-            <span className="text-lg font-semibold text-slate-800 tracking-wide font-sans">
+          {/* 左側：大字級單字區，靠左對齊更好閱讀 */}
+          <div className="flex flex-col items-start gap-1 select-none">
+            <span className="text-2xl font-bold text-slate-800 tracking-wide leading-none">
               {word.korean}
             </span>
-            <span className="text-xs font-medium text-slate-400">
+            <span className="text-sm font-medium text-slate-500 mt-0.5">
               {word.chinese}
             </span>
           </div>
 
-          {/* 右側：發音按鈕（融入卡片設計，不再突兀） */}
+          {/* 右側：精緻的發音圖示 */}
           <div 
             className={`
               absolute
-              right-3
+              right-4
               p-1.5
               rounded-lg
-              transition-colors
+              transition-all
               duration-150
               ${
                 activeIndex === index 
-                  ? "text-indigo-600 bg-indigo-100/60" 
+                  ? "text-indigo-600 bg-indigo-100/60 scale-95" 
                   : "text-slate-400 group-hover:text-indigo-500 group-hover:bg-slate-50"
               }
             `}
           >
-            <Volume2 className="w-4 h-4" />
+            <Volume2 className="w-4.5 h-4.5" />
           </div>
         </div>
       ))}
