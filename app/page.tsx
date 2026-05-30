@@ -26,23 +26,27 @@ export default function HomePage() {
           </h1>
 
 
-          <div className="mt-6 space-y-3.5 max-w-3xl text-base leading-[1.85] text-slate-500">
-            
-            <p>
-  I&apos;m a Technical Writer who learns by building.
-</p>
+          <div className="mt-6 max-w-3xl">
 
-<p>
-  From Korean to tech,
-  I turn things I don&apos;t understand into projects I can explore.
-</p>
+  <p className="text-base leading-[1.85] text-slate-500">
+    I&apos;m a Technical Writer.
+  </p>
 
-<p>
-  This website is my playground for experiments,
-  learning notes, and everything I&apos;m curious about.
-</p>
+  <p className="mt-4 text-base leading-[1.85] text-[#4338CA] font-medium">
+    I learn by building.
+  </p>
 
-          </div>
+  <p className="mt-4 text-base leading-[1.85] text-slate-500">
+    From tech to korean, I turn things I don&apos;t understand
+    into projects I can explore.
+  </p>
+
+  <p className="mt-4 text-base leading-[1.85] text-slate-500">
+    This website is my playground for experiments,
+    learning notes, and everything I&apos;m curious about.
+  </p>
+
+</div>
 
         </section>
 
