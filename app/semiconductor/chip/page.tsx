@@ -202,17 +202,6 @@ export default function ChipPage() {
                   rarely build each block from scratch — which leads to the next question:
                 </p>
               </div>
-              <Link
-                href="/semiconductor/ip"
-                className="
-                  inline-flex items-center gap-1.5
-                  mt-4 text-[15px] font-semibold text-[#4338CA]
-                  hover:underline
-                "
-              >
-                What is Semiconductor IP?
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </section>
 
           </div>
