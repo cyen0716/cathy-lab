@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
 
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-10">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10">
 
         {/* Logo / Nav */}
         <nav className="mb-10">
@@ -19,7 +19,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-4xl mb-14">
 
-          <h1 className="text-6xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
+          <h1 className="text-6xl md:text-6xl font-bold text-slate-900 leading-tight mb-8">
             Hi,
             <br />
             I’m <span className="text-[#4338CA]">Cathy</span>
