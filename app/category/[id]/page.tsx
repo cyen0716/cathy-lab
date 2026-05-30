@@ -1,89 +1,105 @@
 "use client"
 
-import { useState } from "react"
-import { Volume2 } from "lucide-react"
-import { VocabWord } from "@/lib/vocabulary-data"
-import { speakKorean } from "@/lib/speech"
+import { useState, use } from "react"
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  List,
+  BookOpen,
+  Brain,
+  ChevronLeft,
+} from "lucide-react"
+import { vocabularyData } from "@/lib/vocabulary-data"
+import { VocabularyList } from "@/components/vocabulary-list"
+import { Flashcard } from "@/components/flashcard"
+import { Quiz } from "@/components/quiz"
 
-interface VocabularyListProps {
-  words: VocabWord[]
+interface CategoryPageProps {
+  params: Promise<{ id: string }>
 }
 
-export function VocabularyList({ words }: VocabularyListProps) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+export default function CategoryPage({ params }: CategoryPageProps) {
+  const { id } = use(params)
 
-  if (words.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center py-12 text-slate-500">
-        <p>沒有找到相關單字</p>
-      </div>
-    )
-  }
+  const category = vocabularyData.find((c) => c.id === id)
 
-  const handleSpeak = (korean: string, index: number) => {
-    setActiveIndex(index)
-    speakKorean(korean)
-    setTimeout(() => {
-      setActiveIndex(null)
-    }, 250)
+  const [activeTab, setActiveTab] = useState("list")
+
+  if (!category) {
+    notFound()
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-      {words.map((word, index) => (
-        <div
-          key={index}
-          onClick={() => handleSpeak(word.korean, index)}
-          className={`
-            group
-            relative
-            flex
-            items-center
-            justify-between
-            rounded-xl
-            bg-white
-            p-5
-            border
-            cursor-pointer
-            transition-all
-            duration-200
-            
-            ${
-              activeIndex === index
-                ? "border-indigo-600 bg-indigo-50/50 scale-95 shadow"
-                : "border-slate-200 hover:border-indigo-500 hover:shadow-md hover:-translate-y-0.5"
-            }
-          `}
+    <main className="min-h-screen bg-[#FCFCFC]">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-6 md:py-8">
+        
+        {/* 原本的返回鍵樣式 */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-slate-500 hover:text-slate-800 transition-colors mb-6"
         >
-          {/* 左側文字區：上下緊湊，靠左對齊釋放水平空間，字級放大 */}
-          <div className="flex flex-col items-start select-none pr-8">
-            <span className="text-2xl font-bold text-slate-900 tracking-wide leading-none">
-              {word.korean}
-            </span>
-            <span className="text-sm text-slate-500 mt-2 font-medium">
-              {word.chinese}
-            </span>
-          </div>
+          <ChevronLeft className="w-5 h-5" />
+          <span>返回</span>
+        </Link>
 
-          {/* 右側喇叭：作為視覺提示，不再孤零零懸空 */}
-          <div
-            className={`
-              absolute
-              right-4
-              p-1.5
-              rounded-lg
-              transition-colors
-              ${
-                activeIndex === index
-                  ? "text-indigo-600"
-                  : "text-slate-400 group-hover:text-indigo-500"
-              }
-            `}
-          >
-            <Volume2 className="w-5 h-5" />
-          </div>
+        {/* 標題區塊：移除了單字數量，並微調 mb 讓 Tabs 往上提 */}
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">
+            {category.title}
+          </h1>
+          <p className="text-slate-500">
+            {category.subtitle}
+          </p>
         </div>
-      ))}
-    </div>
+
+        {/* Tabs 切換區塊 */}
+        <Tabs defaultValue="list" className="w-full" onValueChange={setActiveTab}>
+          
+          {/* TabsList：加上 cursor-pointer 與精緻化調整 */}
+          <TabsList className="inline-flex items-center justify-start p-1 bg-slate-100 rounded-xl mb-6 w-full sm:w-auto">
+            
+            <TabsTrigger
+              value="list"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
+            >
+              <List className="w-4 h-4" />
+              <span>單字列表</span>
+            </TabsTrigger>
+
+            <TabsTrigger
+              value="flashcards"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>閃卡練習</span>
+            </TabsTrigger>
+
+            <TabsTrigger
+              value="quiz"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-500 rounded-lg transition-all cursor-pointer select-none data-[state=active]:bg-white data-[state=active]:text-indigo-600 data-[state=active]:shadow-sm"
+            >
+              <Brain className="w-4 h-4" />
+              <span>測驗挑戰</span>
+            </TabsTrigger>
+            
+          </TabsList>
+
+          {/* 內容區塊 */}
+          <TabsContent value="list" className="mt-0 focus-visible:outline-none">
+            <VocabularyList words={category.words} />
+          </TabsContent>
+
+          <TabsContent value="flashcards" className="mt-0 focus-visible:outline-none">
+            <Flashcard words={category.words} />
+          </TabsContent>
+
+          <TabsContent value="quiz" className="mt-0 focus-visible:outline-none">
+            <Quiz words={category.words} />
+          </TabsContent>
+        </Tabs>
+        
+      </div>
+    </main>
   )
 }
