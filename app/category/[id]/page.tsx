@@ -99,27 +99,31 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           className="w-full"
         >
 
-          <TabsList className="inline-flex h-11 rounded-xl bg-slate-100 p-1 mb-8">
+          {/* 僅將 mb-8 微調為 mb-5 讓整體內容往上移 */}
+          <TabsList className="inline-flex h-11 rounded-xl bg-slate-100 p-1 mb-5">
 
+            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="list"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
             >
               <List className="h-4 w-4" />
               List
             </TabsTrigger>
 
+            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="flashcards"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
             >
               <BookOpen className="h-4 w-4" />
               Flashcards
             </TabsTrigger>
 
+            {/* 加上 cursor-pointer */}
             <TabsTrigger
               value="quiz"
-              className="rounded-lg gap-1.5 text-sm px-4"
+              className="rounded-lg gap-1.5 text-sm px-4 cursor-pointer"
             >
               <Brain className="h-4 w-4" />
               Quiz
