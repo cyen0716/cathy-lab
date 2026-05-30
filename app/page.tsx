@@ -52,7 +52,7 @@ export default function HomePage() {
         <section>
 
           {/* H2 — 改用 Style Guide 規範的字級顏色與底邊距 mb-3 */}
-          <h2 className="text-xl font-bold text-slate-900 mb-3">
+          <h2 className="text-2xl font-bold text-slate-900 mb-3">
             Selected Projects
           </h2>
 
