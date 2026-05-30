@@ -14,9 +14,8 @@ export default function KoreanPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
 
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-10 md:py-14">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-14">
 
-        {/* Back Button (完全符合 Style Guide 規範) */}
         <Link
           href="/"
           className="
