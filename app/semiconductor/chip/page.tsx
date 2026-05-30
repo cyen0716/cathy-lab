@@ -21,6 +21,10 @@ export default function ChipPage() {
           <ChevronLeft className="w-5 h-5" />
         </Link>
 
+<p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
+            Semiconductor Fundamentals
+          </p>
+        
         {/* Pill navigation */}
         <div className="flex flex-wrap gap-2.5 mb-6">
           <Link
@@ -48,9 +52,7 @@ export default function ChipPage() {
         <article>
 
           {/* Header */}
-          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
-            Semiconductor Fundamentals
-          </p>
+          
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             What is Inside a Chip?
           </h1>
