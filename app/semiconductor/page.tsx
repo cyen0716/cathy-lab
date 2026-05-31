@@ -31,7 +31,8 @@ export default function SemiconductorPage() {
           </p>
 
           <div className="flex flex-wrap gap-2.5 mb-6">
-
+            
+{/* bookmark */}
             <Link
               href="/semiconductor"
               className="
@@ -49,7 +50,7 @@ export default function SemiconductorPage() {
                 ease-out
               "
             >
-              Map?
+              Learning Map
             </Link>
 
 <Link
