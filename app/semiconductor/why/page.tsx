@@ -9,29 +9,12 @@ export default function SemiconductorPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
-        {/* Back button */}
-        <Link
-          href="/"
-          className="
-            inline-flex items-center justify-center
-            w-11 h-11 rounded-full
-            bg-white border border-slate-200/60 text-slate-600
-            hover:text-[#4338CA] hover:border-indigo-100
-            hover:scale-105
-            hover:shadow-[0_12px_24px_-8px_rgba(67,56,202,0.15)]
-            transition-all duration-500 ease-out
-            mb-7
-          "
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </Link>
+        
 
         <article>
-          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
-            Semiconductor Fundamentals
-          </p>
+          
 
-          <div className="flex flex-wrap gap-2.5 mb-6">
+          <div className="flex flex-wrap gap-2.5 mb-4">
 
             <SemiconductorNav />
 
