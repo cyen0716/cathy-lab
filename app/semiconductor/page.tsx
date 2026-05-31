@@ -36,10 +36,8 @@ export default function SemiconductorPage() {
             Semiconductor Fundamentals
           </p>
 
-          {/* 導覽書籤標籤組 */}
           <div className="flex flex-wrap gap-2.5 mb-6">
 
-            {/* 書籤 1 (當前啟用狀態)：加入四面八方微放大、空氣感靛藍柔陰影 */}
             <Link
               href="/semiconductor"
               className="
@@ -60,7 +58,6 @@ export default function SemiconductorPage() {
               Why Need Semiconductors?
             </Link>
 
-            {/* 書籤 2 (未啟用狀態)：加入四面八方微放大、空氣感淡灰散開陰影、柔化邊框 */}
             <Link
               href="/semiconductor/chip"
               className="
