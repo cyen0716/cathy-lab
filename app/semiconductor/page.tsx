@@ -112,57 +112,73 @@ export default function SemiconductorPage() {
             <section>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
 
-  {/* Memory IC */}
+  {/* Memory */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-5">
+    <h2 className="text-xl font-bold text-slate-900 mb-2">
       Memory IC
     </h2>
 
-    <div className="space-y-3 text-slate-600">
-      <p><span className="font-semibold text-slate-900">SRAM</span> — 快速記憶體</p>
-      <p><span className="font-semibold text-slate-900">DRAM</span> — 主記憶體</p>
-      <p><span className="font-semibold text-slate-900">Flash</span> — 長期儲存</p>
-    </div>
+    <p className="text-slate-500 text-sm leading-[1.7] mb-5">
+      Stores data for processing and long-term retention.
+    </p>
+
+    <ul className="space-y-2 text-slate-600">
+      <li>• SRAM — 快速記憶體</li>
+      <li>• DRAM — 主記憶體</li>
+      <li>• Flash — 長期儲存</li>
+    </ul>
   </div>
 
-  {/* Logic IC */}
+  {/* Logic */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-5">
+    <h2 className="text-xl font-bold text-slate-900 mb-2">
       Logic IC
     </h2>
 
-    <div className="space-y-3 text-slate-600">
-      <p><span className="font-semibold text-slate-900">CPU</span> — 中央處理器</p>
-      <p><span className="font-semibold text-slate-900">MCU</span> — 微控制器</p>
-      <p><span className="font-semibold text-slate-900">DSP</span> — 數位訊號處理器</p>
-      <p><span className="font-semibold text-slate-900">ASIC</span> — 特定用途晶片</p>
-    </div>
+    <p className="text-slate-500 text-sm leading-[1.7] mb-5">
+      Processes information and performs computations.
+    </p>
+
+    <ul className="space-y-2 text-slate-600">
+      <li>• CPU — 中央處理器</li>
+      <li>• MCU — 微控制器</li>
+      <li>• DSP — 數位訊號處理器</li>
+      <li>• ASIC — 特定用途晶片</li>
+    </ul>
   </div>
 
-  {/* Analog IC */}
+  {/* Analog */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-5">
+    <h2 className="text-xl font-bold text-slate-900 mb-2">
       Analog IC
     </h2>
 
-    <div className="space-y-3 text-slate-600">
-      <p><span className="font-semibold text-slate-900">PMIC</span> — 電源管理晶片</p>
-      <p><span className="font-semibold text-slate-900">Amplifier</span> — 放大器</p>
-      <p><span className="font-semibold text-slate-900">ADC</span> — 類比數位轉換器</p>
-    </div>
+    <p className="text-slate-500 text-sm leading-[1.7] mb-5">
+      Handles continuous real-world signals and power.
+    </p>
+
+    <ul className="space-y-2 text-slate-600">
+      <li>• PMIC — 電源管理晶片</li>
+      <li>• Amplifier — 放大器</li>
+      <li>• ADC — 類比數位轉換器</li>
+    </ul>
   </div>
 
-  {/* Micro Component IC */}
+  {/* Interface & RF */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-5">
-      Micro Component IC
+    <h2 className="text-xl font-bold text-slate-900 mb-2">
+      Interface & RF
     </h2>
 
-    <div className="space-y-3 text-slate-600">
-      <p><span className="font-semibold text-slate-900">Sensor</span> — 感測器</p>
-      <p><span className="font-semibold text-slate-900">RF</span> — 射頻通訊</p>
-      <p><span className="font-semibold text-slate-900">Interface</span> — 介面控制</p>
-    </div>
+    <p className="text-slate-500 text-sm leading-[1.7] mb-5">
+      Connects devices and enables communication.
+    </p>
+
+    <ul className="space-y-2 text-slate-600">
+      <li>• USB — 通用序列匯流排</li>
+      <li>• RF — 射頻通訊</li>
+      <li>• Sensor — 感測器</li>
+    </ul>
   </div>
 
 </div>
