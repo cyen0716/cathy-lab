@@ -49,7 +49,7 @@ export default function HomePage() {
         {/* Selected Projects */}
         <section>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-5">
+          <h2 className="text-2xl md:text-2xl font-bold text-slate-900 mb-5">
             Selected Projects
           </h2>
 
