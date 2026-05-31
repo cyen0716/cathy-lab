@@ -1,17 +1,14 @@
 import Link from "next/link"
-import { ChevronLeft, ArrowDown, Cpu, Layers, HardDrive } from "lucide-react"
+import { ArrowDown, Cpu, Layers, HardDrive } from "lucide-react"
 import { SemiconductorNav } from "@/components/semiconductor-nav"
 
 export default function WhySramPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
-      
         
-        {/* Pill navigation */}
-        <div className="flex flex-wrap gap-2.5 mb-4">
-         <SemiconductorNav />
-        </div>
+        {/* 頂部導覽：內含返回鍵與蘋果感書籤標籤 */}
+        <SemiconductorNav />
 
         <article>
 
