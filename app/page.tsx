@@ -19,9 +19,12 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-5xl mb-16 mt-18">
 
-          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-10">
-            Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
-          </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold tracking-tight leading-none mb-10">
+  Cathy{" "}
+  <span className="text-[#4338CA]">
+    Yen
+  </span>
+</h1>
 
           <div className="mt-6 max-w-3xl">
 
