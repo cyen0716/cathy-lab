@@ -114,105 +114,54 @@ export default function SemiconductorPage() {
 
   {/* Memory IC */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-4">
+    <h2 className="text-xl font-bold text-slate-900 mb-5">
       Memory IC
     </h2>
 
-    <p className="text-slate-500 leading-[1.8] mb-5">
-      Stores data for processing and long-term retention.
-    </p>
-
-    <div className="flex flex-wrap gap-2">
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        SRAM
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        DRAM
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        Flash
-      </span>
+    <div className="space-y-3 text-slate-600">
+      <p><span className="font-semibold text-slate-900">SRAM</span> — 快速記憶體</p>
+      <p><span className="font-semibold text-slate-900">DRAM</span> — 主記憶體</p>
+      <p><span className="font-semibold text-slate-900">Flash</span> — 長期儲存</p>
     </div>
   </div>
 
   {/* Logic IC */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-4">
+    <h2 className="text-xl font-bold text-slate-900 mb-5">
       Logic IC
     </h2>
 
-    <p className="text-slate-500 leading-[1.8] mb-5">
-      Processes information and performs computations.
-    </p>
-
-    <div className="flex flex-wrap gap-2">
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        CPU
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        MCU
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        DSP
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        ASIC
-      </span>
+    <div className="space-y-3 text-slate-600">
+      <p><span className="font-semibold text-slate-900">CPU</span> — 中央處理器</p>
+      <p><span className="font-semibold text-slate-900">MCU</span> — 微控制器</p>
+      <p><span className="font-semibold text-slate-900">DSP</span> — 數位訊號處理器</p>
+      <p><span className="font-semibold text-slate-900">ASIC</span> — 特定用途晶片</p>
     </div>
   </div>
 
   {/* Analog IC */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-4">
+    <h2 className="text-xl font-bold text-slate-900 mb-5">
       Analog IC
     </h2>
 
-    <p className="text-slate-500 leading-[1.8] mb-5">
-      Works with continuous real-world signals such as power, sound, and voltage.
-    </p>
-
-    <div className="flex flex-wrap gap-2">
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        PMIC
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        Amplifier
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        ADC
-      </span>
+    <div className="space-y-3 text-slate-600">
+      <p><span className="font-semibold text-slate-900">PMIC</span> — 電源管理晶片</p>
+      <p><span className="font-semibold text-slate-900">Amplifier</span> — 放大器</p>
+      <p><span className="font-semibold text-slate-900">ADC</span> — 類比數位轉換器</p>
     </div>
   </div>
 
   {/* Micro Component IC */}
   <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-4">
+    <h2 className="text-xl font-bold text-slate-900 mb-5">
       Micro Component IC
     </h2>
 
-    <p className="text-slate-500 leading-[1.8] mb-5">
-      Supports sensing, communication, and device connectivity.
-    </p>
-
-    <div className="flex flex-wrap gap-2">
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        Sensor
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        RF
-      </span>
-
-      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
-        Interface
-      </span>
+    <div className="space-y-3 text-slate-600">
+      <p><span className="font-semibold text-slate-900">Sensor</span> — 感測器</p>
+      <p><span className="font-semibold text-slate-900">RF</span> — 射頻通訊</p>
+      <p><span className="font-semibold text-slate-900">Interface</span> — 介面控制</p>
     </div>
   </div>
 
