@@ -118,9 +118,9 @@ export default function ChipPage() {
                   logic operations, and coordinates the activity of other blocks.
                 </p>
                 <p>
-                  In most chip designs, the CPU does not work alone. It depends on
-                  fast access to data — which is where memory blocks like SRAM become
-                  essential.
+                  In most chip designs, the CPU does not work alone. 
+                  It depends on fast access to data. 
+                  This is where memory blocks like SRAM become essential.
                 </p>
               </div>
               <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
