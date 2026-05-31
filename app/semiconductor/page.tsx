@@ -114,11 +114,11 @@ export default function SemiconductorPage() {
 
   {/* Memory */}
   <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-2">
+    <h2 className="text-lg font-bold text-slate-900 mb-2">
       Memory IC
     </h2>
 
-    <p className="text-slate-500 text-base leading-[1.7] mb-5">
+    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
       Stores data for processing and long-term retention.
     </p>
 
@@ -136,7 +136,7 @@ export default function SemiconductorPage() {
       Logic IC
     </h2>
 
-    <p className="text-slate-500 text-sm leading-[1.7] mb-5">
+    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
       Processes information and performs computations.
     </p>
 
@@ -154,7 +154,7 @@ export default function SemiconductorPage() {
       Analog IC
     </h2>
 
-    <p className="text-slate-500 text-base leading-[1.7] mb-5">
+    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
       Handles continuous real-world signals and power.
     </p>
 
@@ -171,7 +171,7 @@ export default function SemiconductorPage() {
       Interface & RF
     </h2>
 
-    <p className="text-slate-500 text-base leading-[1.7] mb-5">
+    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
       Connects devices and enables communication.
     </p>
 
