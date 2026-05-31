@@ -8,7 +8,6 @@ export default function SemiconductorPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
-        {/* 返回按鈕：拿掉舊版往上飄的動態，同步改為蘋果感中心微幅放大與細緻柔陰影 */}
         <Link
           href="/"
           className="
