@@ -14,14 +14,14 @@ export default function SemiconductorPage() {
         <article>
           
 
-          <div className="flex flex-wrap gap-2.5 mb-6">
+          <div className="flex flex-wrap gap-2.5 mb-5">
             
 {/* bookmark */}
           <SemiconductorNav />
 
           </div>
 
-          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-6">
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-5">
             Learning Map
           </h1>
 
