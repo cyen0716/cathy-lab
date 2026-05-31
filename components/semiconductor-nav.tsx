@@ -26,34 +26,35 @@ export function SemiconductorNav() {
   ]
 
   return (
-    <div className="flex flex-wrap gap-2.5 mb-3">
+    <div className="flex flex-wrap gap-2.5 mb-6">
+      {tabs.map((tab) => {
+        const isActive = pathname === tab.href
 
-      {tabs.map((tab) => (
+        return (
+          <Link
+            key={tab.href}
+            href={tab.href}
+            className={`
+              px-4
+              py-2
+              rounded-full
+              text-sm
+              font-medium
+              transition-all
+              duration-500
+              ease-out
 
-        <Link
-          key={tab.href}
-          href={tab.href}
-          className={`
-            px-4
-            py-2
-            rounded-full
-            text-sm
-            font-medium
-            transition-all
-            duration-300
-
-            ${
-              pathname === tab.href
-                ? "bg-[#EEF2FF] text-[#4338CA]"
-                : "bg-white border border-slate-200 text-slate-500 hover:border-slate-300"
-            }
-          `}
-        >
-          {tab.label}
-        </Link>
-
-      ))}
-
+              ${
+                isActive
+                  ? "bg-[#EEF2FF] text-[#4338CA] pointer-events-none"
+                  : "bg-white border border-slate-200 text-slate-500 hover:border-slate-300/80 hover:scale-[1.01] hover:shadow-[0_8px_20px_-6px_rgba(15,23,42,0.04)]"
+              }
+            `}
+          >
+            {tab.label}
+          </Link>
+        )
+      })}
     </div>
   )
 }
