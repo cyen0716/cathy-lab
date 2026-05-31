@@ -6,8 +6,7 @@ export default function WhySramPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
-
-       
+      
         
         {/* Pill navigation */}
         <div className="flex flex-wrap gap-2.5 mb-4">
