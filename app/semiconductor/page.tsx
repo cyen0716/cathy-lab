@@ -113,7 +113,7 @@ export default function SemiconductorPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
 
   {/* Memory */}
-  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
     <h2 className="text-xl font-bold text-slate-900 mb-2">
       Memory IC
     </h2>
@@ -122,7 +122,7 @@ export default function SemiconductorPage() {
       Stores data for processing and long-term retention.
     </p>
 
-    <ul className="space-y-1 text-slate-500">
+    <ul className="space-y-0 text-slate-500">
       <li>• SRAM — 靜態隨機存取記憶體</li>
       <li>• DRAM — 動態隨機存取記憶體</li>
       <li>• Flash — 快閃記憶體</li>
@@ -131,7 +131,7 @@ export default function SemiconductorPage() {
   </div>
 
   {/* Logic */}
-  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
     <h2 className="text-xl font-bold text-slate-900 mb-2">
       Logic IC
     </h2>
@@ -140,7 +140,7 @@ export default function SemiconductorPage() {
       Processes information and performs computations.
     </p>
 
-    <ul className="space-y-1 text-slate-500">
+    <ul className="space-y-0 text-slate-500">
       <li>• CPU — 中央處理器</li>
       <li>• MCU — 微控制器</li>
       <li>• DSP — 數位訊號處理器</li>
@@ -149,7 +149,7 @@ export default function SemiconductorPage() {
   </div>
 
   {/* Analog */}
-  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
     <h2 className="text-xl font-bold text-slate-900 mb-2">
       Analog IC
     </h2>
@@ -158,7 +158,7 @@ export default function SemiconductorPage() {
       Handles continuous real-world signals and power.
     </p>
 
-    <ul className="space-y-1 text-slate-500">
+    <ul className="space-y-0 text-slate-500">
       <li>• PMIC — 電源管理晶片</li>
       <li>• Amplifier — 放大器</li>
       <li>• ADC — 類比數位轉換器</li>
@@ -166,7 +166,7 @@ export default function SemiconductorPage() {
   </div>
 
   {/* Interface & RF */}
-  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
     <h2 className="text-xl font-bold text-slate-900 mb-2">
       Interface & RF
     </h2>
@@ -175,7 +175,7 @@ export default function SemiconductorPage() {
       Connects devices and enables communication.
     </p>
 
-    <ul className="space-y-1 text-slate-500">
+    <ul className="space-y-0 text-slate-500">
       <li>• USB — 通用序列匯流排</li>
       <li>• RF — 射頻通訊</li>
       <li>• Sensor — 感測器</li>
