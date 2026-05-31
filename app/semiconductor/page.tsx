@@ -144,7 +144,7 @@ export default function SemiconductorPage() {
       <li>• CPU — 中央處理器</li>
       <li>• MCU — 微控制器</li>
       <li>• DSP — 數位訊號處理器</li>
-      <li>• ASIC — 特定用途晶片</li>
+      <li>• ASIC — 特殊應用積體電路</li>
     </ul>
   </div>
 
@@ -159,7 +159,7 @@ export default function SemiconductorPage() {
     </p>
 
     <ul className="space-y-0 text-slate-500">
-      <li>• PMIC — 電源管理晶片</li>
+      <li>• PMIC — 電源管理 IC</li>
       <li>• Amplifier — 放大器</li>
       <li>• ADC — 類比數位轉換器</li>
     </ul>
@@ -177,7 +177,7 @@ export default function SemiconductorPage() {
 
     <ul className="space-y-0 text-slate-500">
       <li>• USB — 通用序列匯流排</li>
-      <li>• RF — 射頻通訊</li>
+      <li>• RF — 射頻</li>
       <li>• Sensor — 感測器</li>
     </ul>
   </div>
