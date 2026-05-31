@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ChevronLeft, ArrowRight } from "lucide-react"
+import { SemiconductorNav } from "@/components/semiconductor-nav"
 
 export default function ChipPage() {
   return (
@@ -30,61 +31,7 @@ export default function ChipPage() {
         {/* Pill navigation */}
         <div className="flex flex-wrap gap-2.5 mb-6">
           
-          <Link
-            href="/semiconductor"
-            className="
-              px-4
-              py-2
-              rounded-full
-              bg-white
-              border
-              border-slate-200
-              text-slate-500
-              text-sm
-              font-medium
-              hover:border-slate-300/60
-              hover:scale-[1.02]
-              hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
-              transition-all
-              duration-500
-              ease-out
-            "
-          >
-            Learning Map
-          </Link>
-
-          <Link
-            href="/semiconductor/why"
-            className="
-              px-4
-              py-2
-              rounded-full
-              bg-white
-              border
-              border-slate-200
-              text-slate-500
-              text-sm
-              font-medium
-              hover:border-slate-300/60
-              hover:scale-[1.02]
-              hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
-              transition-all
-              duration-500
-              ease-out
-            "
-          >
-            Why Need Semiconductor
-          </Link>
-          
-          <span
-            className="
-              px-4 py-2 rounded-full
-              bg-[#EEF2FF] text-[#4338CA]
-              text-sm font-medium
-            "
-          >
-            What&apos;s inside a chip?
-          </span>
+          <SemiconductorNav />
         </div>
 
         <article>
