@@ -17,6 +17,7 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Section */}
+        <section className="max-w-5xl mb-14 mt-12">
         <section className="max-w-5xl mb-14">
 
           <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-10">
