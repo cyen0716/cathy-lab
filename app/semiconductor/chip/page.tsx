@@ -23,59 +23,58 @@ export default function ChipPage() {
           <ChevronLeft className="w-5 h-5" />
         </Link>
 
-<p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
-            Semiconductor Fundamentals
-          </p>
+        <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-medium mb-4">
+          Semiconductor Fundamentals
+        </p>
         
         {/* Pill navigation */}
         <div className="flex flex-wrap gap-2.5 mb-6">
           
-          
           <Link
-  href="/semiconductor"
-  className="
-    px-4
-                py-2
-                rounded-full
-                bg-white
-                border
-                border-slate-200
-                text-slate-500
-                text-sm
-                font-medium
-                hover:border-slate-300/60
-                hover:scale-[1.02]
-                hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
-                transition-all
-                duration-500
-                ease-out
-  "
->
-  Learning Map
-</Link>
+            href="/semiconductor"
+            className="
+              px-4
+              py-2
+              rounded-full
+              bg-white
+              border
+              border-slate-200
+              text-slate-500
+              text-sm
+              font-medium
+              hover:border-slate-300/60
+              hover:scale-[1.02]
+              hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
+              transition-all
+              duration-500
+              ease-out
+            "
+          >
+            Learning Map
+          </Link>
 
-<Link
-              href="/semiconductor/why"
-              className="
-                px-4
-                py-2
-                rounded-full
-                bg-white
-                border
-                border-slate-200
-                text-slate-500
-                text-sm
-                font-medium
-                hover:border-slate-300/60
-                hover:scale-[1.02]
-                hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
-                transition-all
-                duration-500
-                ease-out
-              "
-            >
-              Why Need Semiconductor
-            </Link>
+          <Link
+            href="/semiconductor/why"
+            className="
+              px-4
+              py-2
+              rounded-full
+              bg-white
+              border
+              border-slate-200
+              text-slate-500
+              text-sm
+              font-medium
+              hover:border-slate-300/60
+              hover:scale-[1.02]
+              hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
+              transition-all
+              duration-500
+              ease-out
+            "
+          >
+            Why Need Semiconductor
+          </Link>
           
           <span
             className="
@@ -91,7 +90,6 @@ export default function ChipPage() {
         <article>
 
           {/* Header */}
-          
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             What is Inside a Chip?
           </h1>
@@ -109,40 +107,41 @@ export default function ChipPage() {
           </div>
 
           {/* Chip Diagram */}
-<div className="max-w-2xl mx-auto mb-10">
-          <div className="bg-white border-2 border-[#C7D2FE] rounded-2xl p-6 mb-10">
-            <p className="text-[13px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
-              A Simplified Chip
-            </p>
-            <div className="grid grid-cols-2 gap-2.5">
-              <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-base font-bold text-indigo-800">CPU</p>
-                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Processor core</p>
-              </div>
-              <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-base font-bold text-indigo-800">SRAM</p>
-                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Fast memory</p>
-              </div>
-              <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                <p className="text-base font-bold text-indigo-800">Memory Controller</p>
-                <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Data routing</p>
-              </div>
-              <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-  <p className="text-base font-bold text-indigo-800">USB</p>
-  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
-    Connectivity
-  </p>
-</div>
+          <div className="max-w-2xl mx-auto mb-10">
+            {/* 這裡已將 border-[#C7D2FE] 改為 border-slate-200 */}
+            <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 mb-10">
+              <p className="text-[13px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
+                A Simplified Chip
+              </p>
+              <div className="grid grid-cols-2 gap-2.5">
+                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+                  <p className="text-base font-bold text-indigo-800">CPU</p>
+                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Processor core</p>
+                </div>
+                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+                  <p className="text-base font-bold text-indigo-800">SRAM</p>
+                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Fast memory</p>
+                </div>
+                <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+                  <p className="text-base font-bold text-indigo-800">Memory Controller</p>
+                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Data routing</p>
+                </div>
+                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+                  <p className="text-base font-bold text-indigo-800">USB</p>
+                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
+                    Connectivity
+                  </p>
+                </div>
 
-<div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-  <p className="text-base font-bold text-indigo-800">Security</p>
-  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
-    Data Protection
-  </p>
-</div>
+                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
+                  <p className="text-base font-bold text-indigo-800">Security</p>
+                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
+                    Data Protection
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-</div>
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
@@ -245,47 +244,46 @@ export default function ChipPage() {
             </section>
 
             {/* Security */}
-<section>
-  <div className="border-t border-slate-200 mb-8" />
-  <h2 className="text-xl font-bold text-slate-900 mb-3">Security</h2>
+            <section>
+              <div className="border-t border-slate-200 mb-8" />
+              <h2 className="text-xl font-bold text-slate-900 mb-3">Security</h2>
 
-  <div className="space-y-3.5">
-    <p>
-      A Security block is dedicated hardware that performs security-related
-      functions inside a chip. It is responsible for tasks such as encryption,
-      authentication, secure key storage, and access control. Keeping these functions in
-      dedicated hardware improves security and helps protect critical data from
-      unauthorized access.
-    </p>
+              <div className="space-y-3.5">
+                <p>
+                  A Security block is dedicated hardware that performs security-related
+                  functions inside a chip. It is responsible for tasks such as encryption,
+                  authentication, secure key storage, and access control. Keeping these functions in
+                  dedicated hardware improves security and helps protect critical data from
+                  unauthorized access.
+                </p>
+              </div>
 
-  </div>
-
-  <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
-    <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
-      Security blocks perform specialized security functions such as
-      encryption, authentication, and secure key management.
-    </p>
-  </div>
-</section>
+              <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
+                <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
+                  Security blocks perform specialized security functions such as
+                  encryption, authentication, and secure key management.
+                </p>
+              </div>
+            </section>
 
             {/* Closing */}
             <section>
-  <div className="border-t border-slate-200 mb-8" />
+              <div className="border-t border-slate-200 mb-8" />
 
-  <div className="space-y-3.5">
-    <p>
-      Each block performs a specific function. The CPU processes instructions,
-      SRAM stores frequently used data, the Memory Controller manages data
-      transfers, USB enables external communication, and Security protects
-      sensitive operations.
-    </p>
+              <div className="space-y-3.5">
+                <p>
+                  Each block performs a specific function. The CPU processes instructions,
+                  SRAM stores frequently used data, the Memory Controller manages data
+                  transfers, USB enables external communication, and Security protects
+                  sensitive operations.
+                </p>
 
-    <p>
-      Together, these blocks form a complete system that allows a chip to
-      compute, store, communicate, and operate securely.
-    </p>
-  </div>
-</section>
+                <p>
+                  Together, these blocks form a complete system that allows a chip to
+                  compute, store, communicate, and operate securely.
+                </p>
+              </div>
+            </section>
 
           </div>
         </article>
