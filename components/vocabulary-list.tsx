@@ -25,6 +25,8 @@ export function VocabularyList({ words }: VocabularyListProps) {
     speakKorean(korean)
     setTimeout(() => {
       setActiveIndex(null)
+    }, 200) // 動態微調至 200ms，卡片下壓反饋更俐落敏捷
+  }
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-1">
@@ -85,5 +87,4 @@ export function VocabularyList({ words }: VocabularyListProps) {
       ))}
     </div>
   )
-}
 }
