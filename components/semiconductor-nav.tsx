@@ -26,7 +26,7 @@ export function SemiconductorNav() {
   ]
 
   return (
-    <div className="flex flex-wrap gap-2.5 mb-3">
+    <div className="flex flex-wrap gap-2.5 mb-2">
       {tabs.map((tab) => {
         const isActive = pathname === tab.href
 
