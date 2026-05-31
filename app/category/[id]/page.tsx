@@ -40,20 +40,14 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <Link
           href="/korean"
           className="
-            inline-flex
-            items-center
-            justify-center
-            w-11
-            h-11
-            rounded-full
-            bg-[#EEF2FF]
-            text-[#4338CA]
-            hover:bg-[#E0E7FF]
-            hover:shadow-md
-            hover:-translate-y-0.5
-            transition-all
-            duration-200
-            mb-8
+            inline-flex items-center justify-center
+            w-11 h-11 rounded-full
+            bg-white border border-slate-200/60 text-slate-600
+            hover:text-[#4338CA] hover:border-indigo-100
+            hover:scale-105
+            hover:shadow-[0_12px_24px_-8px_rgba(67,56,202,0.15)]
+            transition-all duration-500 ease-out
+            mb-7
           "
         >
           <ChevronLeft className="w-5 h-5" />
