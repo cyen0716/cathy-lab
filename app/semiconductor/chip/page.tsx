@@ -143,9 +143,9 @@ export default function ChipPage() {
                   clock cycle.
                 </p>
                 <p>
-                  Because it is fast but expensive to manufacture, SRAM is used
-                  sparingly — only for data the CPU needs right now. Larger amounts of
-                  data are stored elsewhere and fetched as needed.
+                  Because it is fast but expensive to manufacture, SRAM is used sparingly
+                  and stores only the data the CPU needs right now. 
+                  Larger amounts of data are stored elsewhere and fetched as needed.
                 </p>
               </div>
               <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
