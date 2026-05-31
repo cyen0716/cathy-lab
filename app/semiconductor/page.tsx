@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 
@@ -6,6 +8,7 @@ export default function SemiconductorPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
+        {/* 返回按鈕：拿掉舊版往上飄的動態，同步改為蘋果感中心微幅放大與細緻柔陰影 */}
         <Link
           href="/"
           className="
@@ -18,10 +21,11 @@ export default function SemiconductorPage() {
             bg-[#EEF2FF]
             text-[#4338CA]
             hover:bg-[#E0E7FF]
-            hover:shadow-md
-            hover:-translate-y-0.5
+            hover:shadow-[0_12px_24px_-8px_rgba(67,56,202,0.15)]
+            hover:scale-[1.05]
             transition-all
-            duration-200
+            duration-500
+            ease-out
             mb-7
           "
         >
@@ -33,8 +37,10 @@ export default function SemiconductorPage() {
             Semiconductor Fundamentals
           </p>
 
+          {/* 導覽書籤標籤組 */}
           <div className="flex flex-wrap gap-2.5 mb-6">
 
+            {/* 書籤 1 (當前啟用狀態)：加入四面八方微放大、空氣感靛藍柔陰影 */}
             <Link
               href="/semiconductor"
               className="
@@ -45,13 +51,17 @@ export default function SemiconductorPage() {
                 text-[#4338CA]
                 text-sm
                 font-medium
-                hover:bg-[#E0E7FF]
-                transition
+                hover:scale-[1.02]
+                hover:shadow-[0_10px_25px_-5px_rgba(67,56,202,0.1)]
+                transition-all
+                duration-500
+                ease-out
               "
             >
               Why Need Semiconductors?
             </Link>
 
+            {/* 書籤 2 (未啟用狀態)：加入四面八方微放大、空氣感淡灰散開陰影、柔化邊框 */}
             <Link
               href="/semiconductor/chip"
               className="
@@ -64,8 +74,12 @@ export default function SemiconductorPage() {
                 text-slate-500
                 text-sm
                 font-medium
-                hover:bg-slate-50
-                transition
+                hover:border-slate-300/60
+                hover:scale-[1.02]
+                hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
+                transition-all
+                duration-500
+                ease-out
               "
             >
               What&apos;s Inside a Chip?
@@ -80,7 +94,6 @@ export default function SemiconductorPage() {
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
             {/* Intro */}
-
             <section>
               <p>
                 A good switch needs two states: ON and OFF.
@@ -92,9 +105,7 @@ export default function SemiconductorPage() {
             </section>
 
             {/* 0 and 1 */}
-
             <section>
-
               <p>
                 Computers work the same way.
               </p>
@@ -104,15 +115,12 @@ export default function SemiconductorPage() {
               </p>
 
               <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-2xl p-5 text-center">
-
                 <p className="text-xl font-bold text-[#4338CA]">
                   1 = ON
                 </p>
-
                 <p className="text-xl font-bold text-[#4338CA] mt-2">
                   0 = OFF
                 </p>
-
               </div>
 
               <p className="mt-6">
@@ -130,17 +138,13 @@ export default function SemiconductorPage() {
               <p className="mt-4">
                 So engineers created tiny electronic switches instead.
               </p>
-
             </section>
 
             {/* Divider */}
-
             <div className="border-t border-slate-200" />
 
             {/* Semiconductor */}
-
             <section>
-
               <h2 className="text-xl font-bold text-slate-900 mb-3">
                 What Makes Those Tiny Switches Possible?
               </h2>
@@ -150,63 +154,47 @@ export default function SemiconductorPage() {
               </p>
 
               <div className="mt-6 bg-[#EEF2FF] border border-[#C7D2FE] rounded-3xl p-8">
-
                 <p className="text-xl font-semibold text-center text-[#4338CA]">
                   A semiconductor is a material that allows us to control electricity.
                 </p>
-
               </div>
 
               <div className="mt-8 grid md:grid-cols-2 gap-4">
-
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 text-center">
-
                   <p className="text-slate-500 font-medium">
                     Electricity Flows
                   </p>
-
                   <p className="text-2xl my-3">
                     ↓
                   </p>
-
                   <p className="text-xl font-bold text-slate-900">
                     ON
                   </p>
-
                 </div>
 
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 text-center">
-
                   <p className="text-slate-500 font-medium">
                     Electricity Stops
                   </p>
-
                   <p className="text-2xl my-3">
                     ↓
                   </p>
-
                   <p className="text-xl font-bold text-slate-900">
                     OFF
                   </p>
-
                 </div>
-
               </div>
 
               <p className="mt-6">
                 That ability makes semiconductors the ideal material for electronic switches.
               </p>
-
             </section>
 
             {/* Divider */}
-
             <div className="border-t border-slate-200" />
 
             {/* Transistor */}
-
             <section>
-
               <h2 className="text-xl font-bold text-slate-900 mb-3">
                 From Transistor to Chip
               </h2>
@@ -220,47 +208,33 @@ export default function SemiconductorPage() {
               </p>
 
               <div className="my-10">
-
                 <div className="my-12">
-
                   <div className="flex items-center justify-center gap-8 flex-wrap">
-
                     <div className="text-center">
-
                       <div className="bg-white border border-slate-200 rounded-xl px-10 py-4">
                         <p className="text-base text-slate-900">
                           ON
                         </p>
                       </div>
-
                       <p className="text-lg font-medium text-slate-700 mt-3">
                         One Transistor
                       </p>
-
                     </div>
 
                     <div className="text-center">
-
                       <div className="flex items-center gap-4">
-
                         <p className="text-xl font-medium text-slate-500">
                           × Billions
                         </p>
-
                         <p className="text-2xl text-slate-400">
                           =
                         </p>
-
                       </div>
-
                     </div>
 
                     <div className="text-center">
-
                       <div className="bg-white border border-slate-200 rounded-xl px-8 py-6">
-
                         <div className="grid grid-cols-4 gap-x-4 gap-y-2 text-sm font-medium text-slate-700">
-
                           <span>ON</span>
                           <span>OFF</span>
                           <span>ON</span>
@@ -275,31 +249,22 @@ export default function SemiconductorPage() {
                           <span>ON</span>
                           <span>OFF</span>
                           <span>ON</span>
-
                         </div>
-
                       </div>
-
                       <p className="text-lg font-medium text-slate-700 mt-3">
                         Chip
                       </p>
-
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
 
               <p>
                 A chip is not one switch. It is billions of tiny switches working together.
               </p>
-
             </section>
 
           </div>
-
         </article>
 
       </div>
