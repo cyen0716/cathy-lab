@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
+import { SemiconductorNav } from "@/components/semiconductor-nav"
 
 export default function SemiconductorPage() {
   return (
