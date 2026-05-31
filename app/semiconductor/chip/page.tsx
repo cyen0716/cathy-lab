@@ -193,13 +193,13 @@ export default function ChipPage() {
                 </p>
                 <p>
                   Inside the chip, the USB block translates between the chip&apos;s
-                  internal data format and the USB protocol — converting signals so
+                  internal data format and the USB protocol, converting signals so
                   that external devices can understand them, and vice versa.
                 </p>
               </div>
               <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
                 <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
-                  USB allows the chip to communicate with external devices — including
+                  USB allows the chip to communicate with external devices, such as
                   keyboards, mice, storage drives, and smartphones.
                 </p>
               </div>
