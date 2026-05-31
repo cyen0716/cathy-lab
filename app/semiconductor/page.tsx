@@ -102,7 +102,7 @@ export default function SemiconductorPage() {
           </div>
 
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
-            Why Do We Need Semiconductors?
+            Learning Map
           </h1>
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
