@@ -25,7 +25,7 @@ export default function HomePage() {
 
           <div className="mt-6 max-w-3xl">
 
-  <p className="text-base leading-[1.6] text-slate-500">
+  <p className="text-lg font-bold leading-[1.6] text-slate-700">
     I&apos;m a Technical Writer who learns by building.
   </p>
 
