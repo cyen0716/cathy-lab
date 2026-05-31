@@ -231,13 +231,22 @@ export default function ChipPage() {
 
             {/* Closing */}
             <section>
-              <div className="border-t border-slate-200 mb-8" />
-              <div className="space-y-3.5">
-                <p>
-                  CPU, memory, and interfaces all have different jobs. A modern chip combines these functions into a single system.
-                </p>
-              </div>
-            </section>
+  <div className="border-t border-slate-200 mb-8" />
+
+  <div className="space-y-3.5">
+    <p>
+      Each block performs a specific function. The CPU processes instructions,
+      SRAM stores frequently used data, the Memory Controller manages data
+      transfers, USB enables external communication, and Security protects
+      sensitive operations.
+    </p>
+
+    <p>
+      Together, these blocks form a complete system that allows a chip to
+      compute, store, communicate, and operate securely.
+    </p>
+  </div>
+</section>
 
           </div>
         </article>
