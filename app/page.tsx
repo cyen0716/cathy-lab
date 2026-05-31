@@ -25,16 +25,16 @@ export default function HomePage() {
 
           <div className="mt-6 max-w-3xl">
 
-  <p className="text-lg leading-[1.6] text-slate-500">
+  <p className="text-base leading-[1.6] text-slate-500">
     I&apos;m a Technical Writer who learns by building.
   </p>
 
-  <p className="mt-2 text-lg leading-[1.6] text-slate-500">
+  <p className="mt-2 text-base leading-[1.6] text-slate-500">
     From Korean to semiconductors,
     I turn things I don&apos;t understand into projects I can explore.
   </p>
 
-  <p className="mt-2 text-lg leading-[1.6] text-slate-500">
+  <p className="mt-2 text-base leading-[1.6] text-slate-500">
     This website is my playground for experiments,
     learning notes, and curious side projects.
   </p>
@@ -65,7 +65,7 @@ export default function HomePage() {
                     Semiconductor Notes
                   </h3>
 
-                  <p className="text-lg leading-[1.7] text-slate-500 mt-2">
+                  <p className="text-base leading-[1.7] text-slate-500 mt-2">
                     Semiconductor basics,
                     technical concepts, and learning notes.
                   </p>
@@ -87,7 +87,7 @@ export default function HomePage() {
                     Korean Vocabulary
                   </h3>
 
-                  <p className="text-lg leading-[1.7] text-slate-500 mt-2">
+                  <p className="text-base leading-[1.7] text-slate-500 mt-2">
                     Flashcards, quizzes, pronunciation,
                     and categorized Korean vocabulary study sets.
                   </p>
