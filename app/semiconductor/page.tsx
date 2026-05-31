@@ -123,9 +123,10 @@ export default function SemiconductorPage() {
     </p>
 
     <ul className="space-y-2 text-slate-600">
-      <li>• SRAM — 快速記憶體</li>
-      <li>• DRAM — 主記憶體</li>
-      <li>• Flash — 長期儲存</li>
+      <li>• SRAM — 靜態隨機存取記憶體</li>
+      <li>• DRAM — 動態隨機存取記憶體</li>
+      <li>• Flash — 快閃記憶體</li>
+      <li>• ROM — 唯獨記憶體</li>
     </ul>
   </div>
 
