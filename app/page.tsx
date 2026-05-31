@@ -19,27 +19,27 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-6xl mb-14">
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight mb-8">
+          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
             Hi, I’m <span className="text-[#4338CA] bg-gradient-to-r from-[#4338CA] to-[#6366F1] bg-clip-text text-transparent">Cathy</span>
           </h1>
 
-          <div className="mt-6 max-w-6xl">
+          <div className="mt-6 max-w-3xl">
 
-            <p className="text-lg leading-[1.5] text-slate-500">
-              I&apos;m a Technical Writer. I learn by building.
-            </p>
+  <p className="text-lg leading-[1.6] text-slate-500">
+    I&apos;m a Technical Writer who learns by building.
+  </p>
 
-            <p className="mt-2 text-lg leading-[1.5] text-slate-500">
-              From tech to korean, I turn things I don&apos;t understand
-              into projects I can explore.
-            </p>
+  <p className="mt-2 text-lg leading-[1.6] text-slate-500">
+    From Korean to semiconductors,
+    I turn things I don&apos;t understand into projects I can explore.
+  </p>
 
-            <p className="mt-2 text-lg leading-[1.5] text-slate-500">
-              This website is my playground for experiments,
-              learning notes, and everything I&apos;m curious about.
-            </p>
+  <p className="mt-2 text-lg leading-[1.6] text-slate-500">
+    This website is my playground for experiments,
+    learning notes, and curious side projects.
+  </p>
 
-          </div>
+</div>
 
         </section>
 
