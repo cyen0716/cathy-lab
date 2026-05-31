@@ -132,7 +132,7 @@ export default function SemiconductorPage() {
 
   {/* Logic */}
   <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-2">
+    <h2 className="text-lg font-bold text-slate-900 mb-2">
       Logic IC
     </h2>
 
@@ -150,7 +150,7 @@ export default function SemiconductorPage() {
 
   {/* Analog */}
   <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-2">
+    <h2 className="text-lg font-bold text-slate-900 mb-2">
       Analog IC
     </h2>
 
@@ -167,7 +167,7 @@ export default function SemiconductorPage() {
 
   {/* Interface & RF */}
   <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-xl font-bold text-slate-900 mb-2">
+    <h2 className="text-lg font-bold text-slate-900 mb-2">
       Interface & RF
     </h2>
 
