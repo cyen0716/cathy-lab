@@ -107,34 +107,116 @@ export default function SemiconductorPage() {
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
+            
             {/* Intro */}
             <section>
-              <pre className="text-slate-700 leading-8">
-{`
-Semiconductor
-│
-├─ Fundamentals
-│  └─ Why Do We Need Semiconductors?
-│
-├─ Inside a Chip
-│  ├─ CPU
-│  ├─ SRAM
-│  ├─ Memory Controller
-│  ├─ USB
-│  └─ Security
-│
-├─ Memory
-│  ├─ SRAM
-│  ├─ DRAM
-│  └─ Flash
-│
-├─ Logic
-│  ├─ MCU
-│  ├─ MPU
-│  ├─ DSP
-│  └─ ASIC
-`}
-</pre>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+
+  {/* Memory IC */}
+  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <h2 className="text-xl font-bold text-slate-900 mb-4">
+      Memory IC
+    </h2>
+
+    <p className="text-slate-500 leading-[1.8] mb-5">
+      Stores data for processing and long-term retention.
+    </p>
+
+    <div className="flex flex-wrap gap-2">
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        SRAM
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        DRAM
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        Flash
+      </span>
+    </div>
+  </div>
+
+  {/* Logic IC */}
+  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <h2 className="text-xl font-bold text-slate-900 mb-4">
+      Logic IC
+    </h2>
+
+    <p className="text-slate-500 leading-[1.8] mb-5">
+      Processes information and performs computations.
+    </p>
+
+    <div className="flex flex-wrap gap-2">
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        CPU
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        MCU
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        DSP
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        ASIC
+      </span>
+    </div>
+  </div>
+
+  {/* Analog IC */}
+  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <h2 className="text-xl font-bold text-slate-900 mb-4">
+      Analog IC
+    </h2>
+
+    <p className="text-slate-500 leading-[1.8] mb-5">
+      Works with continuous real-world signals such as power, sound, and voltage.
+    </p>
+
+    <div className="flex flex-wrap gap-2">
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        PMIC
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        Amplifier
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        ADC
+      </span>
+    </div>
+  </div>
+
+  {/* Micro Component IC */}
+  <div className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <h2 className="text-xl font-bold text-slate-900 mb-4">
+      Micro Component IC
+    </h2>
+
+    <p className="text-slate-500 leading-[1.8] mb-5">
+      Supports sensing, communication, and device connectivity.
+    </p>
+
+    <div className="flex flex-wrap gap-2">
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        Sensor
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        RF
+      </span>
+
+      <span className="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-600">
+        Interface
+      </span>
+    </div>
+  </div>
+
+</div>
             </section>
 
           </div>
