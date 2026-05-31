@@ -32,13 +32,21 @@ export default function ChipPage() {
           <Link
   href="/semiconductor"
   className="
-    px-4 py-2 rounded-full
-    bg-white border border-slate-200
-    text-slate-500 text-sm font-medium
-    hover:border-slate-300/80 hover:text-slate-800
-    hover:scale-[1.03] 
-    hover:shadow-[0_10px_25px_-10px_rgba(15,23,42,0.08)]
-    transition-all duration-500 ease-out
+    px-4
+                py-2
+                rounded-full
+                bg-white
+                border
+                border-slate-200
+                text-slate-500
+                text-sm
+                font-medium
+                hover:border-slate-300/60
+                hover:scale-[1.02]
+                hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
+                transition-all
+                duration-500
+                ease-out
   "
 >
   Why need semiconductors?
