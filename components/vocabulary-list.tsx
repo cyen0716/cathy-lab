@@ -25,8 +25,6 @@ export function VocabularyList({ words }: VocabularyListProps) {
     speakKorean(korean)
     setTimeout(() => {
       setActiveIndex(null)
-    }, 200) // 動態微調至 200ms，卡片下壓反饋更俐落敏捷
-  }
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-1">
@@ -48,17 +46,15 @@ export function VocabularyList({ words }: VocabularyListProps) {
             border
             cursor-pointer
             transition-all
-            duration-200
             ease-out
             
             ${
               activeIndex === index
-                ? "border-indigo-600 bg-indigo-50/40 scale-[0.97] shadow-sm"
-                : "border-slate-100/80 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.03)] hover:border-indigo-200/80 hover:bg-gradient-to-tr hover:from-white hover:to-indigo-50/10 hover:shadow-[0_12px_24px_-8px_rgba(67,56,202,0.08)] hover:-translate-y-0.5"
+                ? "border-indigo-600 bg-indigo-50/40 scale-[0.97] shadow-sm duration-200"
+                : "border-slate-100/80 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.03)] hover:border-indigo-100 hover:scale-[1.02] hover:shadow-[0_15px_35px_-10px_rgba(15,23,42,0.06),0_10px_20px_-5px_rgba(67,56,202,0.03)] duration-500"
             }
           `}
         >
-          {/* 左側：中韓文字級層級微調，拉開對比 */}
           <div className="flex flex-col items-start gap-1 select-none">
             <span className="text-2xl font-bold text-slate-800 tracking-wide leading-none font-sans">
               {word.korean}
@@ -68,7 +64,6 @@ export function VocabularyList({ words }: VocabularyListProps) {
             </span>
           </div>
 
-          {/* 右側：發音按鈕改為「聯動式」淡入淡出，質感極佳 */}
           <div 
             className={`
               absolute
@@ -90,4 +85,5 @@ export function VocabularyList({ words }: VocabularyListProps) {
       ))}
     </div>
   )
+}
 }
