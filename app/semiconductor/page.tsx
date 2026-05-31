@@ -10,9 +10,7 @@ export default function SemiconductorPage() {
       <div className="max-w-6xl mx-auto px-6 py-10">
 
         
-
         <article>
-          
 
           <div className="flex flex-wrap gap-2.5 mb-5">
             
