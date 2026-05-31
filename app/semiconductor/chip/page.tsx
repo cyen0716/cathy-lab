@@ -205,6 +205,30 @@ export default function ChipPage() {
               </div>
             </section>
 
+            {/* Security */}
+<section>
+  <div className="border-t border-slate-200 mb-8" />
+  <h2 className="text-xl font-bold text-slate-900 mb-3">Security</h2>
+
+  <div className="space-y-3.5">
+    <p>
+      A Security block is dedicated hardware that performs security-related
+      functions inside a chip. It is responsible for tasks such as encryption,
+      authentication, secure key storage, and access control. Keeping these functions in
+      dedicated hardware improves security and helps protect critical data from
+      unauthorized access.
+    </p>
+
+  </div>
+
+  <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
+    <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
+      Security blocks perform specialized security functions such as
+      encryption, authentication, and secure key management.
+    </p>
+  </div>
+</section>
+
             {/* Closing */}
             <section>
               <div className="border-t border-slate-200 mb-8" />
