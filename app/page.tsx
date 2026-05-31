@@ -19,7 +19,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-5xl mb-16 mt-18">
 
-          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold tracking-tight leading-none mb-10">
+          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold leading-none mb-10">
   Cathy{" "}
   <span className="text-[#4338CA]">
     Yen
