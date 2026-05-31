@@ -49,9 +49,32 @@ export default function SemiconductorPage() {
                 ease-out
               "
             >
-              Why Need Semiconductors?
+              Map?
             </Link>
 
+<Link
+              href="/semiconductor/why"
+              className="
+                px-4
+                py-2
+                rounded-full
+                bg-white
+                border
+                border-slate-200
+                text-slate-500
+                text-sm
+                font-medium
+                hover:border-slate-300/60
+                hover:scale-[1.02]
+                hover:shadow-[0_12px_30px_-10px_rgba(15,23,42,0.06)]
+                transition-all
+                duration-500
+                ease-out
+              "
+            >
+              Why Need Semiconductor?
+            </Link>
+            
             <Link
               href="/semiconductor/chip"
               className="
