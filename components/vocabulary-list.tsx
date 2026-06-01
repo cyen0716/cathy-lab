@@ -25,7 +25,7 @@ export function VocabularyList({ words }: VocabularyListProps) {
     speakKorean(korean)
     setTimeout(() => {
       setActiveIndex(null)
-    }, 200) // 動態微調至 200ms，卡片下壓反饋更俐落敏捷
+    }, 200) // 保持妳最愛的 200ms 俐落反饋
   }
 
   return (
@@ -42,8 +42,8 @@ export function VocabularyList({ words }: VocabularyListProps) {
             justify-between
             rounded-2xl
             bg-white
-            py-4.5
-            pl-5
+            py-6
+            pl-6
             pr-14
             border
             cursor-pointer
@@ -52,20 +52,26 @@ export function VocabularyList({ words }: VocabularyListProps) {
             
             ${
               activeIndex === index
-                ? "border-indigo-600 bg-indigo-50/40 scale-[0.97] shadow-sm duration-200"
-                : "border-slate-100/80 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.03)] hover:border-indigo-100 hover:scale-[1.02] hover:shadow-[0_15px_35px_-10px_rgba(15,23,42,0.06),0_10px_20px_-5px_rgba(67,56,202,0.03)] duration-500"
+                ? "border-slate-300 bg-slate-50 scale-[0.96] shadow-[inset_0_2px_4px_rgba(0,0,0,0.02)] duration-100" 
+                /* ✨ 點擊時：徹底拔除紫色！換成極低調的微醺暖灰，伴隨優雅的輕微內陰影，呈現高級下壓感 */
+                : "border-slate-100/80 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.03)] hover:border-slate-300 hover:scale-[1.02] hover:shadow-[0_15px_35px_-10px_rgba(15,23,42,0.04)] duration-500"
+                /* ✨ 平常與 Hover：也同步把亮紫色 Hover 邊框，換成內斂的 Apple 原生灰（slate-300）*/
             }
           `}
         >
-          <div className="flex flex-col items-start gap-1 select-none">
-            <span className="text-2xl font-bold text-slate-800 tracking-wide leading-none font-sans">
+          {/* 文字區塊：將間距與字體完美對比 */}
+          <div className="flex flex-col items-start gap-1.5 select-none">
+            {/* ✨ 韓文：巨大、醒目、深夜黑，極具蘋果官網風格 */}
+            <span className="text-xl font-bold text-slate-900 tracking-wide leading-none font-sans">
               {word.korean}
             </span>
-            <span className="text-[13px] font-medium text-slate-400 mt-1 transition-colors group-hover:text-slate-500">
+            {/* ✨ 中文：精緻小巧、輕盈淡雅的輔助字 */}
+            <span className="text-base font-medium text-slate-400/90 transition-colors group-hover:text-slate-500">
               {word.chinese}
             </span>
           </div>
 
+          {/* 右側喇叭按鈕：去色優雅化，沉澱為極簡黑白灰 */}
           <div 
             className={`
               absolute
@@ -76,8 +82,8 @@ export function VocabularyList({ words }: VocabularyListProps) {
               duration-200
               ${
                 activeIndex === index 
-                  ? "text-indigo-600 bg-indigo-100/80 scale-90" 
-                  : "text-slate-300 opacity-60 group-hover:opacity-100 group-hover:text-indigo-500 group-hover:bg-indigo-50/50 group-hover:scale-105"
+                  ? "text-slate-800 bg-slate-100 scale-[0.92]" /* ✨ 點擊時：溫和的低調煙燻灰，不刺眼 */
+                  : "text-slate-300 opacity-50 group-hover:opacity-100 group-hover:text-slate-700 group-hover:bg-slate-50 group-hover:scale-102" /* ✨ 平常與 Hover：維持極致內斂 */
               }
             `}
           >
