@@ -9,99 +9,168 @@ export default function SemiconductorPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
-        
-        <article>
-
-          <div className="flex flex-wrap gap-2.5 mb-5">
             
 {/* bookmark */}
           <SemiconductorNav />
+        
 
-          </div>
 
-          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-5">
-            Learning Map
+        <article>
+
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
+            Major Categories of ICs
           </h1>
 
-          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-14 text-base leading-[1.85] text-slate-500">
 
-            
+          <div className="mb-5">
+
+  <p className="mt-2 text-slate-500">
+    Integrated circuits can be broadly grouped into four categories.
+  </p>
+</div>  
+
+
+
             {/* Intro */}
-            <section>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            {/* Intro - 半導體四大分類入口 */}
+<section className="my-14">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
 
-  {/* Memory */}
-  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-lg font-bold text-slate-900 mb-2">
-      Memory IC
-    </h2>
+    {/* 1. Memory IC */}
+    <div className="p-7 rounded-2xl border border-slate-200 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.02)] transition-all hover:border-[#C7D2FE]/60 hover:bg-[#EEF2FF]/14 group">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xl font-bold text-slate-900 group-hover:text-[#4338CA] transition-colors">
+          Memory IC
+        </h2>
+        <span className="text-[14px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-md bg-slate-140 text-slate-400 group-hover:bg-[#EEF2FF] group-hover:text-[#4338CA] transition-colors">
+          Storage
+        </span>
+      </div>
 
-    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
-      Stores data for processing and long-term retention.
-    </p>
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+        Stores data for processing and long-term retention.
+      </p>
 
-    <ul className="space-y-0 text-slate-500">
-      <li>• SRAM — 靜態隨機存取記憶體</li>
-      <li>• DRAM — 動態隨機存取記憶體</li>
-      <li>• Flash — 快閃記憶體</li>
-      <li>• ROM — 唯獨記憶體</li>
-    </ul>
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">SRAM</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">靜態隨機記憶體</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">DRAM</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">動態隨機記憶體</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">Flash</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">快閃記憶體</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">ROM</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">唯讀記憶體</span>
+        </div>
+      </div>
+    </div>
+
+    {/* 2. Logic IC */}
+    <div className="p-7 rounded-2xl border border-slate-200 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.02)] transition-all hover:border-[#C7D2FE]/60 hover:bg-[#EEF2FF]/14 group">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xl font-bold text-slate-900 group-hover:text-[#4338CA] transition-colors">
+          Logic IC
+        </h2>
+        <span className="text-[14px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-md bg-slate-140 text-slate-400 group-hover:bg-[#EEF2FF] group-hover:text-[#4338CA] transition-colors">
+          Compute
+        </span>
+      </div>
+
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+        Processes information and performs computations.
+      </p>
+
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">CPU</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">中央處理器</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">MCU</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">微控制器</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">DSP</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">數位訊號處理器</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">ASIC</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">特殊應用晶片</span>
+        </div>
+      </div>
+    </div>
+
+    {/* 3. Analog IC */}
+    <div className="p-7 rounded-2xl border border-slate-200 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.02)] transition-all hover:border-[#C7D2FE]/60 hover:bg-[#EEF2FF]/14 group">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xl font-bold text-slate-900 group-hover:text-[#4338CA] transition-colors">
+          Analog IC
+        </h2>
+        <span className="text-[14px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-md bg-slate-140 text-slate-400 group-hover:bg-[#EEF2FF] group-hover:text-[#4338CA] transition-colors">
+          Signal
+        </span>
+      </div>
+
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+        Handles continuous real-world signals and power.
+      </p>
+
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">PMIC</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">電源管理晶片</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">Amplifier</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">訊號放大器</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">ADC / DAC</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">模數/數模轉換器</span>
+        </div>
+      </div>
+    </div>
+
+    {/* 4. Interface & RF */}
+    <div className="p-7 rounded-2xl border border-slate-200 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.02)] transition-all hover:border-[#C7D2FE]/60 hover:bg-[#EEF2FF]/14 group">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xl font-bold text-slate-900 group-hover:text-[#4338CA] transition-colors">
+          Interface & RF
+        </h2>
+        <span className="text-[14px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-md bg-slate-140 text-slate-400 group-hover:bg-[#EEF2FF] group-hover:text-[#4338CA] transition-colors">
+          Connect
+        </span>
+      </div>
+
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+        Connects devices and enables communication.
+      </p>
+
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">USB / PCIe</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">高速傳輸介面</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">RF Transceiver</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">無線射頻收發器</span>
+        </div>
+        <div className="flex flex-col border-l-2 border-slate-200/60 pl-2.5 group-hover:border-indigo-200 transition-colors">
+          <span className="font-bold text-slate-800">Sensor IC</span>
+          <span className="text-[14px] text-slate-400 mt-0.5">環境感測晶片</span>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  {/* Logic */}
-  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-lg font-bold text-slate-900 mb-2">
-      Logic IC
-    </h2>
-
-    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
-      Processes information and performs computations.
-    </p>
-
-    <ul className="space-y-0 text-slate-500">
-      <li>• CPU — 中央處理器</li>
-      <li>• MCU — 微控制器</li>
-      <li>• DSP — 數位訊號處理器</li>
-      <li>• ASIC — 特殊應用積體電路</li>
-    </ul>
-  </div>
-
-  {/* Analog */}
-  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-lg font-bold text-slate-900 mb-2">
-      Analog IC
-    </h2>
-
-    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
-      Handles continuous real-world signals and power.
-    </p>
-
-    <ul className="space-y-0 text-slate-500">
-      <li>• PMIC — 電源管理 IC</li>
-      <li>• Amplifier — 放大器</li>
-      <li>• ADC — 類比數位轉換器</li>
-    </ul>
-  </div>
-
-  {/* Interface & RF */}
-  <div className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <h2 className="text-lg font-bold text-slate-900 mb-2">
-      Interface & RF
-    </h2>
-
-    <p className="text-slate-500 text-sm leading-[1.7] mb-3">
-      Connects devices and enables communication.
-    </p>
-
-    <ul className="space-y-0 text-slate-500">
-      <li>• USB — 通用序列匯流排</li>
-      <li>• RF — 射頻</li>
-      <li>• Sensor — 感測器</li>
-    </ul>
-  </div>
-
-</div>
-            </section>
+</section>
 
           </div>
         </article>

@@ -7,8 +7,9 @@ export default function WhySramPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
         
-        {/* 頂部導覽：內含返回鍵與蘋果感書籤標籤 */}
         <SemiconductorNav />
+
+
 
         <article>
 
@@ -17,9 +18,11 @@ export default function WhySramPage() {
             Why Don&apos;t We Use SRAM for Everything?
           </h1>
 
+
+
           {/* Intro block */}
           <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
-            <h2 className="text-xl font-bold text-slate-900 mb-3">SRAM and DRAM</h2>
+          
             <p>
               Modern computers use different types of memory. 
               Two of the most common are SRAM and DRAM.
@@ -27,48 +30,98 @@ export default function WhySramPage() {
           </div>
 
           {/* SRAM & DRAM Side-by-Side Overview */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-            <div className="bg-white border border-slate-200 rounded-2xl p-6">
-              <span className="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-600 text-xs font-semibold uppercase tracking-wider">
-                SRAM
-              </span>
-              <p className="text-base font-bold text-slate-900 mt-3 mb-2">Static Random Access Memory</p>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Designed for speed. As long as power is supplied, it can retain data without needing continuous refresh operations. Commonly used as cache memory close to the CPU.
-              </p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-6">
-              <span className="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-600 text-xs font-semibold uppercase tracking-wider">
-                DRAM
-              </span>
-              <p className="text-base font-bold text-slate-900 mt-3 mb-2">Dynamic Random Access Memory</p>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Slower than SRAM. It must refresh its stored data continuously to prevent information from disappearing. However, it can store much larger amounts of data at a much lower cost. Typically used as main memory.
-              </p>
-            </div>
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+
+  {/* SRAM */}
+<div className="bg-white border border-slate-100 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.02)] rounded-2xl p-6 transition-all duration-500 hover:border-slate-200">
+  <h3 className="text-xl font-bold text-slate-900 mt-3 mb-6 tracking-wide">
+    Static RAM
+  </h3>
+  
+  {/* 將外層改為 text-base，確保整體比例和協 */}
+  <div className="divide-y divide-slate-100/80 text-base">
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Speed</span>
+      <span className="text-base text-slate-800 font-medium">Extremely fast.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Keeps data</span>
+      <span className="text-base text-slate-800 font-medium">As long as power is on. No refresh needed.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Cost</span>
+      <span className="text-base text-slate-800 font-medium">Expensive per bit.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Capacity</span>
+      <span className="text-base text-slate-800 font-medium">Small. Kilobytes to a few megabytes.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Where it lives</span>
+      <span className="text-base text-slate-800 font-medium">CPU cache (L1, L2, L3)</span>
+    </div>
+  </div>
+</div>
+
+{/* DRAM */}
+<div className="bg-white border border-slate-100 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.02)] rounded-2xl p-6 transition-all duration-500 hover:border-slate-200">
+  <h3 className="text-xl font-bold text-slate-900 mt-3 mb-6 tracking-wide">
+    Dynamic RAM
+  </h3>
+  
+  <div className="divide-y divide-slate-100/80 text-base">
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Speed</span>
+      <span className="text-base text-slate-800 font-medium">Slower, but fast enough for most workloads.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Keeps data</span>
+      <span className="text-base text-slate-800 font-medium text-right max-w-[70%] truncate hover:text-clip hover:whitespace-normal">
+        Forgets instantly. Needs constant refreshing.
+      </span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Cost</span>
+      <span className="text-base text-slate-800 font-medium">Cheap per bit.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Capacity</span>
+      <span className="text-base text-slate-800 font-medium">Large. Gigabytes to terabytes.</span>
+    </div>
+    
+    <div className="py-3 flex justify-between items-center">
+      <span className="font-medium text-slate-400">Where it lives</span>
+      <span className="text-base text-slate-800 font-medium">Next to the CPU. Main memory.</span>
+    </div>
+  </div>
+</div>
+
+</div>
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
-            {/* Section 1 */}
+
+
+
             <section>
               <div className="border-t border-slate-200 mb-8" />
               <h2 className="text-xl font-bold text-slate-900 mb-3">SRAM Is Faster. Why Not Use It Everywhere?</h2>
+              
+              
+              {/* Section 1 */}
               <div className="space-y-3.5">
                 <p>
-                  At first, the answer seems obvious. If SRAM is faster than DRAM, why not replace all DRAM with SRAM? 
-                  Wouldn&apos;t that make computers faster?
-                </p>
-                <p>
-                  The problem is that speed is only one part of the equation. Memory also needs to be affordable.
+                  SRAM Is Fast, but it takes more space.
                 </p>
               </div>
-            </section>
 
-            {/* Section 2 */}
-            <section>
-              <div className="border-t border-slate-200 mb-8" />
-              <h2 className="text-xl font-bold text-slate-900 mb-3">SRAM Is Fast, but It Takes More Space</h2>
               <div className="space-y-3.5">
                 <p>
                   SRAM achieves its speed by using a more complex circuit to store data. As a result, each memory cell occupies more silicon area. 

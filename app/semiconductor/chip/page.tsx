@@ -7,14 +7,8 @@ export default function ChipPage() {
     <main className="min-h-screen bg-[#FCFCFC]">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
-
-      
-        
-        {/* Pill navigation */}
-        <div className="flex flex-wrap gap-2.5 mb-4">
-          
+{/* bookmark */}          
           <SemiconductorNav />
-        </div>
 
         <article>
 
@@ -26,51 +20,62 @@ export default function ChipPage() {
           {/* Intro */}
           <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
             <p>
-              A chip is made of billions of transistors. But engineers do not think
-              in billions of individual transistors.
-            </p>
+             A chip is not a random collection of circuits.</p>
             <p>
-              Instead, they organize transistors into functional blocks. Each block
-              performs a specific job. Together, these blocks form a complete chip.
+             Every function occupies silicon area and competes for limited resources such as space, power, and performance.
+             Because of these constraints, engineers divide a chip into specialized functional blocks,
+            each responsible for a different task.</p>
+            <p>Designing a chip is not only about what to include.
+            It is also about deciding what deserves precious silicon area.
             </p>
           </div>
 
           {/* Chip Diagram */}
           <div className="max-w-2xl mx-auto mb-10">
-            {/* 這裡已將 border-[#C7D2FE] 改為 border-slate-200 */}
-            <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 mb-10">
-              <p className="text-[13px] uppercase tracking-[0.12em] text-indigo-500 font-semibold text-center mb-4">
-                A Simplified Chip
-              </p>
-              <div className="grid grid-cols-2 gap-2.5">
-                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                  <p className="text-base font-bold text-indigo-800">CPU</p>
-                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Processor core</p>
-                </div>
-                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                  <p className="text-base font-bold text-indigo-800">SRAM</p>
-                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Fast memory</p>
-                </div>
-                <div className="col-span-2 bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                  <p className="text-base font-bold text-indigo-800">Memory Controller</p>
-                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">Data routing</p>
-                </div>
-                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                  <p className="text-base font-bold text-indigo-800">USB</p>
-                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
-                    Connectivity
-                  </p>
-                </div>
+  {/* 外層容器：邊框顏色使用溫和的 slate-200，維持大器陰影 */}
+  <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-[0_12px_40px_rgba(0,0,0,0.03)]">
+    
+    {/* 小標題：使用與前一張圖一致的 text-slate-500，拉大字距 */}
+    <p className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold text-center mb-6">
+      A Simplified Chip
+    </p>
+    
+    {/* 區塊矩陣：加大格開間距，邊界更分明 */}
+    <div className="grid grid-cols-2 gap-3.5">
+      
+      {/* CPU */}
+      <div className="bg-[#EEF2FF]/60 border border-[#C7D2FE]/70 rounded-xl px-5 py-5 text-center transition-all hover:bg-[#EEF2FF]">
+        <p className="text-lg font-bold text-[#4338CA] tracking-tight">CPU</p>
+        <p className="text-sm text-indigo-600/80 font-medium mt-1">Processor core</p>
+      </div>
+      
+      {/* SRAM */}
+      <div className="bg-[#EEF2FF]/60 border border-[#C7D2FE]/70 rounded-xl px-5 py-5 text-center transition-all hover:bg-[#EEF2FF]">
+        <p className="text-lg font-bold text-[#4338CA] tracking-tight">SRAM</p>
+        <p className="text-sm text-indigo-600/80 font-medium mt-1">Fast memory</p>
+      </div>
+      
+      {/* Memory Controller */}
+      <div className="col-span-2 bg-[#EEF2FF]/60 border border-[#C7D2FE]/70 rounded-xl px-5 py-5 text-center transition-all hover:bg-[#EEF2FF]">
+        <p className="text-lg font-bold text-[#4338CA] tracking-tight">Memory Controller</p>
+        <p className="text-sm text-indigo-600/80 font-medium mt-1">Data routing</p>
+      </div>
+      
+      {/* USB */}
+      <div className="bg-[#EEF2FF]/60 border border-[#C7D2FE]/70 rounded-xl px-5 py-5 text-center transition-all hover:bg-[#EEF2FF]">
+        <p className="text-lg font-bold text-[#4338CA] tracking-tight">USB</p>
+        <p className="text-sm text-indigo-600/80 font-medium mt-1">Connectivity</p>
+      </div>
 
-                <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-4 py-3.5 text-center">
-                  <p className="text-base font-bold text-indigo-800">Security</p>
-                  <p className="text-[13px] text-indigo-500 font-medium mt-0.5">
-                    Data Protection
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Security */}
+      <div className="bg-[#EEF2FF]/60 border border-[#C7D2FE]/70 rounded-xl px-5 py-5 text-center transition-all hover:bg-[#EEF2FF]">
+        <p className="text-lg font-bold text-[#4338CA] tracking-tight">Security</p>
+        <p className="text-sm text-indigo-600/80 font-medium mt-1">Data Protection</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
           <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
