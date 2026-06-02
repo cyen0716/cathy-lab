@@ -7,8 +7,7 @@ import { Cpu, BookOpen, Sparkles, Sparkle } from "lucide-react"
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-10">
-
+      <div className="max-w-6xl mx-auto px-6 py-10">
         {/* Logo / Nav - 星光微光款（手動下沉完美對齊版） */}
         <nav className="mb-14 pt-2 select-none">
           <Link href="/" className="inline-flex items-center gap-2 group">

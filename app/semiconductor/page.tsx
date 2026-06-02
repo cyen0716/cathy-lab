@@ -13,8 +13,6 @@ export default function SemiconductorPage() {
 {/* bookmark */}
           <SemiconductorNav />
         
-
-
         <article>
 
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
