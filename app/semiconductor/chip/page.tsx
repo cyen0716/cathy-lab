@@ -18,7 +18,7 @@ export default function ChipPage() {
           </h1>
 
           {/* Intro */}
-          <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
+          <div className="space-y-3.5 text-base leading-[1.85] text-slate-600 mb-8">
             <p>
              A chip is not a random collection of circuits.</p>
             <p>
@@ -35,8 +35,8 @@ export default function ChipPage() {
   {/* 外層容器：邊框顏色使用溫和的 slate-200，維持大器陰影 */}
   <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-[0_12px_40px_rgba(0,0,0,0.03)]">
     
-    {/* 小標題：使用與前一張圖一致的 text-slate-500，拉大字距 */}
-    <p className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold text-center mb-6">
+    {/* 小標題：使用與前一張圖一致的 text-slate-600，拉大字距 */}
+    <p className="text-xs uppercase tracking-[0.2em] text-slate-600 font-bold text-center mb-6">
       A Simplified Chip
     </p>
     
@@ -77,7 +77,7 @@ export default function ChipPage() {
   </div>
 </div>
 
-          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-10 text-base leading-[1.85] text-slate-600">
 
             {/* CPU */}
             <section>

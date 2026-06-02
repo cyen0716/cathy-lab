@@ -19,11 +19,11 @@ export default function SemiconductorPage() {
             Major Categories of ICs
           </h1>
 
-          <div className="space-y-14 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-14 text-base leading-[1.85] text-slate-600">
 
           <div className="mb-5">
 
-  <p className="mt-2 text-slate-500">
+  <p className="mt-2 text-slate-600">
     Integrated circuits can be broadly grouped into four categories.
   </p>
 </div>  
@@ -46,7 +46,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+      <p className="text-slate-600 text-sm leading-relaxed mb-5">
         Stores data for processing and long-term retention.
       </p>
 
@@ -81,7 +81,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+      <p className="text-slate-600 text-sm leading-relaxed mb-5">
         Processes information and performs computations.
       </p>
 
@@ -116,7 +116,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+      <p className="text-slate-600 text-sm leading-relaxed mb-5">
         Handles continuous real-world signals and power.
       </p>
 
@@ -147,7 +147,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-500 text-sm leading-relaxed mb-5">
+      <p className="text-slate-600 text-sm leading-relaxed mb-5">
         Connects devices and enables communication.
       </p>
 
