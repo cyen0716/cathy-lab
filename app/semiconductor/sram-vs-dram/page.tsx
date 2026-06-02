@@ -29,79 +29,105 @@ export default function WhySramPage() {
             </p>
           </div>
 
-          {/* SRAM & DRAM Side-by-Side Overview */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
 
-  {/* SRAM */}
-<div className="bg-white border border-slate-100 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.02)] rounded-2xl p-6 transition-all duration-500 hover:border-slate-200">
-  <h3 className="text-xl font-bold text-slate-900 mt-3 mb-6 tracking-wide">
-    Static RAM
-  </h3>
-  
-  {/* 將外層改為 text-base，確保整體比例和協 */}
-  <div className="divide-y divide-slate-100/80 text-base">
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Speed</span>
-      <span className="text-base text-slate-800 font-medium">Extremely fast.</span>
-    </div>
+
+{/* 🍎 完美主義 RWD 進化版：改用 lg: 讓平板也絕對清爽 */}
+<div className="w-full mb-10 select-none">
+  <div className="bg-white border border-slate-200/60 shadow-[0_2px_8px_rgba(15,23,42,0.01)] rounded-2xl p-6 lg:p-8 w-full">
     
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Keeps data</span>
-      <span className="text-base text-slate-800 font-medium">As long as power is on. No refresh needed.</span>
+    {/* 💡 md: 改為 lg: */}
+    <div className="hidden lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 border-b border-slate-100 pb-4 mb-2 text-base font-bold text-slate-950">
+      <div className="text-slate-400 font-medium">Features</div>
+      <div className="font-sans tracking-wide">SRAM</div>
+      <div className="font-sans tracking-wide">DRAM</div>
     </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Cost</span>
-      <span className="text-base text-slate-800 font-medium">Expensive per bit.</span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Capacity</span>
-      <span className="text-base text-slate-800 font-medium">Small. Kilobytes to a few megabytes.</span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Where it lives</span>
-      <span className="text-base text-slate-800 font-medium">CPU cache (L1, L2, L3)</span>
-    </div>
+
+    <div className="divide-y divide-slate-100/80 text-base">
+      
+      {/* 1. Speed */}
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
+          Speed
+        </span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Extremely fast.</span>
+        </div>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Slower, but fast enough for most workloads.</span>
+        </div>
+      </div>
+
+      {/* 2. Keeps data */}
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
+          Keeps data
+        </span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">As long as power is on. No refresh needed.</span>
+        </div>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Forgets instantly. Needs constant refreshing.</span>
+        </div>
+      </div>
+
+      {/* 3. Cost */}
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
+          Cost
+        </span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Expensive per bit.</span>
+        </div>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Cheap per bit.</span>
+        </div>
+      </div>
+
+      {/* 4. Capacity */}
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
+          Capacity
+        </span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Small. Kilobytes to a few megabytes.</span>
+        </div>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Large. Gigabytes to terabytes.</span>
+        </div>
+      </div>
+
+      {/* 5. Where it lives */}
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
+          Where it lives
+        </span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">CPU cache (L1, L2, L3)</span>
+        </div>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Next to the CPU. Main memory.</span>
+        </div>
+      </div>
   </div>
 </div>
 
-{/* DRAM */}
-<div className="bg-white border border-slate-100 shadow-[0_4px_12px_-4px_rgba(15,23,42,0.02)] rounded-2xl p-6 transition-all duration-500 hover:border-slate-200">
-  <h3 className="text-xl font-bold text-slate-900 mt-3 mb-6 tracking-wide">
-    Dynamic RAM
-  </h3>
-  
-  <div className="divide-y divide-slate-100/80 text-base">
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Speed</span>
-      <span className="text-base text-slate-800 font-medium">Slower, but fast enough for most workloads.</span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Keeps data</span>
-      <span className="text-base text-slate-800 font-medium text-right max-w-[70%] truncate hover:text-clip hover:whitespace-normal">
-        Forgets instantly. Needs constant refreshing.
-      </span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Cost</span>
-      <span className="text-base text-slate-800 font-medium">Cheap per bit.</span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Capacity</span>
-      <span className="text-base text-slate-800 font-medium">Large. Gigabytes to terabytes.</span>
-    </div>
-    
-    <div className="py-3 flex justify-between items-center">
-      <span className="font-medium text-slate-400">Where it lives</span>
-      <span className="text-base text-slate-800 font-medium">Next to the CPU. Main memory.</span>
-    </div>
-  </div>
-</div>
+
+
 
 </div>
 
@@ -224,60 +250,7 @@ export default function WhySramPage() {
                 </p>
               </div>
 
-              {/* Memory Hierarchy Stack */}
-              <div className="max-w-md mx-auto my-8 bg-slate-50 border border-slate-200/60 rounded-2xl p-6">
-                <p className="text-[13px] uppercase tracking-[0.12em] text-indigo-600 font-semibold text-center mb-5">
-                  The Memory Hierarchy
-                </p>
-                <div className="space-y-2.5">
-                  <div className="flex items-center bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm">
-                    <div className="p-2 bg-indigo-50 rounded-lg text-indigo-600 mr-3.5">
-                      <Cpu className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-slate-800">CPU</p>
-                      <p className="text-xs text-slate-400">Processing Core</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-center"><ArrowDown className="w-4 h-4 text-slate-300" /></div>
-
-                  <div className="flex items-center bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm">
-                    <div className="p-2 bg-indigo-50 rounded-lg text-indigo-600 mr-3.5">
-                      <Layers className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-slate-800">SRAM Cache</p>
-                      <p className="text-xs text-indigo-500 font-medium">Ultra-Fast Speed</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-center"><ArrowDown className="w-4 h-4 text-slate-300" /></div>
-
-                  <div className="flex items-center bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm">
-                    <div className="p-2 bg-emerald-50 rounded-lg text-emerald-600 mr-3.5">
-                      <Layers className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-slate-800">DRAM</p>
-                      <p className="text-xs text-emerald-500 font-medium">Main Memory Capacity</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-center"><ArrowDown className="w-4 h-4 text-slate-300" /></div>
-
-                  <div className="flex items-center bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm">
-                    <div className="p-2 bg-slate-100 rounded-lg text-slate-600 mr-3.5">
-                      <HardDrive className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-slate-800">Storage</p>
-                      <p className="text-xs text-slate-400">Long-Term Retention (SSD/HDD)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              
               <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5 space-y-1">
                 <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
                   • <strong>SRAM</strong> provides speed.
