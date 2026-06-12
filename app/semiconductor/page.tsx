@@ -1,29 +1,23 @@
 "use client"
 
-import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
-import { SemiconductorNav } from "@/components/semiconductor-nav"
-
 export default function SemiconductorPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-6xl mx-auto px-6 py-10">
+      <div className="max-w-7xl mx-auto px-6 py-10">
 
-            
-{/* bookmark */}
-          <SemiconductorNav />
-        
-        <article>
+                   
+        <div className="flex gap-8">
+  <article className="flex-1 max-w-4xl">
 
           <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
             Major Categories of ICs
           </h1>
 
-          <div className="space-y-14 text-base leading-[1.85] text-slate-600">
+          <div className="space-y-14 text-base leading-[1.85] text-slate-500">
 
           <div className="mb-5">
 
-  <p className="mt-2 text-slate-600">
+  <p className="mt-2 text-slate-500">
     Integrated circuits can be broadly grouped into four categories.
   </p>
 </div>  
@@ -46,7 +40,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-600 text-sm leading-relaxed mb-5">
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
         Stores data for processing and long-term retention.
       </p>
 
@@ -81,7 +75,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-600 text-sm leading-relaxed mb-5">
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
         Processes information and performs computations.
       </p>
 
@@ -116,7 +110,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-600 text-sm leading-relaxed mb-5">
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
         Handles continuous real-world signals and power.
       </p>
 
@@ -147,7 +141,7 @@ export default function SemiconductorPage() {
         </span>
       </div>
 
-      <p className="text-slate-600 text-sm leading-relaxed mb-5">
+      <p className="text-slate-500 text-sm leading-relaxed mb-5">
         Connects devices and enables communication.
       </p>
 
@@ -172,6 +166,7 @@ export default function SemiconductorPage() {
 
           </div>
         </article>
+      </div>
 
       </div>
     </main>

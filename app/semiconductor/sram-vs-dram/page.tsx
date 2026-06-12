@@ -1,303 +1,244 @@
 import Link from "next/link"
 import { ArrowDown, Cpu, Layers, HardDrive } from "lucide-react"
-import { SemiconductorNav } from "@/components/semiconductor-nav"
 
 export default function WhySramPage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-6xl mx-auto px-6 py-10">
+      <div className="max-w-7xl mx-auto px-6 py-10">
         
-        <SemiconductorNav />
+
+
 
         <article>
 
-          {/* 開頭 Hook：用反問句提高吸引力 */}
-<h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
-  Why Don&apos;t We Use SRAM for Everything?
-</h1>
-
-<div className="space-y-4 text-base leading-[1.85] text-slate-600 mb-8">
-  <p>
-    If SRAM is faster than DRAM, why doesn&apos;t your laptop have 16 GB of SRAM instead of 16 GB of DRAM?
-    The answer has nothing to do with speed.
-    It comes down to silicon area, manufacturing yield, and cost.
-  </p>
-
-{/* 💡 隱形流 Note：無方塊、無背景、無斜體，字體放大更清晰 */}
-  <div className="pt-2 select-none text-sm tracking-wide">
-    <span className="text-slate-500 font-semibold mr-2">Note:</span>
-    <span className="text-slate-500">
-      Density refers to how much data can fit into the same silicon area.
-    </span>
-  </div>
-</div>
+          {/* Header */}
+          <h1 className="text-4xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
+            Why Don&apos;t We Use SRAM for Everything?
+          </h1>
 
 
-{/* 🍎 Apple 官網規格流：完美對齊型對比表（已加入表頭） */}
+
+          {/* Intro block */}
+          <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
+          
+            <p>
+              Modern computers use different types of memory. 
+              Two of the most common are SRAM and DRAM.
+            </p>
+          </div>
+
+
+
+{/* 🍎 完美主義 RWD 進化版：改用 lg: 讓平板也絕對清爽 */}
 <div className="w-full mb-10 select-none">
-  <div className="bg-white border border-slate-200/60 shadow-[0_2px_8px_rgba(15,23,42,0.01)] rounded-2xl p-5 md:p-6 w-full">
+  <div className="bg-white border border-slate-200/60 shadow-[0_2px_8px_rgba(15,23,42,0.01)] rounded-2xl p-6 lg:p-8 w-full">
     
-    {/* 💡 補上的大螢幕表頭：完美對齊下方內文的 160px 1fr 1fr */}
-    <div className="hidden md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 border-b border-slate-100 pb-4 mb-2 text-base font-bold text-slate-950">
-      <div className="text-slate-500 font-medium">Features</div>
+    {/* 💡 md: 改為 lg: */}
+    <div className="hidden lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 border-b border-slate-100 pb-4 mb-2 text-base font-bold text-slate-950">
+      <div className="text-slate-400 font-medium">Features</div>
       <div className="font-sans tracking-wide">SRAM</div>
       <div className="font-sans tracking-wide">DRAM</div>
     </div>
 
-    {/* 表格內容矩陣 */}
     <div className="divide-y divide-slate-100/80 text-base">
       
       {/* 1. Speed */}
-      <div className="py-3 flex flex-col gap-2 md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 md:items-center">
-        <span className="font-semibold text-slate-900 md:text-slate-500 md:font-medium text-sm md:text-base uppercase tracking-wider md:normal-case md:tracking-normal">
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
           Speed
         </span>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[SRAM]</span>
-          <span className="text-slate-600 font-medium">Extremely fast.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Extremely fast.</span>
         </div>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[DRAM]</span>
-          <span className="text-slate-600 font-medium">Slower, but fast enough for most workloads.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Slower, but fast enough for most workloads.</span>
         </div>
       </div>
 
       {/* 2. Keeps data */}
-      <div className="py-3 flex flex-col gap-2 md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 md:items-center">
-        <span className="font-semibold text-slate-900 md:text-slate-500 md:font-medium text-sm md:text-base uppercase tracking-wider md:normal-case md:tracking-normal">
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
           Keeps data
         </span>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[SRAM]</span>
-          <span className="text-slate-600 font-medium">As long as power is on. No refresh needed.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">As long as power is on. No refresh needed.</span>
         </div>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[DRAM]</span>
-          <span className="text-slate-600 font-medium">Forgets instantly. Needs constant refreshing.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Forgets instantly. Needs constant refreshing.</span>
         </div>
       </div>
 
       {/* 3. Cost */}
-      <div className="py-3 flex flex-col gap-2 md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 md:items-center">
-        <span className="font-semibold text-slate-900 md:text-slate-500 md:font-medium text-sm md:text-base uppercase tracking-wider md:normal-case md:tracking-normal">
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
           Cost
         </span>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[SRAM]</span>
-          <span className="text-slate-600 font-medium">Expensive per bit.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Expensive per bit.</span>
         </div>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[DRAM]</span>
-          <span className="text-slate-600 font-medium">Cheap per bit.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Cheap per bit.</span>
         </div>
       </div>
 
       {/* 4. Capacity */}
-      <div className="py-3 flex flex-col gap-2 md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 md:items-center">
-        <span className="font-semibold text-slate-900 md:text-slate-500 md:font-medium text-sm md:text-base uppercase tracking-wider md:normal-case md:tracking-normal">
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
           Capacity
         </span>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[SRAM]</span>
-          <span className="text-slate-600 font-medium">Small. Kilobytes to a few megabytes.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">Small. Kilobytes to a few megabytes.</span>
         </div>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[DRAM]</span>
-          <span className="text-slate-600 font-medium">Large. Gigabytes to terabytes.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Large. Gigabytes to terabytes.</span>
         </div>
       </div>
 
       {/* 5. Where it lives */}
-      <div className="py-4 flex flex-col gap-2 md:grid md:grid-cols-[160px_1fr_1fr] md:gap-8 md:items-center">
-        <span className="font-semibold text-slate-900 md:text-slate-500 md:font-medium text-sm md:text-base uppercase tracking-wider md:normal-case md:tracking-normal">
+      {/* 💡 md: 改為 lg: */}
+      <div className="py-4 flex flex-col gap-2 lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 lg:items-center">
+        <span className="font-semibold text-slate-900 lg:text-slate-400 lg:font-medium text-sm lg:text-base uppercase tracking-wider lg:normal-case lg:tracking-normal">
           Where it lives
         </span>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[SRAM]</span>
-          <span className="text-slate-600 font-medium">CPU cache (L1, L2, L3)</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[SRAM]</span>
+          <span className="text-slate-800 font-medium">CPU cache (L1, L2, L3)</span>
         </div>
-        <div className="md:whitespace-nowrap">
-          <span className="inline-block md:hidden text-xs font-bold text-slate-500 mr-1.5">[DRAM]</span>
-          <span className="text-slate-600 font-medium">Next to the CPU. Main memory.</span>
+        <div className="lg:whitespace-nowrap">
+          <span className="inline-block lg:hidden text-xs font-bold text-slate-400 mr-1.5">[DRAM]</span>
+          <span className="text-slate-800 font-medium">Next to the CPU. Main memory.</span>
         </div>
       </div>
-
-    </div>
   </div>
 </div>
 
 
 
-<div className="space-y-10 text-base leading-[1.85] text-slate-600">
-
-
-{/* Why SRAM and DRAM are so different */}
-<section className="select-none">
-  <div className="border-t border-slate-200 mb-8" />
-  
-  <h2 className="text-xl font-bold text-slate-900 mb-6 tracking-wide">
-    Why SRAM and DRAM are so different
-  </h2>
-
-  {/* 前言比喻 */}
-  <div className="text-base text-slate-600 leading-relaxed space-y-4 mb-8">
-    <p>
-      Think of SRAM as a sticky note on your desk—always right in front of you for instant access, but space is limited. DRAM is like a filing cabinet—it stores vastly more, but retrieving it takes a few more steps.
-    </p>
-    <p>
-      This fundamental difference comes down to how each memory cell is engineered under the microscope.
-    </p>
-  </div>
-
-{/* 🎨 左右對稱極簡對比圖：圖卡幾何 1:1 黃金比例對稱（修正扁塌） */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  
-  {/* 💾 SRAM Card */}
-  <div className="bg-slate-50/60 border border-slate-200/50 rounded-2xl p-8 flex flex-col items-center justify-center min-h-[170px]">
-    <div className="flex flex-col items-center mb-4">
-      {/* 💡 統一使用固定寬高的 3x2 網格，確保方塊是絕對完美的 1:1 正方形 */}
-      <div className="grid grid-cols-3 gap-2.5 mb-2">
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-      </div>
-      {/* 微型絲印標籤 */}
-      <span className="text-[10px] font-medium text-slate-500/80 tracking-wider">
-        6 Transistors
-      </span>
-    </div>
-    <span className="text-xs font-bold text-slate-500 tracking-widest uppercase mt-auto">
-      SRAM
-    </span>
-  </div>
-
-  {/* ⚡ DRAM Card */}
-  <div className="bg-slate-50/60 border border-slate-200/50 rounded-2xl p-8 flex flex-col items-center justify-center min-h-[170px]">
-    {/* 💡 移除負 margin，利用 items-start 配合標準間距，讓線條自然置中 */}
-    <div className="flex items-start gap-4 justify-center mb-4">
-      
-      {/* 1個開關方塊（寬高與 SRAM 完全一致，也是 h-10 w-10） */}
-      <div className="flex flex-col items-center gap-2">
-        <div className="border border-slate-900/80 bg-white rounded-md h-10 w-10" />
-        <span className="text-[10px] font-medium text-slate-500/80 tracking-wider">Transistor</span>
-      </div>
-      
-      {/* 連接線：高度剛好在 40px 的中心點（h-10 的一半是 20px，扣掉自身半高，剛好 mt-[19px]） */}
-      <div className="h-[1px] bg-slate-300 w-6 mt-[19px] shrink-0" />
-      
-      {/* 1個圓形水桶（同樣設定 h-10 w-10，視覺重量完全對等） */}
-      <div className="flex flex-col items-center gap-2">
-        <div className="border border-dashed border-slate-500 bg-white rounded-full h-10 w-10 flex items-center justify-center relative overflow-hidden">
-          <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-slate-200" />
-          <div className="w-1.5 h-1.5 bg-slate-500 rounded-full relative z-10" />
-        </div>
-        <span className="text-[10px] font-medium text-slate-500/80 tracking-wider">Capacitor</span>
-      </div>
-
-    </div>
-    <span className="text-xs font-bold text-slate-500 tracking-widest uppercase mt-auto">
-      DRAM
-    </span>
-  </div>
 
 </div>
 
-  {/* 📖 核心技術描述：移動到圖卡下方，形成一般內文流 */}
-  <div className="text-base text-slate-600 leading-relaxed space-y-5 my-8">
-    <p>
-      <strong className="text-slate-900 font-semibold">SRAM</strong> uses a complex circuit of six transistors to lock each bit of data in a continuous, stable loop. Because these electronic switches hold their state indefinitely as long as power is supplied, SRAM requires no refresh cycles and responds instantly. However, packing six transistors into a single memory cell demands a massive amount of physical silicon area.
-    </p>
-    
-    <p>
-      <strong className="text-slate-900 font-semibold">DRAM</strong> takes the opposite approach by simplifying the cell down to just one transistor and one capacitor. The transistor acts as the gateway, while the capacitor works like a tiny electrical bucket to store the data as charge. This micro-size allows developers to cram billions of cells onto a single chip. The catch? Those tiny buckets slowly leak their charge over time, meaning the data must be continuously refreshed thousands of times per second to prevent data loss.
-    </p>
-  </div>
-
-  {/* 結論總結 */}
-    <p className="text-base text-slate-600 font-medium">
-      In short, SRAM sacrifices density for speed, while DRAM sacrifices speed for density.
-    </p>
-</section>
+          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
 
 
 
-{/* Why SRAM gets expensive so quickly */}
-<section>
-  <div className="border-t border-slate-200 mb-8" />
-  <h2 className="text-xl font-bold text-slate-900 mb-3">
-    Why SRAM gets expensive so quickly
-  </h2>
 
-  <div className="space-y-3.5">
-    <p>
-      The downside of SRAM is cost. Because each SRAM cell is much larger,
-      storing the same amount of data requires a much larger chip.
-    </p>
+            <section>
+              <div className="border-t border-slate-200 mb-8" />
+              <h2 className="text-xl font-bold text-slate-900 mb-3">SRAM Is Faster. Why Not Use It Everywhere?</h2>
+              
+              
+              {/* Section 1 */}
+              <div className="space-y-3.5">
+                <p>
+                  SRAM Is Fast, but it takes more space.
+                </p>
+              </div>
 
-    <p>
-      Larger chips are expensive for two reasons. Fewer chips fit on a
-      silicon wafer, which raises the manufacturing cost of each chip.
-      At the same time, larger chips are more likely to contain defects.
-      Even a tiny defect can ruin an entire chip, reducing
-      yield 
-      and driving costs even higher.
-    </p>
-  </div>
+              <div className="space-y-3.5">
+                <p>
+                  SRAM achieves its speed by using a more complex circuit to store data. As a result, each memory cell occupies more silicon area. 
+                  One memory cell is tiny, but modern systems contain billions of them.
+                </p>
+                <p>
+                  As SRAM capacity increases, the amount of silicon required grows quickly.
+                </p>
+              </div>
 
-  {/* Wafer / Chip Size Comparison */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 max-w-2xl mx-auto">
-    <div className="bg-white border border-slate-200 rounded-xl p-5 text-center">
-      <p className="text-[13px] uppercase tracking-wider text-slate-500 font-semibold mb-3">
-        Smaller chips
-      </p>
+              {/* Silicon Area Flowchart Diagram */}
+              <div className="max-w-md mx-auto my-8 bg-white border border-slate-200 rounded-xl p-5">
+                <div className="flex flex-col items-center space-y-3">
+                  <div className="w-full bg-indigo-50 border border-indigo-100 rounded-lg py-2.5 text-center text-sm font-semibold text-indigo-800">
+                    More SRAM
+                  </div>
+                  <ArrowDown className="w-4 h-4 text-slate-400" />
+                  <div className="w-full bg-indigo-50 border border-indigo-100 rounded-lg py-2.5 text-center text-sm font-semibold text-indigo-800">
+                    More Silicon Area
+                  </div>
+                  <ArrowDown className="w-4 h-4 text-slate-400" />
+                  <div className="w-full bg-indigo-900 rounded-lg py-2.5 text-center text-sm font-semibold text-white shadow-sm">
+                    Larger Chip Cost
+                  </div>
+                </div>
+              </div>
 
-      <div className="w-32 h-32 rounded-full border-2 border-dashed border-slate-300 mx-auto flex flex-wrap gap-1 p-3 items-center justify-center bg-slate-50/50">
-        {[...Array(16)].map((_, i) => (
-          <div key={i} className="w-4 h-4 bg-indigo-600 rounded-sm" />
-        ))}
-      </div>
+              <p className="mt-4">This is where cost becomes important.</p>
+            </section>
 
-      <div className="mt-4 text-sm font-medium text-slate-600">
-        More chips per wafer
-      </div>
+            {/* Section 3 */}
+            <section>
+              <div className="border-t border-slate-200 mb-8" />
+              <h2 className="text-xl font-bold text-slate-900 mb-3">Larger Chips Cost More</h2>
+              <div className="space-y-3.5">
+                <p>
+                  Chips are manufactured on circular silicon wafers. After fabrication, the wafer is cut into individual chips.
+                </p>
+              </div>
 
-      <p className="text-xs text-slate-500 mt-0.5">
-        Higher yield, lower cost
-      </p>
-    </div>
+              {/* Wafer / Chip Size Comparison Visual */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 max-w-2xl mx-auto">
+                <div className="bg-white border border-slate-200 rounded-xl p-5 text-center">
+                  <p className="text-[13px] uppercase tracking-wider text-slate-400 font-semibold mb-3">Small Chips Layout</p>
+                  <div className="w-32 h-32 rounded-full border-2 border-dashed border-slate-300 mx-auto flex flex-wrap gap-1 p-3 items-center justify-center bg-slate-50/50">
+                    {[...Array(16)].map((_, i) => (
+                      <div key={i} className="w-4 h-4 bg-indigo-600 rounded-sm" />
+                    ))}
+                  </div>
+                  <div className="mt-4 text-sm font-medium text-slate-700">More Chips Per Wafer</div>
+                  <p className="text-xs text-slate-400 mt-0.5">Lower cost per unit</p>
+                </div>
 
-    <div className="bg-white border border-slate-200 rounded-xl p-5 text-center">
-      <p className="text-[13px] uppercase tracking-wider text-slate-500 font-semibold mb-3">
-        Larger chips
-      </p>
+                <div className="bg-white border border-slate-200 rounded-xl p-5 text-center">
+                  <p className="text-[13px] uppercase tracking-wider text-slate-400 font-semibold mb-3">Large Chips Layout</p>
+                  <div className="w-32 h-32 rounded-full border-2 border-dashed border-slate-300 mx-auto flex flex-wrap gap-2 p-4 items-center justify-center bg-slate-50/50">
+                    {[...Array(4)].map((_, i) => (
+                      <div key={i} className="w-9 h-9 bg-indigo-900 rounded-sm" />
+                    ))}
+                  </div>
+                  <div className="mt-4 text-sm font-medium text-slate-700">Fewer Chips Per Wafer</div>
+                  <p className="text-xs text-slate-400 mt-0.5">Higher manufacturing cost</p>
+                </div>
+              </div>
 
-      <div className="w-32 h-32 rounded-full border-2 border-dashed border-slate-300 mx-auto flex flex-wrap gap-2 p-4 items-center justify-center bg-slate-50/50">
-        {[...Array(4)].map((_, i) => (
-          <div key={i} className="w-9 h-9 bg-indigo-900 rounded-sm" />
-        ))}
-      </div>
+              <div className="space-y-3.5">
+                <p>
+                  If each chip is small, more chips can fit on a single wafer. If each chip becomes larger, fewer chips fit on the same wafer. 
+                  This means the manufacturing cost of each chip increases.
+                </p>
+                <p>
+                  Larger chips are also more likely to contain manufacturing defects, which further reduces yield and increases cost.
+                </p>
+              </div>
+            </section>
 
-      <div className="mt-4 text-sm font-medium text-slate-600">
-        Fewer chips per wafer
-      </div>
+            {/* Section 4 */}
+            <section>
+              <div className="border-t border-slate-200 mb-8" />
+              <h2 className="text-xl font-bold text-slate-900 mb-3">DRAM Takes a Different Approach</h2>
+              <div className="space-y-3.5">
+                <p>
+                  Instead of prioritizing speed, DRAM focuses on density. Its memory cells are much smaller, allowing engineers to fit far more memory into the same area. 
+                  This makes DRAM ideal for storing large amounts of data.
+                </p>
+                <p>
+                  The trade-off is that DRAM must constantly refresh its contents, making it slower than SRAM. 
+                  However, the lower cost and higher capacity make DRAM practical for everyday systems.
+                </p>
+              </div>
+            </section>
 
-      <p className="text-xs text-slate-500 mt-0.5">
-        Lower yield, higher cost
-      </p>
-    </div>
-  </div>
-
-  <p>
-    This is why SRAM works well for small CPU caches, but becomes impractical
-    for large-capacity memory.
-  </p>
-</section>
-
-
-{/* Section 5 */}
+            {/* Section 5 */}
             <section>
               <div className="border-t border-slate-200 mb-8" />
               <h2 className="text-xl font-bold text-slate-900 mb-3">Why Modern Systems Use Both</h2>
@@ -324,16 +265,20 @@ export default function WhySramPage() {
               </div>
             </section>
 
-
-{/* 結論：保留有力的結尾 */}
+            {/* Conclusion */}
             <section>
+              <div className="border-t border-slate-200 mb-8" />
               <div className="space-y-3.5">
                 <p>
-                  SRAM is fast but expensive and sparse. DRAM is slower but cheap and dense. 
-                  The goal isn&apos;t to build the fastest memory — it&apos;s to build the most useful memory for the price.
+                  When I first learned about memory, I assumed faster automatically meant better. 
+                  SRAM showed me that engineering is often about trade-offs.
                 </p>
-                <p className="font-medium text-slate-600">
-                  That&apos;s why your laptop has megabytes of SRAM cache and gigabytes of DRAM — not the other way around.
+                <p>
+                  Using SRAM everywhere would increase chip area, reduce the number of chips produced from each wafer, and significantly increase cost. 
+                  That is why modern systems use a small amount of SRAM where speed matters most and rely on DRAM for the bulk of their memory.
+                </p>
+                <p className="font-medium text-slate-800">
+                  The goal is not to build the fastest memory possible. The goal is to find the right balance between speed, capacity, and cost.
                 </p>
               </div>
             </section>
@@ -343,4 +288,4 @@ export default function WhySramPage() {
       </div>
     </main>
   )
-}            
+}

@@ -4,6 +4,8 @@ import Link from "next/link"
 import { Sparkle, BookOpen, FolderOpen } from "lucide-react"
 import { CategoryCard } from "@/components/category-card"
 import { vocabularyData } from "@/lib/vocabulary-data"
+import { SiteNav } from "@/components/site-nav"
+
 
 export default function KoreanPage() {
   const totalWords = vocabularyData.reduce(
@@ -13,21 +15,10 @@ export default function KoreanPage() {
 
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
-      {/* 💡 這裡的外層容器 px 與 py 設定，已經全部調整成跟首頁完全一致的 md:px-6 py-10 */}
-      <div className="max-w-6xl mx-auto px-6 md:px-6 py-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-6 py-10">
 
-        {/* 🍎 Logo 位置完美複製首頁：使用 mb-14 與 pt-2，確保絕對重合不抖動 */}
-        <nav className="mb-14 pt-2 select-none">
-          <Link href="/" className="inline-flex items-center gap-2 group">
-            <Sparkle 
-              className="w-4 h-4 text-slate-400 transition-all duration-700 ease-out group-hover:text-slate-800 group-hover:rotate-12 group-active:scale-90" 
-              strokeWidth={1.8} 
-            />
-            <span className="text-base font-semibold text-slate-900 tracking-[0.12em] font-sans">
-              Cathy<span className="font-light text-slate-400 ml-0.5">Lab</span>
-            </span>
-          </Link>
-        </nav>
+        <SiteNav />
+        
 
         {/* Header */}
         <header className="mb-14">
