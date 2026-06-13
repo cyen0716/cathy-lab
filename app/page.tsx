@@ -30,39 +30,53 @@ export default function HomePage() {
           </h1>
 
          <div className="mt-8 max-w-7xl">
+  <p className="text-lg md:text-xl text-slate-800 tracking-normal leading-tight mb-2">
+    An English major turned technical writer, driven by a curiosity about technology.
+  </p>
   <p className="text-lg md:text-xl text-slate-800 tracking-normal leading-tight">
-    An English major turned technical writer, driven by a curiosity about technology. <br />
     Here is my playground for documenting what I learn.
   </p>
 </div>
         </section>
 
 <Link 
-  href="/portfolio" 
-  className="inline-flex items-center justify-center px-6 py-4 rounded-full 
-  bg-[#4338CA] text-white font-medium text-base tracking-wide
-  shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]
-  hover:scale-[1.02]
-  active:scale-[0.98]
-  transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+  href="https://www.linkedin.com/in/cathyyen/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center px-5 py-4 rounded-full tracking-wide
+  border border-2 border-slate-700 bg-transparent text-slate-800 font-medium text-11 
+  hover:scale-[1.05]
+  hover:border-slate-500
+  transition-all duration-700 ease-out"
 >
-  Portfolio
+  LinkedIn
 </Link>
- 
 
 
- {/* Learning Lab Section */}
+ {/* Learning Journey Section */}
 <section className="mt-30">
-  <div className="flex flex-col gap-8 ">
+  <div className="flex flex-col gap-7 ">
 
     <div>
       <h2 className="text-2xl md:text-2xl font-bold text-slate-900 leading-tight">
-        Learning Lab
+        Learning Journey
       </h2>
     </div>
 
-    <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-6">
-      
+    <div className="flex-1 grid grid-cols-1 sm:grid-cols-4 gap-6">
+
+<Link 
+  href="/portfolio" 
+  className="group p-8 rounded-3xl border border-white/10 bg-[#463dbe] 
+  shadow-[0_2px_12px_rgba(0,0,0,0.2)] 
+  hover:scale-[1.02] 
+  hover:shadow-[0_20px_20px_-15px_rgba(0,0,0,0.05)] 
+  transition-all duration-700 ease-out block"
+>
+  <h3 className="text-xl font-bold text-white">Portfolio</h3>
+  <p className="text-sm text-slate-50 mt-2">Technical writing samples.</p>
+</Link>
+
       
       {/* Server & Storage 卡片 */}
       <Link href="/server-storage" 
@@ -73,7 +87,7 @@ export default function HomePage() {
       hover:border-slate-300 
       transition-all duration-700 ease-out block">
   <h3 className="text-xl font-bold text-slate-900">Server & Storage</h3>
-  <p className="text-base text-slate-800 mt-2">Learning enterprise infrastructure.</p>
+  <p className="text-sm text-slate-800 mt-2">Learning enterprise infrastructure.</p>
 </Link>
 
       {/* Semiconductor 卡片 */}
@@ -85,7 +99,7 @@ export default function HomePage() {
       hover:border-slate-300 
       transition-all duration-700 ease-out block">
         <h3 className="text-xl font-bold text-slate-900">Semiconductor</h3>
-        <p className="text-base text-slate-800 mt-2">Understanding chip technology.</p>
+        <p className="text-sm text-slate-800 mt-2">Understanding chip technology.</p>
       </Link>
 
       {/* Korean 卡片 */}
@@ -97,7 +111,7 @@ export default function HomePage() {
       hover:border-slate-300 
       transition-all duration-700 ease-out block">
         <h3 className="text-xl font-bold text-slate-900">Korean</h3>
-        <p className="text-base text-slate-800 mt-2">One word at a time.</p>
+        <p className="text-sm text-slate-800 mt-2">One word at a time.</p>
       </Link>
     </div>
   </div>
