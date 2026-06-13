@@ -13,12 +13,12 @@ export default function SemiconductorPage() {
             Why Do We Need Semiconductors?
           </h1>
 
-          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-10 text-base leading-[1.85] text-slate-700">
 
             {/* Intro */}
             <section>
 <section>
-  <div className="space-y-5 text-base leading-[1.85] text-slate-500">
+  <div className="space-y-5 text-base leading-[1.85] text-slate-700">
 
     <p>
       Computers only understand two states:
@@ -38,7 +38,7 @@ export default function SemiconductorPage() {
       <p className="text-xs uppercase tracking-widest text-slate-400 font-medium mb-3">
         Gate off
       </p>
-      <p className="text-sm text-slate-500 leading-relaxed">
+      <p className="text-sm text-slate-700 leading-relaxed">
         Voltage removed.<br />Current stops.
       </p>
       <p className="text-xl font-bold text-slate-900 mt-3">0</p>
@@ -128,16 +128,16 @@ export default function SemiconductorPage() {
       <div className="h-[1px] bg-slate-100 my-0.5 w-8 mx-auto" />
       <p className="text-xs font-medium text-slate-400">or OFF</p>
     </div>
-    <p className="text-sm font-semibold text-slate-500 mt-3">One Transistor</p>
+    <p className="text-sm font-semibold text-slate-700 mt-3">One Transistor</p>
   </div>
 
   {/* 乘號 */}
-  <p className="text-lg uppercase tracking-widest font-bold text-slate-500">
+  <p className="text-lg uppercase tracking-widest font-bold text-slate-700">
     × Billions
   </p>
   
   {/* 等號 */}
-  <p className="text-2xl font-light text-slate-500">=</p>
+  <p className="text-2xl font-light text-slate-700">=</p>
 
   {/* 右側：由無數獨立開關拼出的晶片 */}
   <div className="text-center">
@@ -160,13 +160,13 @@ export default function SemiconductorPage() {
         <span className="bg-white border border-indigo-100 text-[#4338CA] px-2.5 py-2 rounded-md shadow-sm">ON</span>
       </div>
     </div>
-    <p className="text-sm font-semibold text-slate-500 mt-3">Chip Matrix</p>
+    <p className="text-sm font-semibold text-slate-700 mt-3">Chip Matrix</p>
   </div>
 
 </div>
 
 
-<p className="text-base leading-[1.85] text-slate-500">
+<p className="text-base leading-[1.85] text-slate-700">
   It is a massive network of billions of transistors working together,
   constantly switching between ON and OFF states.
   Every calculation, image, video, app, and AI model ultimately comes

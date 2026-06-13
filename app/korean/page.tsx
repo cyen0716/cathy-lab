@@ -29,7 +29,7 @@ export default function KoreanPage() {
           </h1>
 
           {/* Body Text */}
-          <p className="text-base font-normal text-slate-500/90 leading-relaxed tracking-normal max-w-2xl">
+          <p className="text-base font-normal text-slate-700/90 leading-relaxed tracking-normal max-w-2xl">
             A growing collection of Korean words I&apos;m learning and exploring.
           </p>
 

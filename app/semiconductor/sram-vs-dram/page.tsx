@@ -19,7 +19,7 @@ export default function WhySramPage() {
 
 
           {/* Intro block */}
-          <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
+          <div className="space-y-3.5 text-base leading-[1.85] text-slate-700 mb-8">
           
             <p>
               Modern computers use different types of memory. 
@@ -129,7 +129,7 @@ export default function WhySramPage() {
 
 </div>
 
-          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-10 text-base leading-[1.85] text-slate-700">
 
 
 
@@ -259,7 +259,7 @@ export default function WhySramPage() {
                 <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-medium">
                   • <strong>Storage</strong> provides long-term retention.
                 </p>
-                <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-normal text-slate-500 mt-1">
+                <p className="text-[14.5px] leading-[1.75] text-indigo-800 font-normal text-slate-700 mt-1">
                   Each layer solves a different problem.
                 </p>
               </div>

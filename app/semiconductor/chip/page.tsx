@@ -16,7 +16,7 @@ export default function ChipPage() {
           </h1>
 
           {/* Intro */}
-          <div className="space-y-3.5 text-base leading-[1.85] text-slate-500 mb-8">
+          <div className="space-y-3.5 text-base leading-[1.85] text-slate-700 mb-8">
             <p>
              A chip is not a random collection of circuits.</p>
             <p>
@@ -75,7 +75,7 @@ export default function ChipPage() {
   </div>
 </div>
 
-          <div className="space-y-10 text-base leading-[1.85] text-slate-500">
+          <div className="space-y-10 text-base leading-[1.85] text-slate-700">
 
             {/* CPU */}
             <section>

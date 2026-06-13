@@ -27,7 +27,7 @@ export default function SemiconductorLayout({
             <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            Articles
+            
           </button>
         </div>
 
@@ -50,7 +50,6 @@ export default function SemiconductorLayout({
               {/* 抽屜主體 - 從左側滑出 */}
               <div className="fixed inset-y-0 left-0 w-full max-w-xs bg-white p-6 shadow-xl flex flex-col overflow-y-auto">
                 <div className="flex justify-between items-center mb-6">
-                  <span className="font-bold text-gray-900 text-lg">專題導航</span>
                   {/* 關閉按鈕 */}
                   <button 
                     onClick={() => setIsMobileMenuOpen(false)}
