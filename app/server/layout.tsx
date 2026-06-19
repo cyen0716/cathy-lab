@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
-import { SemiconductorSidebar } from "@/components/semiconductor-sidebar"
+import { ServerSidebar } from "@/components/server-sidebar"
 
-export default function SemiconductorLayout({
+export default function ServerLayout({
   children,
 }: {
   children: React.ReactNode
@@ -13,10 +13,9 @@ export default function SemiconductorLayout({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
 
-  // 定義路徑與分類標籤的對照表
+  // 1. 分類標籤判斷邏輯（與半導體系列一致）
   const getCategory = () => {
-    if (pathname.includes("/sram-vs-dram")) return "Memory"
-    return "Basics" // 預設分類
+    return "Basics"
   }
 
   return (
@@ -24,6 +23,7 @@ export default function SemiconductorLayout({
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-10">
         <SiteNav />
 
+        {/* 2. 手機版抽屜觸發按鈕 */}
         <div className="md:hidden mb-4">
           <button
             onClick={() => setIsMobileMenuOpen(true)}
@@ -36,21 +36,22 @@ export default function SemiconductorLayout({
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+          {/* 3. 電腦版 Sidebar */}
           <div className="hidden md:block w-64 shrink-0">
-            <SemiconductorSidebar />
+            <ServerSidebar />
           </div>
 
-          {/* 手機版抽屜 */}
+          {/* 4. 手機版抽屜邏輯 */}
           {isMobileMenuOpen && (
             <div className="fixed inset-0 z-50 md:hidden animate-fade-in">
               <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
               <div className="fixed inset-y-0 left-0 w-full max-w-xs bg-white p-6 shadow-xl flex flex-col overflow-y-auto">
-                <SemiconductorSidebar />
+                <ServerSidebar onClose={() => setIsMobileMenuOpen(false)} />
               </div>
             </div>
           )}
 
-          {/* 自動顯示標籤並包裹內容 */}
+          {/* 5. 內容區：包含分類標籤渲染 */}
           <div className="flex-1 min-w-0 w-full">
             <div className="mb-2">
               <span className="text-sm font-semibold text-[#4338CA] tracking-wider uppercase">

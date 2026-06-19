@@ -24,7 +24,7 @@ export default function KoreanPage() {
         <header className="mb-14">
 
           {/* H1 — Page Title */}
-          <h1 className="text-4xl font-bold text-slate-950 leading-tight mb-6">
+          <h1 className="text-3xl font-bold text-slate-950 leading-tight mb-6">
             Korean Vocabulary
           </h1>
 

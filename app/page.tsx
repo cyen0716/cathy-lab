@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { Cpu, BookOpen, Sparkles, Sparkle } from "lucide-react"
-import { SiteNav } from "@/components/site-nav"
 
 
 export default function HomePage() {
@@ -78,15 +77,15 @@ export default function HomePage() {
 </Link>
 
       
-      {/* Server & Storage 卡片 */}
-      <Link href="/server-storage" 
+      {/* Server 卡片 */}
+      <Link href="/server" 
       className="group p-8 rounded-3xl border border-slate-200 bg-white 
       shadow-[0_2px_12px_rgba(0,0,0,0.01)] 
       hover:scale-[1.02] 
       hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
       hover:border-slate-300 
       transition-all duration-700 ease-out block">
-  <h3 className="text-xl font-bold text-slate-900">Server & Storage</h3>
+  <h3 className="text-xl font-bold text-slate-900">Server</h3>
   <p className="text-sm text-slate-800 mt-2">Learning enterprise infrastructure.</p>
 </Link>
 
