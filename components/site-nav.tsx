@@ -10,7 +10,7 @@ export function SiteNav() {
   const tabs = [
     { href: "/portfolio", label: "Portfolio" },
     { href: "/semiconductor", label: "Semiconductor" },
-    { href: "/server", label: "Server & Storage" },
+    { href: "/server", label: "Server" },
     { href: "/korean", label: "Korean" },
   ]
 

@@ -16,7 +16,7 @@ export function SemiconductorSidebar() {
     }`;
 
   return (
-    <aside className="w-70 shrink-0"> 
+    <aside className="w-64 shrink-0"> 
       <div className="sticky top-24">
         
 
@@ -24,7 +24,7 @@ export function SemiconductorSidebar() {
           {/* 第 1 區塊 */}
           <div>
             <p className="text-sm font-semibold text-slate-800 uppercase tracking-wider mb-3 px-4">
-              Fundamentals
+              Basics
             </p>
             <div className="space-y-0.5">
               <Link href="/semiconductor" className={getLinkClass("/semiconductor")}>
