@@ -1,6 +1,4 @@
-"use client"
-
-import Link from "next/link"
+"use client";
 
 export default function ServerPage() {
   return (
@@ -8,32 +6,109 @@ export default function ServerPage() {
       <h1 className="text-3xl font-bold text-slate-900 mt-4 mb-4">
         What is a Server?
       </h1>
-<h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">
-        So Why Do We Even Have Servers?
-      </h2>
+
       <div className="space-y-10 text-base leading-[1.85] text-slate-700">
         
         {/* Intro Section */}
         <section className="space-y-5">
-          <p>You open a website at midnight. It loads. </p>
-          <p> You check your email on your phone. Everything's there.</p>
-          <p>Why is that website still awake?
-            How can thousands of people use it at once?</p>
-          <p>The answer: a server.</p>
-
-          
-          <div className="border-l-[3px] border-[#4338CA] pl-4">
-            <p className="text-base text-indigo-800 font-medium">
-              A server isn't a completely different machine. It's a computer designed for a different purpose.</p>
-          </div>
-          <p >  
-              While a personal computer is built for an individual's tasks, a server is designed to store, 
-              manage, and deliver data to other devices and users.
+          <p> You open a website at midnight, it loads instantly. 
+            You check your email on your phone, and your messages are right there. 
+            While these everyday actions feel seamless, they rely on massive, invisible systems 
+            built to stay online 24/7.
           </p>
-
-         
-
+          <p> How does a website remain available around the clock? 
+            How do thousands of users access the same service simultaneously?</p>
+          <p>The answer comes down to a piece of core infrastructure: the server.</p>        
+          <p>  
+              Although a server shares similar components (CPU, RAM, motherboard) with a PC, 
+               its design prioritizes stability and durability.
+               To ensure 24/7 uninterrupted service, it features:
+          </p>
+          <ul className="list-disc pl-6 ">
+            <li>High Redundancy: Built with backup systems, such as dual power supplies, to prevent a system crash 
+              if a single component fails.</li>
+            <li>Massive Performance: Packed with multiple processors and vast amounts of RAM to handle thousands of simultaneous 
+              connection requests.</li>
+            <li>Specialized OS: Runs operating systems specifically designed for multi-user connectivity 
+              and high security, such as Linux or Windows Server.</li>
+          </ul>
         </section>
+        
+        
+        {/* Types of Servers */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-bold text-slate-900 mb-3">Common Types of Servers</h2>
+          <p>  
+              The hardware alone does not determine what kind of server it is. 
+              A server can perform different jobs depending on the software installed on it.
+          </p>
+          <p>  
+            Based on the services it provides, a server can take on different roles.
+          </p>
+          <ul className="list-disc pl-6 ">
+            <li>Web Server – Stores website files and delivers web pages to your browser 
+              or mobile phone when you type in a URL.</li>
+            <li>Mail Server – Responsible for sending, receiving, filtering, and storing emails.</li>
+            <li>Database Server – Stores and manages data such as user accounts, passwords, and order information.</li>
+            <li>Game Server – Built for multiplayer online games to track player status 
+              and synchronize real-time actions for a smooth experience.</li>
+          </ul>
+        </section>
+
+        {/* How It Works */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-bold text-slate-900 mb-3">How Server Works?</h2>
+          <p>  
+          1. Receiving Requests: When you click a website, send a message, or play a game on your 
+          phone or computer, your device sends a "Request" to the server via the internet.
+          </p>
+          <p>  
+          2. Processing Data: Once received, the server's CPU or AI chips perform the calculations,
+           and it reads or writes data to its storage drives.
+          </p>
+          <p>  
+          3. Sending Responses: After processing, the server packages the results (such as web pages, 
+          video streams, or game data) and transmits them back to the client device.
+          </p>
+          <p>  
+          4. Displaying Results: The client's device (like a web browser or an app) 
+          decodes the received data and displays it to you.
+          </p>
+        </section>
+
+        {/* Graphic */}
+       <div className="bg-white border border-slate-200 rounded-3xl p-8 my-8 shadow-sm">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+    {/* Client */}
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-full md:w-2/12 text-center">
+      <p className="text-base text-slate-800 font-bold">Client</p>
+    </div>
+
+    {/* 雙向長箭頭與文字區塊 */}
+    <div className="hidden md:flex flex-col justify-center items-center w-4/12 gap-1">
+      {/* Request 區塊 */}
+      <div className="flex flex-col items-center">
+        <span className="text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Request</span>
+        <svg width="200" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 8H198M198 8L188 2M198 8L188 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+
+      {/* Response 區塊 */}
+      <div className="flex flex-col items-center mt-2">
+        <svg width="200" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M200 8H2M2 8L12 2M2 8L12 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        <span className="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Response</span>
+      </div>
+    </div>
+
+    {/* Server */}
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-full md:w-2/12 text-center">
+      <p className="text-base text-slate-800 font-bold">Server</p>
+    </div>
+  </div>
+</div>
 
       </div>
     </article>

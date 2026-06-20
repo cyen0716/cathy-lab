@@ -11,45 +11,60 @@ export default function HomePage() {
       {/* Logo */}
       <Link href="/" className="inline-flex items-center gap-2 group shrink-0">
         <Sparkle
-          className="w-5 h-5 text-slate-400 transition-all duration-700 ease-out group-hover:rotate-12"
+          className="w-5 h-5 text-slate-600 transition-all duration-700 ease-out group-hover:rotate-12"
           strokeWidth={1.8}
         />
         {/* Cathy 改為藍紫色，Lab 維持原有配色 */}
-        <span className="text-lg font-bold text-[#4338CA] tracking-[0.05em]">
+        <span className="text-lg font-bold text-slate-900 tracking-[0.05em]">
           Cathy
-          <span className="font-medium text-slate-500 ml-1">Lab</span>
+          <span className="font-semibold text-slate-900 ml-1">Lab</span>
         </span>
       </Link>
 
-        {/* Hero Section */}
-        <section className="max-w-7xl mb-15 mt-16">
-          {/* 拿掉 tracking-tight，讓 Cathy Yen 的字母自然舒展 */}
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-950 leading-tight mb-10">
-            Hello, I&apos;m Cathy
-          </h1>
+{/* Hero Section */}
+<section className="max-w-7xl mb-15 mt-16 flex flex-col md:flex-row gap-12 items-start">
+  
+  {/* 左邊：文字區域 */}
+  <div className="flex-1">
+    <h1 className="text-4xl md:text-5xl font-bold text-slate-950 leading-tight mb-10">
+      Hello, I&apos;m Cathy
+    </h1>
 
-         <div className="mt-8 max-w-7xl">
-  <p className="text-lg md:text-xl text-slate-800 tracking-normal leading-tight mb-2">
-    An English major turned technical writer, driven by a curiosity about technology.
-  </p>
-  <p className="text-lg md:text-xl text-slate-800 tracking-normal leading-tight">
-    Here is my playground for documenting what I learn.
-  </p>
-</div>
-        </section>
+    <div className="max-w-3xl">
+      <p className="text-lg md:text-lg text-slate-800 tracking-normal mb-2">
+        I'm a Technical Writer with a curiosity for technology.
+        AI gave me a new way to learn: instead of only reading about things, I can build them.
+      </p>
+      <p className="text-lg md:text-lg text-slate-800 tracking-normal mb-8">
+        Cathy Lab started as a small experiment and became a place where I explore servers, 
+        semiconductors, Korean, and whatever I'm curious about next.
+      </p>
+    </div>
 
-<Link 
-  href="https://www.linkedin.com/in/cathyyen/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center px-5 py-4 rounded-full tracking-wide
-  border border-2 border-slate-700 bg-transparent text-slate-800 font-medium text-11 
-  hover:scale-[1.05]
-  hover:border-slate-500
-  transition-all duration-700 ease-out"
->
-  LinkedIn
-</Link>
+    <Link 
+      href="https://www.linkedin.com/in/cathyyen/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center px-5 py-4 rounded-full tracking-wide
+      border border-2 border-slate-700 bg-transparent text-slate-800 font-medium text-sm 
+      hover:scale-[1.05] hover:border-slate-500 transition-all duration-700 ease-out"
+    >
+      LinkedIn
+    </Link>
+  </div>
+
+  {/* 右邊：圖片區域 (4:3 比例，無圓角陰影，限制寬度) */}
+  <div className="w-full md:w-64 flex-shrink-0">
+    <div className="aspect-[1/1] w-full">
+      <img 
+        src="/cathy-book.jpeg" 
+        alt="Cathy" 
+        className="object-cover w-full h-full"
+      />
+    </div>
+  </div>
+
+</section>
 
 
  {/* Learning Journey Section */}
@@ -57,7 +72,7 @@ export default function HomePage() {
   <div className="flex flex-col gap-7 ">
 
     <div>
-      <h2 className="text-2xl md:text-2xl font-bold text-slate-900 leading-tight">
+      <h2 className="text-xl md:text-xl font-bold text-slate-900 leading-tight">
         Learning Journey
       </h2>
     </div>
@@ -66,14 +81,15 @@ export default function HomePage() {
 
 <Link 
   href="/portfolio" 
-  className="group p-8 rounded-3xl border border-white/10 bg-[#463dbe] 
-  shadow-[0_2px_12px_rgba(0,0,0,0.2)] 
-  hover:scale-[1.02] 
-  hover:shadow-[0_20px_20px_-15px_rgba(0,0,0,0.05)] 
-  transition-all duration-700 ease-out block"
+  className="group p-8 rounded-3xl border border-slate-200 bg-white 
+      shadow-[0_2px_12px_rgba(0,0,0,0.01)] 
+      hover:scale-[1.02] 
+      hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
+      hover:border-slate-300 
+      transition-all duration-700 ease-out block"
 >
-  <h3 className="text-xl font-bold text-white">Portfolio</h3>
-  <p className="text-sm text-slate-50 mt-2">Technical writing samples.</p>
+  <h3 className="text-xl font-bold text-slate-900">Portfolio</h3>
+  <p className="text-sm text-slate-800 mt-2">Technical writing samples.</p>
 </Link>
 
       
