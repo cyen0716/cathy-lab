@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function PortfolioTabs() {
   // 1. 用 state 來記錄當前點擊的書籤，預設讓第一個亮起
-  const [activeTab, setActiveTab] = useState("#vpn");
+  const [activeTab, setActiveTab] = useState("#cx4800");
 
   // 2. 移除 usePathname，直接比對當前點擊的 anchor
   const getLinkClass = (hash: string) => 

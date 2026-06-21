@@ -23,12 +23,12 @@ export function SiteNav() {
       {/* Logo - 手機版靠左 */}
       <Link href="/" className="inline-flex items-center gap-2 group shrink-0 self-start">
         <Sparkle
-          className="w-5 h-5 text-slate-400 transition-all duration-700 ease-out group-hover:rotate-12"
+          className="w-5 h-5 text-slate-600 transition-all duration-700 ease-out group-hover:rotate-12"
           strokeWidth={1.8}
         />
-        <span className="text-lg font-bold text-[#4338CA] tracking-[0.05em]">
+        <span className="text-lg font-bold text-slate-900 tracking-[0.05em]">
           Cathy
-          <span className="font-medium text-slate-500 ml-1">Lab</span>
+          <span className="font-semibold text-slate-900 ml-1">Lab</span>
         </span>
       </Link>
 
