@@ -13,7 +13,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
 
   return (
     <Link
-      href={`/category/${category.id}`}
+      href={`/korean/${category.id}`}
       className="
         group p-6 rounded-2xl border border-slate-200/80 bg-white
         shadow-[0_2px_8px_rgba(0,0,0,0.01)]

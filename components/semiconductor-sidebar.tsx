@@ -39,8 +39,8 @@ export function SemiconductorSidebar({
             <p className="text-xs font-semibold text-zinc-900 uppercase tracking-wider mb-3 px-6">Basics</p>
             <div className="space-y-0.5">
               <Link href="/semiconductor" className={getLinkClass("/semiconductor")}>IC Categories</Link>
-              <Link href="/semiconductor/why" className={getLinkClass("/semiconductor/why")}>Why Need Semiconductors?</Link>
-              <Link href="/semiconductor/chip" className={getLinkClass("/semiconductor/chip")}>Inside a Chip</Link>
+              <Link href="/semiconductor/why" className={getLinkClass("/semiconductor/why")}>Semiconductor Basics</Link>
+              <Link href="/semiconductor/chip" className={getLinkClass("/semiconductor/chip")}>Chip Organization</Link>
             </div>
           </div>
           <div>

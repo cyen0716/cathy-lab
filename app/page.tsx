@@ -6,13 +6,13 @@ import { FlaskConical } from 'lucide-react'; // 引入燒瓶圖示
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FCFCFC] antialiased">
-      <div className="max-w-7xl mx-auto py-8">
+<div className="max-w-7xl mx-auto px-6 py-8">
 
 {/* Logo */}
 <Link href="/" className="inline-flex items-center gap-3 group shrink-0">
   {/* 圖示容器 */}
   <div className="relative">
-    <div className="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-full transition-transform duration-700 ease-out group-hover:-rotate-12">
+    <div className="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-full transition-transform duration-700 ease-out group-hover:-rotate-15">
       <FlaskConical 
         className="w-5 h-5 text-white" 
         strokeWidth={2.3} 
@@ -92,7 +92,7 @@ export default function HomePage() {
       hover:scale-[1.02] 
       hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
       hover:border-zinc-300 
-      transition-all duration-700 ease-out block"
+      transition-all duration-300 ease-out block"
 >
   <h3 className="text-xl font-bold text-zinc-900">Portfolio</h3>
   <p className="text-sm text-zinc-800 mt-2">Technical writing samples.</p>
@@ -106,7 +106,7 @@ export default function HomePage() {
       hover:scale-[1.02] 
       hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
       hover:border-zinc-300 
-      transition-all duration-700 ease-out block">
+      transition-all duration-300 ease-out block">
   <h3 className="text-xl font-bold text-zinc-900">Server</h3>
   <p className="text-sm text-zinc-800 mt-2">Learning enterprise infrastructure.</p>
 </Link>
@@ -118,19 +118,19 @@ export default function HomePage() {
       hover:scale-[1.02] 
       hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
       hover:border-zinc-300 
-      transition-all duration-700 ease-out block">
+      transition-all duration-300 ease-out block">
         <h3 className="text-xl font-bold text-zinc-900">Semiconductor</h3>
         <p className="text-sm text-zinc-800 mt-2">Understanding chip technology.</p>
       </Link>
 
       {/* Korean 卡片 */}
       <Link href="/korean" 
-      className="group p-8 rounded-3xl border border-zinc-200 bg-white 
+      className="group p-8 rounded-3xl border border-zinc-200 bg-white
       shadow-[0_2px_12px_rgba(0,0,0,0.01)] 
       hover:scale-[1.02] 
       hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] 
-      hover:border-zinc-300 
-      transition-all duration-700 ease-out block">
+      hover:border-zinc-300
+      transition-all duration-300 ease-out block">
         <h3 className="text-xl font-bold text-zinc-900">Korean</h3>
         <p className="text-sm text-zinc-800 mt-2">One word at a time.</p>
       </Link>

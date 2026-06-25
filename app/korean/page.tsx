@@ -1,6 +1,6 @@
 "use client"
 
-import { Sparkle, BookOpen, FolderOpen } from "lucide-react"
+import { BookOpen, FolderOpen } from "lucide-react"
 import { CategoryCard } from "@/components/category-card"
 import { vocabularyData } from "@/lib/vocabulary-data"
 import { SiteNav } from "@/components/site-nav"
