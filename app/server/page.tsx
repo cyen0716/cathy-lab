@@ -77,33 +77,35 @@ export default function ServerPage() {
         </section>
 
         {/* Graphic */}
-  <div className="bg-white border border-slate-200 rounded-3xl p-4 md:p-8 my-8 shadow-sm">
-  <div className="flex items-center justify-center gap-2 md:gap-4">
-    
+       <div className="bg-white border border-slate-200 rounded-3xl p-8 my-8 shadow-sm">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
     {/* Client */}
-    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-6 py-3 md:p-4 w-4/12 md:w-3/12 text-center shrink-0">
-      <p className="text-base md:text-base text-slate-800 font-bold">Client</p>
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-full md:w-2/12 text-center">
+      <p className="text-base text-slate-800 font-bold">Client</p>
     </div>
 
-    {/* 箭頭區塊 */}
-    <div className="flex flex-col justify-center items-center w-4/12 md:w-4/12 gap-1">
+    {/* 雙向長箭頭與文字區塊 */}
+    <div className="hidden md:flex flex-col justify-center items-center w-4/12 gap-1">
+      {/* Request 區塊 */}
       <div className="flex flex-col items-center">
-        <span className="text-xs md:text-xs font-semibold text-slate-500 mb-0.5 uppercase tracking-wider">Request</span>
-        <svg className="w-full md:w-[400px]" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span className="text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Request</span>
+        <svg width="200" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 8H198M198 8L188 2M198 8L188 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
-      <div className="flex flex-col items-center mt-1">
-        <svg className="w-full md:w-[400px]" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+      {/* Response 區塊 */}
+      <div className="flex flex-col items-center mt-2">
+        <svg width="200" height="16" viewBox="0 0 200 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M200 8H2M2 8L12 2M2 8L12 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-        <span className="text-xs md:text-xs font-semibold text-slate-500 mt-0.5 uppercase tracking-wider">Response</span>
+        <span className="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Response</span>
       </div>
     </div>
 
     {/* Server */}
-    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl px-6 py-3 md:p-4 w-4/12 md:w-3/12 text-center shrink-0">
-      <p className="text-base md:text-base text-slate-800 font-bold">Server</p>
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-full md:w-2/12 text-center">
+      <p className="text-base text-slate-800 font-bold">Server</p>
     </div>
   </div>
 </div>

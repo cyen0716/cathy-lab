@@ -1,65 +1,40 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import { usePathname } from "next/navigation"
+import { useState } from 'react';
 import { SiteNav } from "@/components/site-nav"
 import { SemiconductorSidebar } from "@/components/semiconductor-sidebar"
 
-export default function SemiconductorLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const pathname = usePathname()
-
-  // 定義路徑與分類標籤的對照表
-  const getCategory = () => {
-    if (pathname.includes("/sram-vs-dram")) return "Memory"
-    return "Basics" // 預設分類
-  }
+export default function SemiconductorLayout({ children }: { children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false); // 手機版預設收起
 
   return (
-    <main className="min-h-screen bg-[#FCFCFC]">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-10">
-        <SiteNav />
-
-        <div className="md:hidden mb-4">
-          <button
-            onClick={() => setIsMobileMenuOpen(true)}
-            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-lg bg-white shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
-          >
-            <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+    <main className="min-h-screen bg-zinc-50">
+      <header className="bg-zinc-50 border-b border-zinc-100">
+        <div className="max-w-[1500px] mx-auto px-6 h-16 flex items-center">
+          <SiteNav />
         </div>
+      </header>
 
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-          <div className="hidden md:block w-64 shrink-0">
-            <SemiconductorSidebar />
-          </div>
+      <div className="max-w-[1500px] mx-auto flex gap-0 relative">
+        {/* 手機遮罩 (點擊後關閉 sidebar) */}
+        {isOpen && <div className="fixed inset-0 bg-black/20 z-40 md:hidden" onClick={() => setIsOpen(false)} />}
 
-          {/* 手機版抽屜 */}
-          {isMobileMenuOpen && (
-            <div className="fixed inset-0 z-50 md:hidden animate-fade-in">
-              <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
-              <div className="fixed inset-y-0 left-0 w-full max-w-xs bg-white p-6 shadow-xl flex flex-col overflow-y-auto">
-                <SemiconductorSidebar />
-              </div>
-            </div>
-          )}
+        {/* 側邊欄 */}
+        <aside className={`
+          fixed inset-y-0 left-0 z-50 w-64 bg-zinc-50 border-r border-zinc-200 py-8 shadow-2xl transition-transform duration-300 ease-in-out
+          md:relative md:translate-x-0 md:shadow-none
+          ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+        `}>
+          <SemiconductorSidebar 
+            isOpen={isOpen} 
+            onToggle={() => setIsOpen(!isOpen)} 
+            onClose={() => setIsOpen(false)} 
+          />
+        </aside>
 
-          {/* 自動顯示標籤並包裹內容 */}
-          <div className="flex-1 min-w-0 w-full">
-            <div className="mb-2">
-              <span className="text-sm font-semibold text-[#4338CA] tracking-wider uppercase">
-                {getCategory()}
-              </span>
-            </div>
-            {children}
-          </div>
-        </div>
+        <article className="flex-1 w-full bg-white px-8 py-6 md:px-16">
+          {children}
+        </article>
       </div>
     </main>
   )

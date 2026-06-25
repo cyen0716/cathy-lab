@@ -1,11 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import { Sparkle, BookOpen, FolderOpen } from "lucide-react"
 import { CategoryCard } from "@/components/category-card"
 import { vocabularyData } from "@/lib/vocabulary-data"
 import { SiteNav } from "@/components/site-nav"
-
 
 export default function KoreanPage() {
   const totalWords = vocabularyData.reduce(
@@ -14,46 +12,40 @@ export default function KoreanPage() {
   )
 
   return (
-    <main className="min-h-screen bg-[#FCFCFC] antialiased">
-      <div className="max-w-7xl mx-auto px-6 md:px-6 py-10">
+    <main className="min-h-screen bg-zinc-50 antialiased">
+      {/* 導覽列：與其他 Layout 完全同步 */}
+      <header className="bg-zinc-50 border-b border-zinc-100">
+        <div className="max-w-[1500px] mx-auto px-6 h-16 flex items-center">
+          <SiteNav />
+        </div>
+      </header>
 
-        <SiteNav />
+      {/* 主要內容區 */}
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         
-
-        {/* Header */}
-        <header className="mb-14">
-
-          {/* H1 — Page Title */}
-          <h1 className="text-3xl font-bold text-slate-950 leading-tight mb-6">
+        {/* Header 區塊：調整對齊與寬度以匹配 Layout */}
+        <header className="mb-14 max-w-4xl">
+          <h1 className="text-3xl font-bold text-zinc-950 leading-tight mb-6">
             Korean Vocabulary
           </h1>
-
-          {/* Body Text */}
-          <p className="text-base font-normal text-slate-700/90 leading-relaxed tracking-normal max-w-2xl">
+          <p className="text-base font-normal text-zinc-700 leading-relaxed tracking-normal">
             A growing collection of Korean words I&apos;m learning and exploring.
           </p>
 
-          {/* 統計標籤區塊 */}
           <div className="flex flex-wrap gap-3 mt-8 select-none">
-
-            {/* Words 標籤 */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-slate-100/80 text-slate-600 text-sm font-medium shadow-[0_2px_8px_rgba(15,23,42,0.02)]">
-              <BookOpen strokeWidth={1.4} size={15} className="text-slate-400" />
-              <span className="text-slate-700">{totalWords} Words</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-zinc-100 shadow-[0_2px_8px_rgba(15,23,42,0.02)]">
+              <BookOpen strokeWidth={1.4} size={15} className="text-zinc-400" />
+              <span className="text-sm font-medium text-zinc-700">{totalWords} Words</span>
             </div>
-
-            {/* Categories 標籤 */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-slate-100/80 text-slate-600 text-sm font-medium shadow-[0_2px_8px_rgba(15,23,42,0.02)]">
-              <FolderOpen strokeWidth={1.4} size={15} className="text-slate-400" />
-              <span className="text-slate-700">{vocabularyData.length} Categories</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-zinc-100 shadow-[0_2px_8px_rgba(15,23,42,0.02)]">
+              <FolderOpen strokeWidth={1.4} size={15} className="text-zinc-400" />
+              <span className="text-sm font-medium text-zinc-700">{vocabularyData.length} Categories</span>
             </div>
-
           </div>
-
         </header>
 
         {/* Grid 區塊 */}
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
           {vocabularyData.map((category) => (
             <CategoryCard
               key={category.id}
