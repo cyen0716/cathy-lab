@@ -7,12 +7,12 @@ export default function ChipPage() {
   return (
     <article className="max-w-6xl">
       {/* 標題與 PortfolioPage 典範一致的間距與層級 */}
-      <h1 className="text-3xl font-bold text-slate-900 mt-4 mb-4">
+      <h1 className="text-3xl font-bold text-zinc-900 mt-4 mb-4">
         What is Inside a Chip?
       </h1>
 
       {/* Intro */}
-      <div className="space-y-3.5 text-base leading-[1.85] text-slate-700 mb-8">
+      <div className="space-y-3.5 text-base leading-[1.85] text-zinc-700 mb-8">
         <p>A chip is not a random collection of circuits.</p>
         <p>
           Every function occupies silicon area and competes for limited resources such as space, power, and performance.
@@ -27,8 +27,8 @@ export default function ChipPage() {
 
       {/* Chip Diagram */}
       <div className="max-w-2xl mx-auto mb-10">
-        <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-[0_12px_40px_rgba(0,0,0,0.03)]">
-          <p className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold text-center mb-6">
+        <div className="bg-white border border-zinc-200 rounded-2xl p-7 shadow-[0_12px_40px_rgba(0,0,0,0.03)]">
+          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-bold text-center mb-6">
             A Simplified Chip
           </p>
           <div className="grid grid-cols-2 gap-3.5">
@@ -56,11 +56,11 @@ export default function ChipPage() {
         </div>
       </div>
 
-      <div className="space-y-10 text-base leading-[1.85] text-slate-700">
+      <div className="space-y-10 text-base leading-[1.85] text-zinc-700">
         {/* CPU */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
-          <h2 className="text-xl font-bold text-slate-900 mb-3">CPU</h2>
+          <div className="border-t border-zinc-200 mb-8" />
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">CPU</h2>
           <div className="space-y-3.5">
             <p>
               The CPU, or Central Processing Unit, is the primary computational engine of a chip. It executes instructions, performs arithmetic and logic operations, and coordinates the activity of other blocks.
@@ -78,8 +78,8 @@ export default function ChipPage() {
 
         {/* SRAM */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
-          <h2 className="text-xl font-bold text-slate-900 mb-3">SRAM</h2>
+          <div className="border-t border-zinc-200 mb-8" />
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">SRAM</h2>
           <div className="space-y-3.5">
             <p>
               SRAM stands for Static Random-Access Memory. Unlike the storage in your phone or laptop, SRAM is designed for speed rather than capacity. It sits close to the CPU and can be accessed in a single clock cycle.
@@ -97,8 +97,8 @@ export default function ChipPage() {
 
         {/* Memory Controller */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
-          <h2 className="text-xl font-bold text-slate-900 mb-3">Memory Controller</h2>
+          <div className="border-t border-zinc-200 mb-8" />
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">Memory Controller</h2>
           <div className="space-y-3.5">
             <p>
               A chip does not just use SRAM. It also communicates with external memory — larger and slower storage that sits outside the chip itself. The Memory Controller manages this communication.
@@ -116,14 +116,14 @@ export default function ChipPage() {
 
         {/* USB */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
-          <h2 className="text-xl font-bold text-slate-900 mb-3">USB</h2>
+          <div className="border-t border-zinc-200 mb-8" />
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">USB</h2>
           <div className="space-y-3.5">
             <p>
               USB, or Universal Serial Bus, is an interface standard that allows a chip to communicate with devices outside the system. It handles the physical signaling, protocol, and power delivery needed to connect external hardware.
             </p>
             <p>
-              Inside the chip, the USB block translates between the chip&apos;s internal data format and the USB protocol, converting signals so that external devices can understand them, and vice versa.
+              Inside the chip, the USB block tranzincs between the chip&apos;s internal data format and the USB protocol, converting signals so that external devices can understand them, and vice versa.
             </p>
           </div>
           <div className="border-l-[3px] border-[#4338CA] pl-4 mt-5">
@@ -135,8 +135,8 @@ export default function ChipPage() {
 
         {/* Security */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
-          <h2 className="text-xl font-bold text-slate-900 mb-3">Security</h2>
+          <div className="border-t border-zinc-200 mb-8" />
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">Security</h2>
           <div className="space-y-3.5">
             <p>
               A Security block is dedicated hardware that performs security-related functions inside a chip. It is responsible for tasks such as encryption, authentication, secure key storage, and access control. Keeping these functions in dedicated hardware improves security and helps protect critical data from unauthorized access.
@@ -151,7 +151,7 @@ export default function ChipPage() {
 
         {/* Closing */}
         <section>
-          <div className="border-t border-slate-200 mb-8" />
+          <div className="border-t border-zinc-200 mb-8" />
           <div className="space-y-3.5">
             <p>
               Each block performs a specific function. The CPU processes instructions, SRAM stores frequently used data, the Memory Controller manages data transfers, USB enables external communication, and Security protects sensitive operations.

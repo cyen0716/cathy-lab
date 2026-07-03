@@ -1,4 +1,6 @@
 "use client";
+import { ArrowUpRight } from 'lucide-react';
+
 
 export default function PortfolioPage() {
   return (
@@ -9,11 +11,24 @@ export default function PortfolioPage() {
       <section className="space-y-10">
 
         {/* Remote Access VPN Tutorial */}
-        <div className="mb-8">
+          <div className="flex flex-col space-y-2">
           <h2 className="text-xl font-bold text-slate-900 mb-2">
             Remote Access VPN Tutorial
           </h2>
-          
+
+          {/* UG link */} 
+    <a 
+  href="https://download.zyxel.com/USG_FLEX_700H/user_guide/USG%20FLEX%20700H-UG.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-zinc-700 hover:text-indigo-500 hover:underline text-sm inline-flex items-center gap-1 group w-fit transition-colors"
+>
+  Official User Guide 
+  <ArrowUpRight 
+    size={16} 
+    strokeWidth={1.5} 
+  />
+</a>          
         </div>
 
         {/* Body Content */}
@@ -45,8 +60,12 @@ export default function PortfolioPage() {
             </li>
           </ul>
         </div>
+      </section>
+
 
         {/* PDF Section */}
+      <section className="space-y-4">  
+        <h4 className="text-sm italic text-zinc-700 mt-10"> Writing Sample - VPN Tutorial </h4>  
         <div className="overflow-hidden rounded-lg border border-slate-200 shadow-sm">
           <iframe
             src="/vpn-guide.pdf"

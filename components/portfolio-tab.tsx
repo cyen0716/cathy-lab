@@ -22,10 +22,8 @@ export function PortfolioTabs({
     }`;
 
   return (
-    // 這裡的 relative 是確保按鈕 top-1/2 可以正確垂直居中的關鍵
     <aside className="w-64 shrink-0 h-full relative" onClick={onClose}> 
       
-      {/* 瘦高切換按鈕：統一範本 */}
       <button 
         onClick={(e) => { e.stopPropagation(); onToggle(); }}
         className="md:hidden absolute -right-6 top-1/2 -translate-y-1/2 px-2 py-10 bg-indigo-500 border-r border-y border-zinc-200 rounded-r-lg 
@@ -62,6 +60,27 @@ export function PortfolioTabs({
                 }}
               >
                 Remote Access VPN
+              </Link>
+
+               <Link 
+                href="/portfolio/tailscale" 
+                className={getLinkClass("#tailscale")}
+                onClick={() => {
+                  setActiveTab("#tailscale");
+                  if (onClose) onClose();
+                }}
+              >
+                Tailscale CLI
+              </Link>
+            <Link 
+                href="/portfolio/zyxel-one-app" 
+                className={getLinkClass("#zyxel-one-app")}
+                onClick={() => {
+                  setActiveTab("#zyxel-one-app");
+                  if (onClose) onClose();
+                }}
+              >
+                Zyxel One App User Guide
               </Link>
             </div>
           </div>

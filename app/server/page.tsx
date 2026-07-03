@@ -37,7 +37,7 @@ export default function ServerPage() {
         
         {/* Types of Servers */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-slate-900 mb-3">Common Types of Servers</h2>
+          <h2 className="text-xl font-bold text-zinc-900 mb-3">Common Types of Servers</h2>
           <p>  
               The hardware alone does not determine what kind of server it is. 
               A server can perform different jobs depending on the software installed on it.

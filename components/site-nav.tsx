@@ -51,7 +51,7 @@ export function SiteNav() {
               
               {/* 底線動畫 */}
               <span className={`
-                absolute left-0 -bottom-[5px] w-full h-[2px] rounded-full transition-transform duration-300
+                absolute left-0 -bottom-[2px] w-full h-[2px] rounded-full transition-transform duration-300
                 ${isActive ? "bg-indigo-400" : "bg-zinc-300 scale-x-0 group-hover:scale-x-100"}
               `} />
             </Link>
