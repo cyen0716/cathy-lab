@@ -41,7 +41,7 @@ export function ServerSidebar({
             <p className="text-xs font-semibold text-zinc-900 uppercase tracking-wider mb-3 px-6">Basics</p>
             <div className="space-y-0.5">
               <Link href="/server" className={getLinkClass("/server")}>Server Basics</Link>
-              {/* 這裡可以繼續加入其他連結 */}
+              <Link href="/server/ai-server" className={getLinkClass("/server/ai-server")}>AI Server Basics</Link>
             </div>
           </div>
         </div>
