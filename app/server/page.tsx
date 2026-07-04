@@ -82,30 +82,30 @@ export default function ServerPage() {
   <div className="scale-75 md:scale-100 transition-transform origin-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-row items-center gap-6">
     
     {/* Client */}
-    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-24 text-center shrink-0">
-      <p className="text-base text-slate-800 font-bold">Client</p>
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-lg p-3 w-24 text-center shrink-0">
+      <p className="text-base text-indigo-600 font-bold">Client</p>
     </div>
 
     {/* 箭頭區塊 */}
     <div className="flex flex-col justify-center items-center w-32 gap-1 shrink-0">
       <div className="flex flex-col items-center">
-        <span className="text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Request</span>
+        <span className="text-xs font-bold text-zinc-500 mt-1 uppercase tracking-[0.2em]">Request</span>
         <svg width="120" height="16" viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 8H118M118 8L108 2M118 8L108 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M0 8H118M118 8L108 2M118 8L108 14" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
 
       <div className="flex flex-col items-center mt-2">
         <svg width="120" height="16" viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M120 8H2M2 8L12 2M2 8L12 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M120 8H2M2 8L12 2M2 8L12 14" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-        <span className="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Response</span>
+        <span className="text-xs font-bold text-zinc-500 mt-1 uppercase tracking-[0.2em]">Response</span>
       </div>
     </div>
 
     {/* Server */}
-    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-xl p-4 w-24 text-center shrink-0">
-      <p className="text-base text-slate-800 font-bold">Server</p>
+    <div className="bg-[#EEF2FF] border border-[#C7D2FE] rounded-lg p-3 w-24 text-center shrink-0">
+      <p className="text-base text-indigo-600 font-bold">Server</p>
     </div>
   </div>
 </div>

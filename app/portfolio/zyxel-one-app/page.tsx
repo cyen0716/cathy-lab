@@ -31,15 +31,15 @@ export default function PortfolioPage() {
         {/* Body Content */}
         <div className="space-y-8 text-base leading-[1.85] text-slate-700">
           <p className="text-base text-slate-700">
-            Created the user guide for the pre-release Zyxel One App.
+            Created the user guide and refined UI copy for the pre-release Zyxel One App.
           </p>
 
           <ul className="list-disc list-outside ml-5 space-y-4">
             <li>
               <p>
-                <strong className="text-slate-900 font-semibold">User Experience Optimization: </strong> 
-                Collaborated with PMs and the UI team to refine interface text and improve the app's setup 
-                flow through hands-on testing before launch.
+                <strong className="text-slate-900 font-semibold">UI Copy: </strong> 
+                Refined interface text across the app in collaboration with PMs through hands-on 
+                testing, helping users navigate the setup process more smoothly.
               </p>
             </li>
             <li>

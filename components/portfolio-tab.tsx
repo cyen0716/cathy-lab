@@ -80,7 +80,17 @@ export function PortfolioTabs({
                   if (onClose) onClose();
                 }}
               >
-                Zyxel One App User Guide
+                Zyxel One App 
+              </Link>
+              <Link 
+                href="/portfolio/lite60ax" 
+                className={getLinkClass("#lite60ax")}
+                onClick={() => {
+                  setActiveTab("#lite60ax");
+                  if (onClose) onClose();
+                }}
+              >
+                USG LITE 60AX
               </Link>
             </div>
           </div>

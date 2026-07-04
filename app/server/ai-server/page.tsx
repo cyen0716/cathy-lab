@@ -19,7 +19,7 @@ export default function ServerPage() {
 
       {/* AI server vs traditional server table */}
   <div className="w-full mb-10 select-none">
-  <table className="text-sm font-bold text-zinc-700 mb-3">Table: AI Server vs Traditional Server</table>
+  <h4 className="text-sm font-bold text-zinc-700 mb-3">Table: AI Server vs Traditional Server</h4>
   <div className="bg-white border border-zinc-200/60 shadow-[0_2px_8px_rgba(15,23,42,0.01)] rounded-2xl pt-4 pb-2 px-4 lg:pt-4 lg:pb-2 lg:px-8 w-full">    <div className="hidden lg:grid lg:grid-cols-[160px_1fr_1fr] lg:gap-8 border-b border-zinc-100 pb-3 mb-2 text-sm font-bold text-zinc-700">
       <div>Feature</div>
       <div>AI Server</div>
