@@ -8,7 +8,6 @@ interface CategoryCardProps {
 }
 
 export function CategoryCard({ category }: CategoryCardProps) {
-  // 直接拿到資料庫內嵌的組件型態
   const IconComponent = category.icon
 
   return (
