@@ -8,12 +8,9 @@ import {
   List,
   BookOpen,
   Brain,
-  Sparkle, // 💡 修改：將 ChevronLeft 換成 Sparkle
 } from "lucide-react"
 import { vocabularyData } from "@/lib/vocabulary-data"
 import { VocabularyList } from "@/components/vocabulary-list"
-import { Flashcard } from "@/components/flashcard"
-import { Quiz } from "@/components/quiz"
 import { SiteNav } from "@/components/site-nav"
 
 
@@ -86,18 +83,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
           <TabsContent value="list" className="mt-0 focus-visible:outline-none">
             <VocabularyList words={category.words} />
-          </TabsContent>
-
-          <TabsContent value="flashcards" className="mt-0 focus-visible:outline-none">
-            <div className="max-w-md mx-auto">
-              <Flashcard words={category.words} />
-            </div>
-          </TabsContent>
-
-          <TabsContent value="quiz" className="mt-0 focus-visible:outline-none">
-            <div className="max-w-md mx-auto">
-              <Quiz words={category.words} />
-            </div>
           </TabsContent>
         </Tabs>
 
