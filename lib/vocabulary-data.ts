@@ -1,0 +1,359 @@
+// 1. 引入 Lucide 圖標組件型態與所有需要的質感線條圖標
+import { 
+  LucideIcon,
+  Clock, 
+  Palette, 
+  Binary, 
+  Heart, 
+  User, 
+  Utensils, 
+  MapPin, 
+  Headphones, 
+  Coffee, 
+  Compass, 
+  Briefcase, 
+  Sparkles 
+} from "lucide-react"
+
+export interface VocabWord {
+  korean: string
+  chinese: string
+}
+
+export interface VocabCategory {
+  id: string
+  name: string
+  nameKorean: string
+  icon: LucideIcon // ✨ 關鍵：直接將 icon 規格升級為 Lucide 圖標類型
+  words: VocabWord[]
+}
+
+export const vocabularyData: VocabCategory[] = [
+  {
+    id: "date",
+    name: "時間",
+    nameKorean: "시간",
+    icon: Clock, // 🕙 -> 質感時鐘
+    words: [
+      { korean: "오늘", chinese: "今天" },
+      { korean: "어제", chinese: "昨天" },
+      { korean: "내일", chinese: "明天" },
+      { korean: "매일", chinese: "每天" },
+      { korean: "매주", chinese: "每週" },
+      { korean: "매달", chinese: "每月" },
+      { korean: "매년", chinese: "每年" },
+      { korean: "월요일", chinese: "星期一" },
+      { korean: "화요일", chinese: "星期二" },
+      { korean: "수요일", chinese: "星期三" },
+      { korean: "목요일", chinese: "星期四" },
+      { korean: "금요일", chinese: "星期五" },
+      { korean: "토요일", chinese: "星期六" },
+      { korean: "일요일", chinese: "星期日" },
+      { korean: "주말", chinese: "週末" },
+      { korean: "평일", chinese: "平日" },
+    ],
+  },
+  {
+    id: "color",
+    name: "顏色",
+    nameKorean: "색깔",
+    icon: Palette, // 🎨 -> 調色盤
+    words: [
+      { korean: "빨간색", chinese: "紅色" },
+      { korean: "주황색", chinese: "橘色" },
+      { korean: "노란색", chinese: "黃色" },
+      { korean: "초록색", chinese: "綠色" },
+      { korean: "파란색", chinese: "藍色" },
+      { korean: "보라색", chinese: "紫色" },
+      { korean: "분홍색", chinese: "粉紅色" },
+      { korean: "갈색", chinese: "咖啡色" },
+      { korean: "회색", chinese: "灰色" },
+      { korean: "검은색", chinese: "黑色" },
+      { korean: "하얀색", chinese: "白色" },
+    ],
+  },
+  {
+    id: "number",
+    name: "數字",
+    nameKorean: "숫자",
+    icon: Binary, // 🔢 -> 科技感的數字矩陣
+    words: [
+      { korean: "하나", chinese: "1" },
+      { korean: "둘", chinese: "2" },
+      { korean: "셋", chinese: "3" },
+      { korean: "넷", chinese: "4" },
+      { korean: "다섯", chinese: "5" },
+      { korean: "여섯", chinese: "6" },
+      { korean: "일곱", chinese: "7" },
+      { korean: "여덟", chinese: "8" },
+      { korean: "아홉", chinese: "9" },
+      { korean: "열", chinese: "10" },
+      { korean: "열하나", chinese: "11" },
+      { korean: "열둘", chinese: "12" },
+      { korean: "열셋", chinese: "13" },
+      { korean: "열넷", chinese: "14" },
+      { korean: "열다섯", chinese: "15" },
+      { korean: "열여섯", chinese: "16" },
+      { korean: "열일곱", chinese: "17" },
+      { korean: "열여덟", chinese: "18" },
+      { korean: "열아홉", chinese: "19" },
+      { korean: "스물", chinese: "20" },
+    ],
+  },
+  {
+    id: "emotions",
+    name: "心情",
+    nameKorean: "감정",
+    icon: Heart, // 🤎 -> 優雅心形
+    words: [
+      { korean: "사랑해", chinese: "我愛你" },
+      { korean: "행복해", chinese: "幸福" },
+      { korean: "슬퍼", chinese: "難過" },
+      { korean: "화나", chinese: "生氣" },
+      { korean: "무서워", chinese: "害怕" },
+      { korean: "걱정돼", chinese: "擔心" },
+      { korean: "기뻐", chinese: "開心" },
+      { korean: "외로워", chinese: "孤單" },
+      { korean: "피곤해", chinese: "累了" },
+      { korean: "설레", chinese: "心動" },
+      { korean: "졸려", chinese: "想睡" },
+      { korean: "심심해", chinese: "無聊" },
+      { korean: "짜증나", chinese: "煩躁" },
+      { korean: "부끄러워", chinese: "害羞" },
+      { korean: "신나", chinese: "興奮" },
+      { korean: "우울해", chinese: "憂鬱" },
+    ],
+  },
+  {
+    id: "body",
+    name: "身體",
+    nameKorean: "몸",
+    icon: User, // 🦷 -> 人體剪影（比單獨一顆牙齒高雅得多）
+    words: [
+      { korean: "머리", chinese: "頭" },
+      { korean: "얼굴", chinese: "臉" },
+      { korean: "눈", chinese: "眼睛" },
+      { korean: "코", chinese: "鼻子" },
+      { korean: "입", chinese: "嘴巴" },
+      { korean: "귀", chinese: "耳朵" },
+      { korean: "목", chinese: "脖子" },
+      { korean: "어깨", chinese: "肩膀" },
+      { korean: "팔", chinese: "手臂" },
+      { korean: "손", chinese: "手" },
+      { korean: "손가락", chinese: "手指" },
+      { korean: "가슴", chinese: "胸口" },
+      { korean: "배", chinese: "肚子" },
+      { korean: "등", chinese: "背部" },
+      { korean: "허리", chinese: "腰" },
+      { korean: "다리", chinese: "腿" },
+      { korean: "무릎", chinese: "膝蓋" },
+      { korean: "발", chinese: "腳" },
+      { korean: "발가락", chinese: "腳趾" },
+      { korean: "몸", chinese: "身體" },
+    ],
+  },
+  {
+    id: "ingredients",
+    name: "食物",
+    nameKorean: "음식",
+    icon: Utensils, // 🍎 -> 極簡精緻餐具
+    words: [
+      { korean: "돼지고기", chinese: "豬肉" },
+      { korean: "소고기", chinese: "牛肉" },
+      { korean: "닭고기", chinese: "雞肉" },
+      { korean: "생선", chinese: "魚" },
+      { korean: "계란", chinese: "雞蛋" },
+      { korean: "우유", chinese: "牛奶" },
+      { korean: "치즈", chinese: "起司" },
+      { korean: "빵", chinese: "麵包" },
+      { korean: "사과", chinese: "蘋果" },
+      { korean: "바나나", chinese: "香蕉" },
+      { korean: "딸기", chinese: "草莓" },
+      { korean: "포도", chinese: "葡萄" },
+      { korean: "오렌지", chinese: "柳橙" },
+      { korean: "수박", chinese: "西瓜" },
+      { korean: "복숭아", chinese: "水蜜桃" },
+      { korean: "토마토", chinese: "番茄" },
+      { korean: "감자", chinese: "馬鈴薯" },
+      { korean: "양파", chinese: "洋蔥" },
+      { korean: "당근", chinese: "紅蘿蔔" },
+      { korean: "과일", chinese: "水果" },
+    ],
+  },
+  {
+    id: "place",
+    name: "地點",
+    nameKorean: "장소",
+    icon: MapPin, // 🏪 -> 極簡地圖定位針
+    words: [
+      { korean: "집", chinese: "家" },
+      { korean: "학교", chinese: "學校" },
+      { korean: "회사", chinese: "公司" },
+      { korean: "병원", chinese: "醫院" },
+      { korean: "은행", chinese: "銀行" },
+      { korean: "공원", chinese: "公園" },
+      { korean: "도서관", chinese: "圖書館" },
+      { korean: "식당", chinese: "餐廳" },
+      { korean: "카페", chinese: "咖啡廳" },
+      { korean: "편의점", chinese: "便利商店" },
+      { korean: "시장", chinese: "市場" },
+      { korean: "앞", chinese: "前面" },
+      { korean: "뒤", chinese: "後面" },
+      { korean: "위", chinese: "上面" },
+      { korean: "아래", chinese: "下面" },
+      { korean: "왼쪽", chinese: "左邊" },
+      { korean: "오른쪽", chinese: "右邊" },
+      { korean: "안", chinese: "裡面" },
+      { korean: "밖", chinese: "外面" },
+      { korean: "근처", chinese: "附近" },
+    ],
+  },
+  {
+    id: "hobby",
+    name: "興趣",
+    nameKorean: "취미",
+    icon: Headphones, // 🎧 -> 頭戴式耳機線條
+    words: [
+      { korean: "음악 듣기", chinese: "聽音樂" },
+      { korean: "사진 찍기", chinese: "拍照" },
+      { korean: "요리하기", chinese: "做飯" },
+      { korean: "독서", chinese: "看書" },
+      { korean: "영화 보기", chinese: "看電影" },
+      { korean: "드라마 보기", chinese: "看韓劇" },
+      { korean: "여행", chinese: "旅行" },
+      { korean: "쇼핑", chinese: "購物" },
+      { korean: "운동", chinese: "運動" },
+      { korean: "산책", chinese: "散步" },
+      { korean: "수영", chinese: "游泳" },
+      { korean: "등산", chinese: "爬山" },
+      { korean: "스키", chinese: "滑雪" },
+      { korean: "게임", chinese: "打電動" },
+      { korean: "그림 그리기", chinese: "畫畫" },
+      { korean: "춤추기", chinese: "跳舞" },
+      { korean: "노래 부르기", chinese: "唱歌" },
+      { korean: "자전거 타기", chinese: "騎腳踏車" },
+      { korean: "캠핑", chinese: "露營" },
+      { korean: "커피 마시기", chinese: "喝咖啡" },
+    ],
+  },
+  {
+    id: "cafe",
+    name: "咖啡廳",
+    nameKorean: "카페",
+    icon: Coffee, // ☕ -> 冒煙的小咖啡杯
+    words: [
+      { korean: "아메리카노", chinese: "美式咖啡" },
+      { korean: "라떼", chinese: "拿鐵" },
+      { korean: "케이크", chinese: "蛋糕" },
+      { korean: "빵", chinese: "麵包" },
+      { korean: "아이스", chinese: "冰的" },
+      { korean: "뜨거운", chinese: "熱的" },
+      { korean: "설탕", chinese: "糖" },
+      { korean: "우유", chinese: "牛奶" },
+      { korean: "주문", chinese: "點餐" },
+      { korean: "계산", chinese: "結帳" },
+      { korean: "커피", chinese: "咖啡" },
+      { korean: "녹차", chinese: "綠茶" },
+      { korean: "홍차", chinese: "紅茶" },
+      { korean: "마카롱", chinese: "馬卡龍" },
+      { korean: "테이크아웃", chinese: "外帶" },
+      { korean: "영수증", chinese: "收據" },
+    ],
+  },
+  {
+    id: "travel",
+    name: "旅行",
+    nameKorean: "여행",
+    icon: Compass, // 🛫 -> 指南針（比飛機圖標更有探險質感）
+    words: [
+      { korean: "공항", chinese: "機場" },
+      { korean: "호텔", chinese: "飯店" },
+      { korean: "지도", chinese: "地圖" },
+      { korean: "택시", chinese: "計程車" },
+      { korean: "표", chinese: "票" },
+      { korean: "여권", chinese: "護照" },
+      { korean: "짐", chinese: "行李" },
+      { korean: "예약", chinese: "預約" },
+      { korean: "관광", chinese: "觀光" },
+      { korean: "사진", chinese: "照片" },
+      { korean: "버스", chinese: "公車" },
+      { korean: "역", chinese: "站" },
+      { korean: "출구", chinese: "出口" },
+      { korean: "입구", chinese: "入口" },
+      { korean: "편의점", chinese: "便利商店" },
+      { korean: "환전", chinese: "換錢" },
+    ],
+  },
+  {
+    id: "job",
+    name: "職業",
+    nameKorean: "직업",
+    icon: Briefcase, // 💼 -> 公事包
+    words: [
+      { korean: "회사원", chinese: "上班族" },
+      { korean: "학생", chinese: "學生" },
+      { korean: "선생님", chinese: "老師" },
+      { korean: "의사", chinese: "醫生" },
+      { korean: "간호사", chinese: "護理師" },
+      { korean: "배우", chinese: "演員" },
+      { korean: "가수", chinese: "歌手" },
+      { korean: "운동선수", chinese: "運動員" },
+      { korean: "경찰", chinese: "警察" },
+      { korean: "소방관", chinese: "消防員" },
+      { korean: "요리사", chinese: "廚師" },
+      { korean: "기자", chinese: "記者" },
+      { korean: "작가", chinese: "作家" },
+      { korean: "번역가", chinese: "翻譯" },
+      { korean: "개발자", chinese: "工程師" },
+      { korean: "디자이너", chinese: "設計師" },
+      { korean: "유튜버", chinese: "YouTuber" },
+      { korean: "사장", chinese: "老闆" },
+      { korean: "비서", chinese: "秘書" },
+      { korean: "기술 문서 작성자", chinese: "Technical Writer" },
+    ],
+  },
+  {
+    id: "kdrama",
+    name: "追星",
+    nameKorean: "팬덤",
+    icon: Sparkles, // 🎬 -> 耀眼的星光
+    words: [
+      { korean: "잘생겼어", chinese: "好帥" },
+      { korean: "예뻐", chinese: "漂亮" },
+      { korean: "대박", chinese: "太棒了" },
+      { korean: "오빠", chinese: "哥哥(女生叫)" },
+      { korean: "언니", chinese: "姐姐(女生叫)" },
+      { korean: "화이팅", chinese: "加油" },
+      { korean: "팬", chinese: "粉絲" },
+      { korean: "콘서트", chinese: "演唱會" },
+      { korean: "드라마", chinese: "電視劇" },
+      { korean: "아이돌", chinese: "偶像" },
+      { korean: "형", chinese: "哥哥(男生叫)" },
+      { korean: "누나", chinese: "姐姐(男生叫)" },
+      { korean: "보고싶어", chinese: "想你" },
+      { korean: "앨범", chinese: "專輯" },
+      { korean: "배우", chinese: "演員" },
+      { korean: "귀여워", chinese: "好可愛" },
+      { korean: "최고", chinese: "最棒" },
+      { korean: "멋있어", chinese: "好帥" },
+    ],
+  },
+]
+
+export function searchVocabulary(query: string): VocabWord[] {
+  if (!query.trim()) return []
+  const results: VocabWord[] = []
+
+  vocabularyData.forEach((category) => {
+    category.words.forEach((word) => {
+      if (
+        word.korean.includes(query) ||
+        word.chinese.includes(query)
+      ) {
+        results.push(word)
+      }
+    })
+  })
+
+  return results
+}
